@@ -1,0 +1,17 @@
+INFO  23:06:46,715 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:06:47,888 - #2 program
+INFO  23:06:47,888 - #43 Keske
+INFO  23:06:47,888 - #6 const
+INFO  23:06:47,904 - #43 int
+INFO  23:06:47,905 - #43 pi
+INFO  23:06:47,923 - #19 =
+INFO  23:06:47,924 - #44 3
+INFO  23:06:47,924 - #33 ;
+INFO  23:06:47,959 - #39 {
+INFO  23:06:47,981 - #5 void
+INFO  23:06:47,982 - #43 main
+INFO  23:06:47,998 - #37 (
+INFO  23:06:47,999 - #38 )
+ERROR 23:06:47,999 - 
+Sintaksna greska na liniji 7
+ERROR 23:06:47,999 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 7

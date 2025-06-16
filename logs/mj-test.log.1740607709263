@@ -1,0 +1,105 @@
+INFO  23:06:49,716 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:06:49,753 - #2 program
+INFO  23:06:49,753 - #43 Tarmi
+INFO  23:06:49,753 - #6 const
+INFO  23:06:49,754 - #43 int
+INFO  23:06:49,754 - #43 pi
+INFO  23:06:49,755 - #19 =
+INFO  23:06:49,755 - #44 3
+INFO  23:06:49,755 - #35 ,
+INFO  23:06:49,756 - #43 pi
+INFO  23:06:49,756 - #19 =
+INFO  23:06:49,756 - #44 33
+INFO  23:06:49,756 - #33 ;
+INFO  23:06:49,757 - #39 {
+INFO  23:06:49,757 - #5 void
+INFO  23:06:49,757 - #43 main
+INFO  23:06:49,757 - #37 (
+INFO  23:06:49,758 - #38 )
+INFO  23:06:49,758 - #39 {
+INFO  23:06:49,759 - #43 a
+INFO  23:06:49,759 - #19 =
+INFO  23:06:49,759 - #43 b
+INFO  23:06:49,760 - #33 ;
+INFO  23:06:49,766 - #40 }
+INFO  23:06:49,767 - #40 }
+INFO  23:06:49,769 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Const(
+    ConstVarDeclList_Epsilon(
+    ) [ConstVarDeclList_Epsilon]
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConstDecl(
+       pi
+        Constant_Number(
+         3
+        ) [Constant_Number]
+      ) [ConstDecl]
+      ConstDeclMore_Comma(
+        ConstDecl(
+         pi
+          Constant_Number(
+           33
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclMore_Comma]
+    ) [ConstDeclList]
+  ) [ConstVarDeclList_Const]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator_Regular(
+             a
+            ) [Designator_Regular]
+            DesignatorStatement_FirstOptions_Assign(
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_Designator(
+                    Designator_Regular(
+                     b
+                    ) [Designator_Regular]
+                    FactorActPars_Epsilon(
+                    ) [FactorActPars_Epsilon]
+                  ) [Factor_Designator]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_FirstOptions_Assign]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  23:06:49,769 - =====================================================================
+ERROR 23:06:49,775 - Dvostruka definica konstante: pi na liniji 3
+ERROR 23:06:49,775 - Dvostruka definica konstante: pi na liniji 3
+INFO  23:06:49,775 - =====================================================================
+ERROR 23:06:49,776 - Parsiranje NIJE uspesno zavrseno!

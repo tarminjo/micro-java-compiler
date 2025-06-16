@@ -1,0 +1,92 @@
+INFO  22:40:31,032 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:40:31,089 - #2 program
+INFO  22:40:31,089 - #43 Tarmi
+INFO  22:40:31,089 - #6 const
+INFO  22:40:31,091 - #43 byte
+INFO  22:40:31,091 - #43 pi
+INFO  22:40:31,091 - #19 =
+INFO  22:40:31,091 - #44 3
+INFO  22:40:31,091 - #33 ;
+INFO  22:40:31,093 - #39 {
+INFO  22:40:31,094 - #5 void
+INFO  22:40:31,094 - #43 main
+INFO  22:40:31,094 - #37 (
+INFO  22:40:31,094 - #38 )
+INFO  22:40:31,095 - #39 {
+INFO  22:40:31,099 - #43 a
+INFO  22:40:31,099 - #19 =
+INFO  22:40:31,099 - #43 b
+INFO  22:40:31,099 - #33 ;
+INFO  22:40:31,103 - #40 }
+INFO  22:40:31,104 - #40 }
+INFO  22:40:31,106 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Const(
+    ConstVarDeclList_Epsilon(
+    ) [ConstVarDeclList_Epsilon]
+    ConstDeclList(
+      Type(
+       byte
+      ) [Type]
+      ConstDecl(
+       pi
+        Constant_Number(
+         3
+        ) [Constant_Number]
+      ) [ConstDecl]
+      ConstDeclMore_Epsilon(
+      ) [ConstDeclMore_Epsilon]
+    ) [ConstDeclList]
+  ) [ConstVarDeclList_Const]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator_Regular(
+             a
+            ) [Designator_Regular]
+            DesignatorStatement_FirstOptions_Assign(
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_Designator(
+                    Designator_Regular(
+                     b
+                    ) [Designator_Regular]
+                    FactorActPars_Epsilon(
+                    ) [FactorActPars_Epsilon]
+                  ) [Factor_Designator]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_FirstOptions_Assign]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  22:40:31,108 - =====================================================================
+ERROR 22:40:31,114 - Nepostojeci tip podatka: byte na liniji 3
+INFO  22:40:31,114 - =====================================================================
+ERROR 22:40:31,115 - Parsiranje NIJE uspesno zavrseno!

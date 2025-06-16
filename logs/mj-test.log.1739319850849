@@ -1,0 +1,10 @@
+INFO  01:11:08,998 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:11:09,048 - #2 program
+INFO  01:11:09,048 - #43 Keske
+INFO  01:11:09,048 - #43 int
+INFO  01:11:09,049 - #43 x
+INFO  01:11:09,050 - #33 ;
+INFO  01:11:09,054 - #33 ;
+ERROR 01:11:09,054 - 
+Sintaksna greska na liniji 3
+ERROR 01:11:09,055 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 3

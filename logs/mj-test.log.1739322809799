@@ -1,0 +1,9 @@
+INFO  02:08:54,709 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  02:08:54,771 - #2 program
+INFO  02:08:54,771 - #43 test301
+INFO  02:08:54,771 - #43 int
+INFO  02:08:54,772 - #43 niz
+INFO  02:08:54,773 - #41 [
+ERROR 02:08:54,775 - 
+Sintaksna greska na liniji 5
+ERROR 02:08:54,775 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

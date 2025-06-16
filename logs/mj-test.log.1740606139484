@@ -1,0 +1,91 @@
+INFO  22:42:09,764 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:42:09,810 - #2 program
+INFO  22:42:09,810 - #43 Tarmi
+INFO  22:42:09,810 - #6 const
+INFO  22:42:09,813 - #43 int
+INFO  22:42:09,814 - #43 pi
+INFO  22:42:09,815 - #19 =
+INFO  22:42:09,817 - #44 3
+INFO  22:42:09,817 - #33 ;
+INFO  22:42:09,818 - #39 {
+INFO  22:42:09,819 - #5 void
+INFO  22:42:09,820 - #43 main
+INFO  22:42:09,820 - #37 (
+INFO  22:42:09,820 - #38 )
+INFO  22:42:09,820 - #39 {
+INFO  22:42:09,822 - #43 a
+INFO  22:42:09,822 - #19 =
+INFO  22:42:09,822 - #43 b
+INFO  22:42:09,822 - #33 ;
+INFO  22:42:09,825 - #40 }
+INFO  22:42:09,825 - #40 }
+INFO  22:42:09,827 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Const(
+    ConstVarDeclList_Epsilon(
+    ) [ConstVarDeclList_Epsilon]
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConstDecl(
+       pi
+        Constant_Number(
+         3
+        ) [Constant_Number]
+      ) [ConstDecl]
+      ConstDeclMore_Epsilon(
+      ) [ConstDeclMore_Epsilon]
+    ) [ConstDeclList]
+  ) [ConstVarDeclList_Const]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator_Regular(
+             a
+            ) [Designator_Regular]
+            DesignatorStatement_FirstOptions_Assign(
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_Designator(
+                    Designator_Regular(
+                     b
+                    ) [Designator_Regular]
+                    FactorActPars_Epsilon(
+                    ) [FactorActPars_Epsilon]
+                  ) [Factor_Designator]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_FirstOptions_Assign]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  22:42:09,829 - =====================================================================
+INFO  22:42:09,837 - =====================================================================
+INFO  22:42:09,838 - Parsiranje uspesno zavrseno!

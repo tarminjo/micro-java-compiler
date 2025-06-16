@@ -1,0 +1,75 @@
+INFO  13:39:49,260 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:39:49,292 - #2 program
+INFO  13:39:49,292 - #43 Tarmi
+INFO  13:39:49,292 - #6 const
+INFO  13:39:49,293 - #43 int
+INFO  13:39:49,293 - #43 pi
+INFO  13:39:49,293 - #19 =
+INFO  13:39:49,294 - #44 3
+INFO  13:39:49,294 - #33 ;
+INFO  13:39:49,295 - #43 char
+INFO  13:39:49,296 - #43 carr
+INFO  13:39:49,296 - #42 [
+INFO  13:39:49,296 - #41 ]
+INFO  13:39:49,296 - #33 ;
+INFO  13:39:49,296 - #39 {
+INFO  13:39:49,297 - #5 void
+INFO  13:39:49,297 - #43 main
+INFO  13:39:49,297 - #37 (
+INFO  13:39:49,297 - #38 )
+INFO  13:39:49,298 - #39 {
+INFO  13:39:49,299 - #40 }
+INFO  13:39:49,300 - #40 }
+INFO  13:39:49,304 - Program(
+  Program_Name(
+   Tarmi
+  ) [Program_Name]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       char
+      ) [Type]
+      VarDecl_Array(
+       carr
+      ) [VarDecl_Array]
+      VarDeclMore_Semi(
+      ) [VarDeclMore_Semi]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_Epsilon(
+      ) [StatementList_Epsilon]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  13:39:49,306 - =====================================================================
+INFO  13:39:49,306 - Parsiranje uspesno zavrseno!

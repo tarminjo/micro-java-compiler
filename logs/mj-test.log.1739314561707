@@ -1,0 +1,12 @@
+INFO  23:42:08,266 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  23:42:08,311 - #2 program
+INFO  23:42:08,311 - #43 Keske
+INFO  23:42:08,311 - #39 {
+INFO  23:42:08,312 - #5 void
+INFO  23:42:08,312 - #43 main
+INFO  23:42:08,313 - #37 (
+INFO  23:42:08,313 - #38 )
+INFO  23:42:08,314 - #39 {
+ERROR 23:42:08,315 - 
+Sintaksna greska na liniji 6
+ERROR 23:42:08,315 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 6

@@ -1,0 +1,159 @@
+INFO  01:24:10,855 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:24:10,903 - #2 program
+INFO  01:24:10,903 - #43 Keske
+INFO  01:24:10,903 - #43 int
+INFO  01:24:10,904 - #43 x
+INFO  01:24:10,905 - #33 ;
+INFO  01:24:10,908 - #39 {
+INFO  01:24:10,909 - #5 void
+INFO  01:24:10,909 - #43 main
+INFO  01:24:10,910 - #37 (
+INFO  01:24:10,910 - #38 )
+INFO  01:24:10,910 - #39 {
+INFO  01:24:10,912 - #43 a
+INFO  01:24:10,912 - #18 ++
+INFO  01:24:10,915 - #33 ;
+INFO  01:24:10,915 - #43 b
+INFO  01:24:10,916 - #19 =
+INFO  01:24:10,916 - #44 3
+INFO  01:24:10,918 - #33 ;
+INFO  01:24:10,921 - #15 do
+INFO  01:24:10,922 - #39 {
+INFO  01:24:10,922 - #3 print
+INFO  01:24:10,922 - #37 (
+INFO  01:24:10,927 - #46 x
+INFO  01:24:10,927 - #38 )
+INFO  01:24:10,928 - #33 ;
+INFO  01:24:10,929 - #40 }
+INFO  01:24:10,929 - #16 while
+INFO  01:24:10,929 - #37 (
+INFO  01:24:10,931 - #45 1
+INFO  01:24:10,931 - #38 )
+INFO  01:24:10,934 - #33 ;
+INFO  01:24:10,934 - #40 }
+INFO  01:24:10,934 - #40 }
+INFO  01:24:10,938 - Program(
+ Keske
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Epsilon(
+    ) [ConstVarDeclList_Epsilon]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+     x
+      VarDeclArray_Epsilon(
+      ) [VarDeclArray_Epsilon]
+      VarDeclMore_Epsilon(
+      ) [VarDeclMore_Epsilon]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodSignatureType_Void(
+        ) [MethodSignatureType_Void]
+       main
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator(
+             a
+              DesignatorArray_Epsilon(
+              ) [DesignatorArray_Epsilon]
+            ) [Designator]
+            DesignatorStatement_FirstOptions_Inc(
+            ) [DesignatorStatement_FirstOptions_Inc]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_More(
+          Statement_Designator(
+            DesignatorStatement_First(
+              Designator(
+               b
+                DesignatorArray_Epsilon(
+                ) [DesignatorArray_Epsilon]
+              ) [Designator]
+              DesignatorStatement_FirstOptions_Assign(
+                Assignop(
+                ) [Assignop]
+                Expr_Regular(
+                  Term(
+                    Factor_NumConst(
+                     3
+                    ) [Factor_NumConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [Expr_Regular]
+              ) [DesignatorStatement_FirstOptions_Assign]
+            ) [DesignatorStatement_First]
+          ) [Statement_Designator]
+          StatementList_More(
+            Statement_DoWhile(
+              Statement_List(
+                StatementList_More(
+                  Statement_Print(
+                    Expr_Regular(
+                      Term(
+                        Factor_CharConst(
+                         x
+                        ) [Factor_CharConst]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [Expr_Regular]
+                    Statement_PrintNumConst_Epsilon(
+                    ) [Statement_PrintNumConst_Epsilon]
+                  ) [Statement_Print]
+                  StatementList_Epsilon(
+                  ) [StatementList_Epsilon]
+                ) [StatementList_More]
+              ) [Statement_List]
+              Statement_DoWhileCond_Yes(
+                Condition(
+                  CondTerm(
+                    CondFact_1(
+                      Expr_Regular(
+                        Term(
+                          Factor_BoolConst(
+                           1
+                          ) [Factor_BoolConst]
+                          FactorMore_Epsilon(
+                          ) [FactorMore_Epsilon]
+                        ) [Term]
+                        ExprAddopTerms_Epsilon(
+                        ) [ExprAddopTerms_Epsilon]
+                      ) [Expr_Regular]
+                    ) [CondFact_1]
+                    CondFactMore_Epsilon(
+                    ) [CondFactMore_Epsilon]
+                  ) [CondTerm]
+                  CondTermMore_Epsilon(
+                  ) [CondTermMore_Epsilon]
+                ) [Condition]
+                Statement_DoWhileCondDesignatorSt_Epsilon(
+                ) [Statement_DoWhileCondDesignatorSt_Epsilon]
+              ) [Statement_DoWhileCond_Yes]
+            ) [Statement_DoWhile]
+            StatementList_Epsilon(
+            ) [StatementList_Epsilon]
+          ) [StatementList_More]
+        ) [StatementList_More]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  01:24:10,938 - =====================================================================
+INFO  01:24:10,938 - Parsiranje uspesno zavrseno!

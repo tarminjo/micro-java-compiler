@@ -1,0 +1,112 @@
+INFO  18:10:20,807 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  18:10:20,905 - #2 program
+INFO  18:10:20,905 - #43 Tarmi
+INFO  18:10:20,905 - #39 {
+INFO  18:10:20,906 - #5 void
+INFO  18:10:20,907 - #43 main
+INFO  18:10:20,907 - #37 (
+INFO  18:10:20,907 - #38 )
+INFO  18:10:20,908 - #39 {
+INFO  18:10:20,911 - #43 a
+INFO  18:10:20,911 - #19 =
+INFO  18:10:20,912 - #43 b
+INFO  18:10:20,913 - #33 ;
+INFO  18:10:20,919 - #40 }
+INFO  18:10:20,921 - #43 int
+INFO  18:10:20,922 - #43 f
+INFO  18:10:20,924 - #37 (
+INFO  18:10:20,924 - #38 )
+INFO  18:10:20,924 - #39 {
+INFO  18:10:20,924 - #4 return
+INFO  18:10:20,924 - #45 1
+INFO  18:10:20,924 - #33 ;
+INFO  18:10:20,925 - #40 }
+INFO  18:10:20,926 - #40 }
+INFO  18:10:20,929 - Program(
+  Program_Name(
+   Tarmi
+  ) [Program_Name]
+  ConstVarDeclList_Epsilon(
+  ) [ConstVarDeclList_Epsilon]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator_Regular(
+             a
+            ) [Designator_Regular]
+            DesignatorStatement_FirstOptions_Assign(
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_Designator(
+                    Designator_Regular(
+                     b
+                    ) [Designator_Regular]
+                    FactorActPars_Epsilon(
+                    ) [FactorActPars_Epsilon]
+                  ) [Factor_Designator]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_FirstOptions_Assign]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_More(
+      MethodDecl(
+        MethodSignature(
+          MethodRetAndName_Type(
+            Type(
+             int
+            ) [Type]
+           f
+          ) [MethodRetAndName_Type]
+          FormParsList_Epsilon(
+          ) [FormParsList_Epsilon]
+        ) [MethodSignature]
+        MethodDeclVarDeclList_Epsilon(
+        ) [MethodDeclVarDeclList_Epsilon]
+        StatementList_More(
+          Statement_Return(
+            Statement_ReturnExpr_Yes(
+              Expr_Regular(
+                Term(
+                  Factor_BoolConst(
+                   1
+                  ) [Factor_BoolConst]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [Statement_ReturnExpr_Yes]
+          ) [Statement_Return]
+          StatementList_Epsilon(
+          ) [StatementList_Epsilon]
+        ) [StatementList_More]
+      ) [MethodDecl]
+      MethodDeclList_Epsilon(
+      ) [MethodDeclList_Epsilon]
+    ) [MethodDeclList_More]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:10:20,931 - =====================================================================

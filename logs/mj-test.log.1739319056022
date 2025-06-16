@@ -1,0 +1,35 @@
+INFO  00:13:56,121 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  00:13:56,172 - #2 program
+INFO  00:13:56,172 - #43 Keske
+INFO  00:13:56,172 - #39 {
+INFO  00:13:56,173 - #5 void
+INFO  00:13:56,174 - #43 main
+INFO  00:13:56,175 - #37 (
+INFO  00:13:56,175 - #38 )
+INFO  00:13:56,176 - #39 {
+INFO  00:13:56,179 - #40 }
+INFO  00:13:56,180 - #40 }
+INFO  00:13:56,185 - Program(
+ Keske
+  ConstVarDeclList_Epsilon(
+  ) [ConstVarDeclList_Epsilon]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodSignatureType_Void(
+        ) [MethodSignatureType_Void]
+       main
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_Epsilon(
+      ) [StatementList_Epsilon]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  00:13:56,190 - =====================================================================
+INFO  00:13:56,190 - Parsiranje uspesno zavrseno!

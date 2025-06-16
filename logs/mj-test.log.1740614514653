@@ -1,0 +1,103 @@
+INFO  01:01:43,521 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:01:43,550 - #2 program
+INFO  01:01:43,550 - #43 Tarmi
+INFO  01:01:43,550 - #6 const
+INFO  01:01:43,552 - #43 int
+INFO  01:01:43,552 - #43 pi
+INFO  01:01:43,552 - #19 =
+INFO  01:01:43,552 - #44 4
+INFO  01:01:43,553 - #35 ,
+INFO  01:01:43,553 - #43 g
+INFO  01:01:43,554 - #19 =
+INFO  01:01:43,554 - #44 33
+INFO  01:01:43,554 - #33 ;
+INFO  01:01:43,554 - #39 {
+INFO  01:01:43,555 - #5 void
+INFO  01:01:43,555 - #43 main
+INFO  01:01:43,555 - #37 (
+INFO  01:01:43,556 - #38 )
+INFO  01:01:43,556 - #39 {
+INFO  01:01:43,557 - #43 a
+INFO  01:01:43,557 - #19 =
+INFO  01:01:43,557 - #43 b
+INFO  01:01:43,558 - #33 ;
+INFO  01:01:43,562 - #40 }
+INFO  01:01:43,563 - #40 }
+INFO  01:01:43,565 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Const(
+    ConstVarDeclList_Epsilon(
+    ) [ConstVarDeclList_Epsilon]
+    ConstDeclList(
+      Type(
+       int
+      ) [Type]
+      ConstDecl(
+       pi
+        Constant_Number(
+         4
+        ) [Constant_Number]
+      ) [ConstDecl]
+      ConstDeclMore_Comma(
+        ConstDecl(
+         g
+          Constant_Number(
+           33
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclMore_Comma]
+    ) [ConstDeclList]
+  ) [ConstVarDeclList_Const]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_First(
+            Designator_Regular(
+             a
+            ) [Designator_Regular]
+            DesignatorStatement_FirstOptions_Assign(
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_Designator(
+                    Designator_Regular(
+                     b
+                    ) [Designator_Regular]
+                    FactorActPars_Epsilon(
+                    ) [FactorActPars_Epsilon]
+                  ) [Factor_Designator]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_FirstOptions_Assign]
+          ) [DesignatorStatement_First]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  01:01:43,565 - =====================================================================
+INFO  01:01:43,570 - =====================================================================
+INFO  01:01:43,571 - Parsiranje uspesno zavrseno!

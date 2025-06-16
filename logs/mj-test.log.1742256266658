@@ -1,0 +1,181 @@
+INFO  22:35:33,236 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:35:33,266 - #2 program
+INFO  22:35:33,267 - #43 Tarmi
+INFO  22:35:33,267 - #6 const
+INFO  22:35:33,268 - #43 int
+INFO  22:35:33,268 - #43 pi
+INFO  22:35:33,269 - #19 =
+INFO  22:35:33,269 - #44 3
+INFO  22:35:33,269 - #35 ,
+INFO  22:35:33,270 - #43 g
+INFO  22:35:33,270 - #19 =
+INFO  22:35:33,270 - #44 33
+INFO  22:35:33,270 - #33 ;
+INFO  22:35:33,271 - #43 char
+INFO  22:35:33,271 - #43 x
+INFO  22:35:33,272 - #35 ,
+INFO  22:35:33,272 - #43 y
+INFO  22:35:33,272 - #42 [
+INFO  22:35:33,272 - #41 ]
+INFO  22:35:33,272 - #33 ;
+INFO  22:35:33,273 - #39 {
+INFO  22:35:33,274 - #5 void
+INFO  22:35:33,274 - #43 main
+INFO  22:35:33,276 - #37 (
+INFO  22:35:33,276 - #38 )
+INFO  22:35:33,276 - #43 int
+INFO  22:35:33,277 - #43 a
+INFO  22:35:33,277 - #35 ,
+INFO  22:35:33,278 - #43 b
+INFO  22:35:33,278 - #42 [
+INFO  22:35:33,278 - #41 ]
+INFO  22:35:33,278 - #33 ;
+INFO  22:35:33,278 - #43 int
+INFO  22:35:33,278 - #43 x
+INFO  22:35:33,279 - #42 [
+INFO  22:35:33,279 - #41 ]
+INFO  22:35:33,279 - #35 ,
+INFO  22:35:33,279 - #43 y
+INFO  22:35:33,279 - #33 ;
+INFO  22:35:33,279 - #43 char
+INFO  22:35:33,279 - #43 eol
+INFO  22:35:33,279 - #33 ;
+INFO  22:35:33,279 - #39 {
+INFO  22:35:33,280 - #3 print
+INFO  22:35:33,280 - #37 (
+INFO  22:35:33,280 - #20 -
+INFO  22:35:33,280 - #44 3
+INFO  22:35:33,280 - #38 )
+INFO  22:35:33,283 - #33 ;
+INFO  22:35:33,283 - #40 }
+INFO  22:35:33,284 - #40 }
+INFO  22:35:33,287 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Comma(
+          ConstDecl(
+           g
+            Constant_Number(
+             33
+            ) [Constant_Number]
+          ) [ConstDecl]
+          ConstDeclMore_Epsilon(
+          ) [ConstDeclMore_Epsilon]
+        ) [ConstDeclMore_Comma]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       char
+      ) [Type]
+      VarDecl_Regular(
+       x
+      ) [VarDecl_Regular]
+      VarDeclMore_Comma(
+        VarDecl_Array(
+         y
+        ) [VarDecl_Array]
+        VarDeclMore_Semi(
+        ) [VarDeclMore_Semi]
+      ) [VarDeclMore_Comma]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           a
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Array(
+             b
+            ) [VarDecl_Array]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Yes(
+          VarDeclList(
+            Type(
+             int
+            ) [Type]
+            VarDecl_Array(
+             x
+            ) [VarDecl_Array]
+            VarDeclMore_Comma(
+              VarDecl_Regular(
+               y
+              ) [VarDecl_Regular]
+              VarDeclMore_Semi(
+              ) [VarDeclMore_Semi]
+            ) [VarDeclMore_Comma]
+          ) [VarDeclList]
+          MethodDeclVarDeclList_Yes(
+            VarDeclList(
+              Type(
+               char
+              ) [Type]
+              VarDecl_Regular(
+               eol
+              ) [VarDecl_Regular]
+              VarDeclMore_Semi(
+              ) [VarDeclMore_Semi]
+            ) [VarDeclList]
+            MethodDeclVarDeclList_Epsilon(
+            ) [MethodDeclVarDeclList_Epsilon]
+          ) [MethodDeclVarDeclList_Yes]
+        ) [MethodDeclVarDeclList_Yes]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Print(
+          Expr_Minus(
+            Term(
+              Factor_NumConst(
+               3
+              ) [Factor_NumConst]
+              FactorMore_Epsilon(
+              ) [FactorMore_Epsilon]
+            ) [Term]
+            ExprAddopTerms_Epsilon(
+            ) [ExprAddopTerms_Epsilon]
+          ) [Expr_Minus]
+          Statement_PrintNumConst_Epsilon(
+          ) [Statement_PrintNumConst_Epsilon]
+        ) [Statement_Print]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  22:35:33,287 - =====================================================================
+INFO  22:35:33,292 - =====================================================================
+INFO  22:35:33,292 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,20 @@
+INFO  01:34:02,948 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:34:02,975 - #2 program
+INFO  01:34:02,975 - #43 test302
+INFO  01:34:02,975 - #43 int
+INFO  01:34:02,975 - #43 i
+INFO  01:34:02,976 - #33 ;
+INFO  01:34:02,977 - #43 bool
+INFO  01:34:02,977 - #43 ibool
+INFO  01:34:02,977 - #33 ;
+INFO  01:34:02,978 - #43 int
+INFO  01:34:02,978 - #43 niz2
+INFO  01:34:02,978 - #33 ;
+INFO  01:34:02,978 - #43 int
+INFO  01:34:02,978 - #43 niz
+INFO  01:34:02,978 - #42 [
+INFO  01:34:02,978 - #41 ]
+INFO  01:34:02,978 - #42 [
+ERROR 01:34:02,978 - 
+Sintaksna greska na liniji 10
+ERROR 01:34:02,978 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

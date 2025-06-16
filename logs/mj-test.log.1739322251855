@@ -1,0 +1,27 @@
+INFO  01:59:37,006 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:59:37,056 - #2 program
+INFO  01:59:37,056 - #43 test301
+INFO  01:59:37,056 - #6 const
+INFO  01:59:37,057 - #43 int
+INFO  01:59:37,057 - #43 nula
+INFO  01:59:37,059 - #19 =
+INFO  01:59:37,059 - #44 0
+INFO  01:59:37,059 - #33 ;
+INFO  01:59:37,061 - #6 const
+INFO  01:59:37,064 - #43 int
+INFO  01:59:37,064 - #43 jedan
+INFO  01:59:37,065 - #19 =
+INFO  01:59:37,065 - #44 1
+INFO  01:59:37,065 - #33 ;
+INFO  01:59:37,065 - #6 const
+INFO  01:59:37,065 - #43 int
+INFO  01:59:37,065 - #43 pet
+INFO  01:59:37,065 - #19 =
+INFO  01:59:37,065 - #44 5
+INFO  01:59:37,065 - #33 ;
+INFO  01:59:37,067 - #43 int
+INFO  01:59:37,072 - #43 niz
+INFO  01:59:37,072 - #41 [
+ERROR 01:59:37,072 - 
+Sintaksna greska na liniji 9
+ERROR 01:59:37,073 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 9
