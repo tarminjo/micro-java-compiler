@@ -240,6 +240,7 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 		else if(varObj.getKind() != Obj.Var && varObj.getKind() != Obj.Con && varObj.getKind() != Obj.Meth 
 					/*&& varObj.getKind() != Obj.Elem - ne znam zbog cega je ovo ovde*/) {
+			// Elem se ne moze uopste dohvatiti iz tabele simbola, i zbog toga je zakomentarisano
 			report_error("Neadekvatna promenljiva: " + designator_Regular.getI1(), designator_Regular);
 			designator_Regular.obj = Tab.noObj;
 		}
@@ -251,6 +252,7 @@ public class SemAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(DesignatorArrayName designatorArrayName) {
 		Obj varObj = Tab.find(designatorArrayName.getI1());
+		
 		if(varObj == Tab.noObj) {
 			report_error("Pristup nedefinisanoj promenljivi niza: " + designatorArrayName.getI1(), designatorArrayName);
 			designatorArrayName.obj = Tab.noObj;
@@ -267,6 +269,7 @@ public class SemAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(Designator_Array designator_Array) {
 		Obj arrObj = designator_Array.getDesignatorArrayName().obj;
+		
 		if(arrObj == Tab.noObj) {
 			designator_Array.obj = Tab.noObj;
 		} else if(!designator_Array.getExpr().struct.equals(Tab.intType)) {
@@ -312,13 +315,6 @@ public class SemAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(Factor_Expr factor_Expr) {
 		factor_Expr.struct = factor_Expr.getExpr().struct;
-	}
-	
-	@Override
-	public void visit(Expr_Minus expr_Minus) {
-		if(!expr_Minus.getTerm().getFactor().struct.equals(Tab.intType)) {
-			report_error("Negacija ne int vrednosti", expr_Minus);
-		}
 	}
 	
 	/* EXPR */
@@ -389,10 +385,29 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// OVO JE OSTALO KAO NESTO STO NIJE ODRADJENO NA TUTORIJALIMA
+	// TODO: OVO JE OSTALO KAO NESTO STO NIJE ODRADJENO NA TUTORIJALIMA
 	@Override
 	public void visit(Expr_Designator expr_Designator) {
 		
+	}
+	
+	// TODO: PROVERI DA LI JE OVO OK
+	@Override
+	public void visit(Expr_Minus expr_Minus) {
+		Struct term = expr_Minus.getTerm().struct;
+		Struct more = expr_Minus.getExprAddopTerms().struct;
+		
+		if(term.equals(Tab.intType) && more.equals(Tab.intType)) {
+			expr_Minus.struct = Tab.intType;
+		} else if(!term.equals(Tab.intType)) {
+			report_error("Negacija ne int vrednosti", expr_Minus);
+			expr_Minus.struct = Tab.noType;
+		} else if(more.equals(Tab.noType)) {
+			expr_Minus.struct = term;
+		} else {
+			report_error("Addop operacije ne int vrednosti.", expr_Minus);
+			expr_Minus.struct = Tab.noType;
+		}
 	}
 	
 	

@@ -1,60 +1,68 @@
-INFO  23:50:13,431 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
-INFO  23:50:15,010 - #2 program
-INFO  23:50:15,010 - #43 Tarmi
-INFO  23:50:15,010 - #6 const
-INFO  23:50:15,037 - #43 int
-INFO  23:50:15,037 - #43 pi
-INFO  23:50:15,050 - #19 =
-INFO  23:50:15,050 - #44 3
-INFO  23:50:15,050 - #35 ,
-INFO  23:50:15,065 - #43 g
-INFO  23:50:15,066 - #19 =
-INFO  23:50:15,066 - #44 33
-INFO  23:50:15,066 - #33 ;
-INFO  23:50:15,078 - #43 char
-INFO  23:50:15,100 - #43 x
-INFO  23:50:15,100 - #35 ,
-INFO  23:50:15,100 - #43 y
-INFO  23:50:15,100 - #42 [
-INFO  23:50:15,100 - #41 ]
-INFO  23:50:15,100 - #33 ;
-INFO  23:50:15,114 - #39 {
-INFO  23:50:15,129 - #5 void
-INFO  23:50:15,129 - #43 main
-INFO  23:50:15,129 - #37 (
-INFO  23:50:15,129 - #38 )
-INFO  23:50:15,142 - #43 int
-INFO  23:50:15,155 - #43 a
-INFO  23:50:15,155 - #35 ,
-INFO  23:50:15,155 - #43 b
-INFO  23:50:15,155 - #42 [
-INFO  23:50:15,157 - #41 ]
-INFO  23:50:15,157 - #33 ;
-INFO  23:50:15,157 - #43 int
-INFO  23:50:15,157 - #43 x
-INFO  23:50:15,157 - #42 [
-INFO  23:50:15,157 - #41 ]
-INFO  23:50:15,157 - #35 ,
-INFO  23:50:15,157 - #43 y
-INFO  23:50:15,157 - #33 ;
-INFO  23:50:15,157 - #43 char
-INFO  23:50:15,157 - #43 eol
-INFO  23:50:15,157 - #33 ;
-INFO  23:50:15,157 - #39 {
-INFO  23:50:15,169 - #43 a
-INFO  23:50:15,170 - #19 =
-INFO  23:50:15,170 - #44 3
-INFO  23:50:15,182 - #17 +
-INFO  23:50:15,208 - #43 b
-INFO  23:50:15,234 - #42 [
-INFO  23:50:15,246 - #44 2
-INFO  23:50:15,247 - #41 ]
-INFO  23:50:15,259 - #22 *
-INFO  23:50:15,273 - #44 2
-INFO  23:50:15,299 - #33 ;
-INFO  23:50:15,300 - #40 }
-INFO  23:50:15,313 - #40 }
-INFO  23:50:15,358 - Program(
+INFO  19:05:31,572 - Compiling source file: D:\FAKS 4\PP\Projekat\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:05:31,604 - #2 program
+INFO  19:05:31,604 - #43 Tarmi
+INFO  19:05:31,604 - #6 const
+INFO  19:05:31,605 - #43 int
+INFO  19:05:31,605 - #43 pi
+INFO  19:05:31,606 - #19 =
+INFO  19:05:31,606 - #44 3
+INFO  19:05:31,606 - #35 ,
+INFO  19:05:31,606 - #43 g
+INFO  19:05:31,607 - #19 =
+INFO  19:05:31,607 - #44 33
+INFO  19:05:31,607 - #33 ;
+INFO  19:05:31,607 - #43 char
+INFO  19:05:31,608 - #43 x
+INFO  19:05:31,608 - #35 ,
+INFO  19:05:31,609 - #43 y
+INFO  19:05:31,609 - #42 [
+INFO  19:05:31,609 - #41 ]
+INFO  19:05:31,609 - #33 ;
+INFO  19:05:31,609 - #39 {
+INFO  19:05:31,610 - #5 void
+INFO  19:05:31,611 - #43 main
+INFO  19:05:31,612 - #37 (
+INFO  19:05:31,612 - #38 )
+INFO  19:05:31,614 - #43 int
+INFO  19:05:31,614 - #43 a
+INFO  19:05:31,614 - #35 ,
+INFO  19:05:31,614 - #43 b
+INFO  19:05:31,614 - #42 [
+INFO  19:05:31,614 - #41 ]
+INFO  19:05:31,614 - #33 ;
+INFO  19:05:31,614 - #43 int
+INFO  19:05:31,614 - #43 x
+INFO  19:05:31,615 - #42 [
+INFO  19:05:31,615 - #41 ]
+INFO  19:05:31,615 - #35 ,
+INFO  19:05:31,615 - #43 y
+INFO  19:05:31,615 - #33 ;
+INFO  19:05:31,615 - #43 char
+INFO  19:05:31,615 - #43 eol
+INFO  19:05:31,615 - #33 ;
+INFO  19:05:31,615 - #39 {
+INFO  19:05:31,615 - #43 a
+INFO  19:05:31,615 - #19 =
+INFO  19:05:31,616 - #44 3
+INFO  19:05:31,616 - #17 +
+INFO  19:05:31,617 - #43 b
+INFO  19:05:31,618 - #42 [
+INFO  19:05:31,618 - #44 2
+INFO  19:05:31,620 - #41 ]
+INFO  19:05:31,620 - #22 *
+INFO  19:05:31,621 - #44 2
+INFO  19:05:31,622 - #33 ;
+INFO  19:05:31,622 - #3 print
+INFO  19:05:31,622 - #37 (
+INFO  19:05:31,622 - #43 x
+INFO  19:05:31,622 - #42 [
+INFO  19:05:31,622 - #46 a
+INFO  19:05:31,622 - #41 ]
+INFO  19:05:31,623 - #38 )
+INFO  19:05:31,623 - #33 ;
+INFO  19:05:31,623 - #40 }
+INFO  19:05:31,623 - #40 }
+INFO  19:05:31,625 - Program(
   ProgramName(
    Tarmi
   ) [ProgramName]
@@ -215,14 +223,49 @@ INFO  23:50:15,358 - Program(
             ) [DesignatorStatement_FirstOptions_Assign]
           ) [DesignatorStatement_First]
         ) [Statement_Designator]
-        StatementList_Epsilon(
-        ) [StatementList_Epsilon]
+        StatementList_More(
+          Statement_Print(
+            Expr_Regular(
+              Term(
+                Factor_Designator(
+                  Designator_Array(
+                    DesignatorArrayName(
+                     x
+                    ) [DesignatorArrayName]
+                    Expr_Regular(
+                      Term(
+                        Factor_CharConst(
+                         a
+                        ) [Factor_CharConst]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [Expr_Regular]
+                  ) [Designator_Array]
+                  FactorActPars_Epsilon(
+                  ) [FactorActPars_Epsilon]
+                ) [Factor_Designator]
+                FactorMore_Epsilon(
+                ) [FactorMore_Epsilon]
+              ) [Term]
+              ExprAddopTerms_Epsilon(
+              ) [ExprAddopTerms_Epsilon]
+            ) [Expr_Regular]
+            Statement_PrintNumConst_Epsilon(
+            ) [Statement_PrintNumConst_Epsilon]
+          ) [Statement_Print]
+          StatementList_Epsilon(
+          ) [StatementList_Epsilon]
+        ) [StatementList_More]
       ) [StatementList_More]
     ) [MethodDecl]
     MethodDeclList_Epsilon(
     ) [MethodDeclList_Epsilon]
   ) [MethodDeclList_More]
 ) [Program]
-INFO  23:50:15,359 - =====================================================================
-INFO  23:50:15,409 - =====================================================================
-INFO  23:50:15,409 - Parsiranje uspesno zavrseno!
+INFO  19:05:31,626 - =====================================================================
+ERROR 19:05:31,631 - Indeksiranje sa ne int vrednosti. na liniji 8
+INFO  19:05:31,631 - =====================================================================
+ERROR 19:05:31,631 - Parsiranje NIJE uspesno zavrseno!
