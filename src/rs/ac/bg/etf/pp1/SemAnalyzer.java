@@ -391,7 +391,8 @@ public class SemAnalyzer extends VisitorAdaptor {
 		
 	}
 	
-	// TODO: PROVERI DA LI JE OVO OK
+	
+	// novo
 	@Override
 	public void visit(Expr_Minus expr_Minus) {
 		Struct term = expr_Minus.getTerm().struct;
