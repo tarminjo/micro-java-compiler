@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/6/2025 16:8:25
+// 30/6/2025 12:44:2
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,7 +24,6 @@ public interface Visitor {
     public void visit(StatementReturnExpr StatementReturnExpr);
     public void visit(StatementPrintNumConst StatementPrintNumConst);
     public void visit(StatementIfElse StatementIfElse);
-    public void visit(DesignatorStatementFirstOptions DesignatorStatementFirstOptions);
     public void visit(ActParsList ActParsList);
     public void visit(FactorActPars FactorActPars);
     public void visit(CondFactMore CondFactMore);
@@ -90,12 +89,11 @@ public interface Visitor {
     public void visit(ActParsMore_Epsilon ActParsMore_Epsilon);
     public void visit(ActParsMore_Yes ActParsMore_Yes);
     public void visit(ActPars ActPars);
-    public void visit(DesignatorStatement_FirstOptions_Dec DesignatorStatement_FirstOptions_Dec);
-    public void visit(DesignatorStatement_FirstOptions_Inc DesignatorStatement_FirstOptions_Inc);
-    public void visit(DesignatorStatement_FirstOptions_ActPars DesignatorStatement_FirstOptions_ActPars);
-    public void visit(DesignatorStatement_FirstOptions_Assign DesignatorStatement_FirstOptions_Assign);
     public void visit(DesignatorStatement_Second DesignatorStatement_Second);
-    public void visit(DesignatorStatement_First DesignatorStatement_First);
+    public void visit(DesignatorStatement_Dec DesignatorStatement_Dec);
+    public void visit(DesignatorStatement_Inc DesignatorStatement_Inc);
+    public void visit(DesignatorStatement_ActPars DesignatorStatement_ActPars);
+    public void visit(DesignatorStatement_Assign DesignatorStatement_Assign);
     public void visit(Statement_DoWhileCondDesignatorSt_Epsilon Statement_DoWhileCondDesignatorSt_Epsilon);
     public void visit(Statement_DoWhileCondDesignatorSt_Yes Statement_DoWhileCondDesignatorSt_Yes);
     public void visit(Statement_DoWhileCond_Epsilon Statement_DoWhileCond_Epsilon);

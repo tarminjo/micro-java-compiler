@@ -357,6 +357,8 @@ public class SemAnalyzer extends VisitorAdaptor {
 		exprAddopTerms_Epsilon.struct = Tab.noType;
 	}
 	
+	/* ================================= EXPRESSION ================================= */
+	
 	@Override
 	public void visit(ExprAddopTerms_More exprAddopTerms_More) {
 		Struct term = exprAddopTerms_More.getTerm().struct;
@@ -411,17 +413,71 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
+	/* ================================= DESIGNATOR ================================= */
 	
+	@Override
+	public void visit(DesignatorStatement_Assign designatorStatement_Assign) {
+		
+		int kind = designatorStatement_Assign.getDesignator().obj.getKind();
+		
+		// TODO: Proveri da li ovde moze doci element niza sa desne strane
+		
+		if(kind != Obj.Var && kind != Obj.Elem) {
+			
+			report_error("Dodela u neadekvatnu promenjivu: " + 
+				designatorStatement_Assign.getDesignator().obj.getName(), designatorStatement_Assign);
+			
+		} else if (designatorStatement_Assign.getExpr().struct
+					.assignableTo(designatorStatement_Assign.getDesignator().obj.getType())) {
+			
+			report_error("Neadekvatna dodela vrednosti u promenljivu: " + 
+					designatorStatement_Assign.getDesignator().obj.getName(), designatorStatement_Assign);
+		}
+	}
 	
+	// dodela povratne vrednosti metode
+	@Override
+	public void visit(DesignatorStatement_ActPars designatorStatement_ActPars) {
+		
+	}
 	
+	@Override
+	public void visit(DesignatorStatement_Inc designatorStatement_Inc) {
+		
+		int kind = designatorStatement_Inc.getDesignator().obj.getKind();
+		
+		if(kind != Obj.Var && kind != Obj.Elem) {
+			report_error("Inkrement neadekvatne promenljive: " + 
+					designatorStatement_Inc.getDesignator().obj.getName(), designatorStatement_Inc);
+		} else if(!designatorStatement_Inc.getDesignator().obj.getType().equals(Tab.intType)) {
+			report_error("Inkrement ne int promenljive: " + 
+					designatorStatement_Inc.getDesignator().obj.getName(), designatorStatement_Inc);
+		}
+	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Override
+	public void visit(DesignatorStatement_Dec designatorStatement_Dec) {
+		
+		int kind = designatorStatement_Dec.getDesignator().obj.getKind();
+		
+		if(kind != Obj.Var && kind != Obj.Elem) {
+			report_error("Dekrement neadekvatne promenljive: " + 
+					designatorStatement_Dec.getDesignator().obj.getName(), designatorStatement_Dec);
+		} else if(!designatorStatement_Dec.getDesignator().obj.getType().equals(Tab.intType)) {
+			report_error("Dekrement ne int promenljive: " + 
+					designatorStatement_Dec.getDesignator().obj.getName(), designatorStatement_Dec);
+		}
+	}
 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
+

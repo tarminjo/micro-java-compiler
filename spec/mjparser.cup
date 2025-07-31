@@ -63,12 +63,13 @@ nonterminal MethodSignature, MethodSignatureType, FormParsList, FormParsMore, Me
 nonterminal Statement, StatementList, DesignatorStatement, Condition;
 nonterminal StatementReturnExpr, StatementPrintNumConst, StatementIfElse;
 nonterminal StatementDoWhileCond, StatementDoWhileCondDesignatorSt;
-nonterminal DesignatorStatementFirstOptions, ActPars, ActParsList, ActParsMore;
+nonterminal ActPars, ActParsList, ActParsMore;
 nonterminal CondTerm, CondTermMore, CondFact, CondFactMore, TermList, SimpleDesignator;
 nonterminal MethodDeclVarDeclList, FormPars;
 nonterminal Label, Assignop, Relop, Addop, Mulop, Setop;
 nonterminal ProgramName, MethodRetAndName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms, Expr, FactorActPars;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, FactorActPars;
 nonterminal	rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
 
 precedence left ELSE;
@@ -198,19 +199,17 @@ StatementDoWhileCondDesignatorSt ::= (Statement_DoWhileCondDesignatorSt_Yes) COM
 									  (Statement_DoWhileCondDesignatorSt_Epsilon) /* Epsilon */
 									  ;
 
-DesignatorStatement ::= (DesignatorStatement_First) Designator DesignatorStatementFirstOptions
+DesignatorStatement ::= (DesignatorStatement_Assign) Designator Assignop Expr
+						|
+						(DesignatorStatement_ActPars) Designator LPAREN ActParsList RPAREN
+						|
+						(DesignatorStatement_Inc) Designator INC
+						|
+						(DesignatorStatement_Dec) Designator DECR
 						|
 						(DesignatorStatement_Second) Designator Assignop Designator Setop Designator
 						;
 					 
-DesignatorStatementFirstOptions ::= (DesignatorStatement_FirstOptions_Assign) Assignop Expr
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_ActPars) LPAREN ActParsList RPAREN
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_Inc) INC
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_Dec) DECR
-							  		 ;
 
 ActPars ::= (ActPars) Expr ActParsMore;
 

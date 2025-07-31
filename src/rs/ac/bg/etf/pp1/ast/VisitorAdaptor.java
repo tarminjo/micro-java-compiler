@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/6/2025 16:8:25
+// 30/6/2025 12:44:2
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -24,7 +24,6 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StatementReturnExpr StatementReturnExpr) { }
     public void visit(StatementPrintNumConst StatementPrintNumConst) { }
     public void visit(StatementIfElse StatementIfElse) { }
-    public void visit(DesignatorStatementFirstOptions DesignatorStatementFirstOptions) { }
     public void visit(ActParsList ActParsList) { }
     public void visit(FactorActPars FactorActPars) { }
     public void visit(CondFactMore CondFactMore) { }
@@ -90,12 +89,11 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(ActParsMore_Epsilon ActParsMore_Epsilon) { visit(); }
     public void visit(ActParsMore_Yes ActParsMore_Yes) { visit(); }
     public void visit(ActPars ActPars) { visit(); }
-    public void visit(DesignatorStatement_FirstOptions_Dec DesignatorStatement_FirstOptions_Dec) { visit(); }
-    public void visit(DesignatorStatement_FirstOptions_Inc DesignatorStatement_FirstOptions_Inc) { visit(); }
-    public void visit(DesignatorStatement_FirstOptions_ActPars DesignatorStatement_FirstOptions_ActPars) { visit(); }
-    public void visit(DesignatorStatement_FirstOptions_Assign DesignatorStatement_FirstOptions_Assign) { visit(); }
     public void visit(DesignatorStatement_Second DesignatorStatement_Second) { visit(); }
-    public void visit(DesignatorStatement_First DesignatorStatement_First) { visit(); }
+    public void visit(DesignatorStatement_Dec DesignatorStatement_Dec) { visit(); }
+    public void visit(DesignatorStatement_Inc DesignatorStatement_Inc) { visit(); }
+    public void visit(DesignatorStatement_ActPars DesignatorStatement_ActPars) { visit(); }
+    public void visit(DesignatorStatement_Assign DesignatorStatement_Assign) { visit(); }
     public void visit(Statement_DoWhileCondDesignatorSt_Epsilon Statement_DoWhileCondDesignatorSt_Epsilon) { visit(); }
     public void visit(Statement_DoWhileCondDesignatorSt_Yes Statement_DoWhileCondDesignatorSt_Yes) { visit(); }
     public void visit(Statement_DoWhileCond_Epsilon Statement_DoWhileCond_Epsilon) { visit(); }

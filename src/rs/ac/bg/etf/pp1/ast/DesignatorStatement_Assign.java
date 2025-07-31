@@ -1,20 +1,31 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/6/2025 16:8:25
+// 30/6/2025 12:44:2
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class DesignatorStatement_FirstOptions_Assign extends DesignatorStatementFirstOptions {
+public class DesignatorStatement_Assign extends DesignatorStatement {
 
+    private Designator Designator;
     private Assignop Assignop;
     private Expr Expr;
 
-    public DesignatorStatement_FirstOptions_Assign (Assignop Assignop, Expr Expr) {
+    public DesignatorStatement_Assign (Designator Designator, Assignop Assignop, Expr Expr) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
         this.Assignop=Assignop;
         if(Assignop!=null) Assignop.setParent(this);
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
+    }
+
+    public Designator getDesignator() {
+        return Designator;
+    }
+
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
     }
 
     public Assignop getAssignop() {
@@ -38,17 +49,20 @@ public class DesignatorStatement_FirstOptions_Assign extends DesignatorStatement
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
         if(Assignop!=null) Assignop.accept(visitor);
         if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
         if(Assignop!=null) Assignop.traverseTopDown(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
         if(Assignop!=null) Assignop.traverseBottomUp(visitor);
         if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
@@ -57,7 +71,13 @@ public class DesignatorStatement_FirstOptions_Assign extends DesignatorStatement
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("DesignatorStatement_FirstOptions_Assign(\n");
+        buffer.append("DesignatorStatement_Assign(\n");
+
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(Assignop!=null)
             buffer.append(Assignop.toString("  "+tab));
@@ -72,7 +92,7 @@ public class DesignatorStatement_FirstOptions_Assign extends DesignatorStatement
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [DesignatorStatement_FirstOptions_Assign]");
+        buffer.append(") [DesignatorStatement_Assign]");
         return buffer.toString();
     }
 }

@@ -1,17 +1,28 @@
 // generated with ast extension for cup
 // version 0.8
-// 28/6/2025 16:8:25
+// 30/6/2025 12:44:2
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class DesignatorStatement_FirstOptions_ActPars extends DesignatorStatementFirstOptions {
+public class DesignatorStatement_ActPars extends DesignatorStatement {
 
+    private Designator Designator;
     private ActParsList ActParsList;
 
-    public DesignatorStatement_FirstOptions_ActPars (ActParsList ActParsList) {
+    public DesignatorStatement_ActPars (Designator Designator, ActParsList ActParsList) {
+        this.Designator=Designator;
+        if(Designator!=null) Designator.setParent(this);
         this.ActParsList=ActParsList;
         if(ActParsList!=null) ActParsList.setParent(this);
+    }
+
+    public Designator getDesignator() {
+        return Designator;
+    }
+
+    public void setDesignator(Designator Designator) {
+        this.Designator=Designator;
     }
 
     public ActParsList getActParsList() {
@@ -27,15 +38,18 @@ public class DesignatorStatement_FirstOptions_ActPars extends DesignatorStatemen
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(Designator!=null) Designator.accept(visitor);
         if(ActParsList!=null) ActParsList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(Designator!=null) Designator.traverseTopDown(visitor);
         if(ActParsList!=null) ActParsList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(Designator!=null) Designator.traverseBottomUp(visitor);
         if(ActParsList!=null) ActParsList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -43,7 +57,13 @@ public class DesignatorStatement_FirstOptions_ActPars extends DesignatorStatemen
     public String toString(String tab) {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
-        buffer.append("DesignatorStatement_FirstOptions_ActPars(\n");
+        buffer.append("DesignatorStatement_ActPars(\n");
+
+        if(Designator!=null)
+            buffer.append(Designator.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         if(ActParsList!=null)
             buffer.append(ActParsList.toString("  "+tab));
@@ -52,7 +72,7 @@ public class DesignatorStatement_FirstOptions_ActPars extends DesignatorStatemen
         buffer.append("\n");
 
         buffer.append(tab);
-        buffer.append(") [DesignatorStatement_FirstOptions_ActPars]");
+        buffer.append(") [DesignatorStatement_ActPars]");
         return buffer.toString();
     }
 }

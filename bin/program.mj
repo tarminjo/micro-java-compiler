@@ -4,7 +4,32 @@ const int pi = 3, g = 33;
 char x, y[];
 {
 	void main() int a, b[]; int x[], y; char eol; {
-		a = 3 + b[2]*2;
+		//a = b;
+		
+		//a = 3 + b;
+		
+		//a = 3 + b*2;
+		
+		//a = 3 + b[2]*2;
+		
+		//g = 3;
+		
+		//x = new int[5];
+		
+		//x[2] = a;
+		//x[3] = x[5];
+		//x = null;
+		
+		//x++; //error
+		
+		//x[3]--; //ok
+		
+		//pi--; //error
+		
+		//eol++; //error
+		
+		a++; //ok
+		
 		//print(x['a']);
 	}
 }

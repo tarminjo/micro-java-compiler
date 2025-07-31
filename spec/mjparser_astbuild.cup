@@ -82,7 +82,6 @@ nonterminal StatementPrintNumConst StatementPrintNumConst;
 nonterminal StatementIfElse StatementIfElse;
 nonterminal StatementDoWhileCond StatementDoWhileCond;
 nonterminal StatementDoWhileCondDesignatorSt StatementDoWhileCondDesignatorSt;
-nonterminal DesignatorStatementFirstOptions DesignatorStatementFirstOptions;
 nonterminal ActPars ActPars;
 nonterminal ActParsList ActParsList;
 nonterminal ActParsMore ActParsMore;
@@ -102,7 +101,8 @@ nonterminal Mulop Mulop;
 nonterminal Setop Setop;
 nonterminal ProgramName ProgramName;
 nonterminal MethodRetAndName MethodRetAndName;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms, Expr, FactorActPars;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, FactorActPars;
 nonterminal	rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
 
 precedence left ELSE;
@@ -232,19 +232,17 @@ StatementDoWhileCondDesignatorSt ::= (Statement_DoWhileCondDesignatorSt_Yes) COM
 									  (Statement_DoWhileCondDesignatorSt_Epsilon) {: RESULT=new Statement_DoWhileCondDesignatorSt_Epsilon(); :} /* Epsilon */
 									  ;
 
-DesignatorStatement ::= (DesignatorStatement_First) Designator:D1 DesignatorStatementFirstOptions:D2 {: RESULT=new DesignatorStatement_First(D1, D2); RESULT.setLine(D1left); :}
+DesignatorStatement ::= (DesignatorStatement_Assign) Designator:D1 Assignop:A2 Expr:E3 {: RESULT=new DesignatorStatement_Assign(D1, A2, E3); RESULT.setLine(D1left); :}
+						|
+						(DesignatorStatement_ActPars) Designator:D1 LPAREN ActParsList:A2 RPAREN {: RESULT=new DesignatorStatement_ActPars(D1, A2); RESULT.setLine(D1left); :}
+						|
+						(DesignatorStatement_Inc) Designator:D1 INC {: RESULT=new DesignatorStatement_Inc(D1); RESULT.setLine(D1left); :}
+						|
+						(DesignatorStatement_Dec) Designator:D1 DECR {: RESULT=new DesignatorStatement_Dec(D1); RESULT.setLine(D1left); :}
 						|
 						(DesignatorStatement_Second) Designator:D1 Assignop:A2 Designator:D3 Setop:S4 Designator:D5 {: RESULT=new DesignatorStatement_Second(D1, A2, D3, S4, D5); RESULT.setLine(D1left); :}
 						;
 					 
-DesignatorStatementFirstOptions ::= (DesignatorStatement_FirstOptions_Assign) Assignop:A1 Expr:E2 {: RESULT=new DesignatorStatement_FirstOptions_Assign(A1, E2); RESULT.setLine(A1left); :}
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_ActPars) LPAREN ActParsList:A1 RPAREN {: RESULT=new DesignatorStatement_FirstOptions_ActPars(A1); RESULT.setLine(A1left); :}
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_Inc) INC {: RESULT=new DesignatorStatement_FirstOptions_Inc(); :}
-							  		 |
-							  		 (DesignatorStatement_FirstOptions_Dec) DECR {: RESULT=new DesignatorStatement_FirstOptions_Dec(); :}
-							  		 ;
 
 ActPars ::= (ActPars) Expr:E1 ActParsMore:A2 {: RESULT=new ActPars(E1, A2); RESULT.setLine(E1left); :};
 
