@@ -76,19 +76,12 @@ nonterminal MethodDecl MethodDecl;
 nonterminal Statement Statement;
 nonterminal StatementList StatementList;
 nonterminal DesignatorStatement DesignatorStatement;
-nonterminal Condition Condition;
-nonterminal StatementReturnExpr StatementReturnExpr;
-nonterminal StatementPrintNumConst StatementPrintNumConst;
 nonterminal StatementIfElse StatementIfElse;
 nonterminal StatementDoWhileCond StatementDoWhileCond;
 nonterminal StatementDoWhileCondDesignatorSt StatementDoWhileCondDesignatorSt;
 nonterminal ActPars ActPars;
 nonterminal ActParsList ActParsList;
 nonterminal ActParsMore ActParsMore;
-nonterminal CondTerm CondTerm;
-nonterminal CondTermMore CondTermMore;
-nonterminal CondFact CondFact;
-nonterminal CondFactMore CondFactMore;
 nonterminal TermList TermList;
 nonterminal SimpleDesignator SimpleDesignator;
 nonterminal MethodDeclVarDeclList MethodDeclVarDeclList;
@@ -102,8 +95,13 @@ nonterminal Setop Setop;
 nonterminal ProgramName ProgramName;
 nonterminal MethodRetAndName MethodRetAndName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, FactorActPars;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, FactorActPars, StatementPrintNumConst;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct CondTerm, CondTermMore, CondFact, CondFactMore;
 nonterminal	rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct StatementReturnExpr;
+nonterminal DoNonterm DoNonterm;
+nonterminal ActParsListBegin ActParsListBegin;
 
 precedence left ELSE;
 
@@ -202,10 +200,12 @@ Statement ::= (Statement_Designator) DesignatorStatement:D1 SEMI {: RESULT=new S
 			  |
 			  (Statement_Print) PRINT LPAREN Expr:E1 StatementPrintNumConst:S2 RPAREN SEMI {: RESULT=new Statement_Print(E1, S2); RESULT.setLine(E1left); :}
 			  |
-			  (Statement_DoWhile) DO Statement:S1 WHILE LPAREN StatementDoWhileCond:S2 RPAREN SEMI {: RESULT=new Statement_DoWhile(S1, S2); RESULT.setLine(S1left); :}
+			  (Statement_DoWhile) DoNonterm:D1 Statement:S2 WHILE LPAREN StatementDoWhileCond:S3 RPAREN SEMI {: RESULT=new Statement_DoWhile(D1, S2, S3); RESULT.setLine(D1left); :}
 			  |
 			  (Statement_List) LBRACE StatementList:S1 RBRACE {: RESULT=new Statement_List(S1); RESULT.setLine(S1left); :}
 			  ;
+			  
+DoNonterm ::= (DoNonterm) DO {: RESULT=new DoNonterm(); :};
 			  
 StatementIfElse ::= (Statement_IfElse_Yes) ELSE Statement:S1 {: RESULT=new Statement_IfElse_Yes(S1); RESULT.setLine(S1left); :}
 					 |
@@ -240,7 +240,7 @@ DesignatorStatement ::= (DesignatorStatement_Assign) Designator:D1 Assignop:A2 E
 						|
 						(DesignatorStatement_Dec) Designator:D1 DECR {: RESULT=new DesignatorStatement_Dec(D1); RESULT.setLine(D1left); :}
 						|
-						(DesignatorStatement_Second) Designator:D1 Assignop:A2 Designator:D3 Setop:S4 Designator:D5 {: RESULT=new DesignatorStatement_Second(D1, A2, D3, S4, D5); RESULT.setLine(D1left); :}
+						(DesignatorStatement_Set) Designator:D1 Assignop:A2 Designator:D3 Setop:S4 Designator:D5 {: RESULT=new DesignatorStatement_Set(D1, A2, D3, S4, D5); RESULT.setLine(D1left); :}
 						;
 					 
 
@@ -251,10 +251,12 @@ ActParsMore ::= (ActParsMore_Yes) COMMA ActPars:A1 {: RESULT=new ActParsMore_Yes
 				(ActParsMore_Epsilon) {: RESULT=new ActParsMore_Epsilon(); :} /* Epsilon */
 				;
 					 
-ActParsList ::= (ActParsList_Yes) ActPars:A1 {: RESULT=new ActParsList_Yes(A1); RESULT.setLine(A1left); :}
+ActParsList ::= (ActParsList_Yes) ActParsListBegin:A1 ActPars:A2 {: RESULT=new ActParsList_Yes(A1, A2); RESULT.setLine(A1left); :}
 				|
-				(ActParsList_Epsilon) {: RESULT=new ActParsList_Epsilon(); :} /* Epsilon */
+				(ActParsList_Epsilon) ActParsListBegin:A1 {: RESULT=new ActParsList_Epsilon(A1); RESULT.setLine(A1left); :} /* epsilon */
 			  	;
+			  	
+ActParsListBegin ::= (ActParsListBegin) {: RESULT=new ActParsListBegin(); :} /* epsilon */;
 
 Condition ::= (Condition) CondTerm:C1 CondTermMore:C2 {: RESULT=new Condition(C1, C2); RESULT.setLine(C1left); :};
 
@@ -294,7 +296,9 @@ FactorMore ::= (FactorMore_Yes) Mulop:M1 Factor:F2 FactorMore:F3 {: RESULT=new F
 			   (FactorMore_Epsilon) {: RESULT=new FactorMore_Epsilon(); :} /* Epsilon */
 			   ;
 			   
-Factor ::= (Factor_Designator) Designator:D1 FactorActPars:F2 {: RESULT=new Factor_Designator(D1, F2); RESULT.setLine(D1left); :}
+Factor ::= (Factor_Var) Designator:D1 {: RESULT=new Factor_Var(D1); RESULT.setLine(D1left); :}
+		   |
+		   (Factor_Meth) Designator:D1 LPAREN ActParsList:A2 RPAREN {: RESULT=new Factor_Meth(D1, A2); RESULT.setLine(D1left); :}
 		   |
 		   (Factor_NumConst) NUMBER:N1 {: RESULT=new Factor_NumConst(N1); RESULT.setLine(N1left); :}
 		   |
@@ -307,10 +311,6 @@ Factor ::= (Factor_Designator) Designator:D1 FactorActPars:F2 {: RESULT=new Fact
 		   (Factor_Expr) LPAREN Expr:E1 RPAREN {: RESULT=new Factor_Expr(E1); RESULT.setLine(E1left); :}
 		   ;
 		   
-FactorActPars ::= (FactorActPars_Yes) LPAREN ActParsList:A1 RPAREN {: RESULT=new FactorActPars_Yes(A1); RESULT.setLine(A1left); :}
-				  |
-				  (FactorActPars_Epsilon) {: RESULT=new FactorActPars_Epsilon(); :} /* Epsilon */
-				  ;
 
 Designator ::= (Designator_Regular) IDENT:I1 {: RESULT=new Designator_Regular(I1); RESULT.setLine(I1left); :}
 			   |

@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/6/2025 12:44:2
+// 3/7/2025 18:35:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,12 +16,12 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(StatementList StatementList) { }
     public void visit(ConstVarDeclList ConstVarDeclList) { }
     public void visit(Addop Addop) { }
-    public void visit(Factor Factor) { }
     public void visit(CondTermMore CondTermMore) { }
+    public void visit(Factor Factor) { }
     public void visit(Designator Designator) { }
     public void visit(FormParsList FormParsList) { }
-    public void visit(FactorMore FactorMore) { }
     public void visit(StatementReturnExpr StatementReturnExpr) { }
+    public void visit(FactorMore FactorMore) { }
     public void visit(StatementPrintNumConst StatementPrintNumConst) { }
     public void visit(StatementIfElse StatementIfElse) { }
     public void visit(ActParsList ActParsList) { }
@@ -60,14 +60,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(DesignatorArrayName DesignatorArrayName) { visit(); }
     public void visit(Designator_Array Designator_Array) { visit(); }
     public void visit(Designator_Regular Designator_Regular) { visit(); }
-    public void visit(FactorActPars_Epsilon FactorActPars_Epsilon) { visit(); }
-    public void visit(FactorActPars_Yes FactorActPars_Yes) { visit(); }
     public void visit(Factor_Expr Factor_Expr) { visit(); }
     public void visit(Factor_New Factor_New) { visit(); }
     public void visit(Factor_BoolConst Factor_BoolConst) { visit(); }
     public void visit(Factor_CharConst Factor_CharConst) { visit(); }
     public void visit(Factor_NumConst Factor_NumConst) { visit(); }
-    public void visit(Factor_Designator Factor_Designator) { visit(); }
+    public void visit(Factor_Meth Factor_Meth) { visit(); }
+    public void visit(Factor_Var Factor_Var) { visit(); }
     public void visit(FactorMore_Epsilon FactorMore_Epsilon) { visit(); }
     public void visit(FactorMore_Yes FactorMore_Yes) { visit(); }
     public void visit(Term Term) { visit(); }
@@ -84,12 +83,13 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(CondTermMore_Epsilon CondTermMore_Epsilon) { visit(); }
     public void visit(CondTermMore_Yes CondTermMore_Yes) { visit(); }
     public void visit(Condition Condition) { visit(); }
+    public void visit(ActParsListBegin ActParsListBegin) { visit(); }
     public void visit(ActParsList_Epsilon ActParsList_Epsilon) { visit(); }
     public void visit(ActParsList_Yes ActParsList_Yes) { visit(); }
     public void visit(ActParsMore_Epsilon ActParsMore_Epsilon) { visit(); }
     public void visit(ActParsMore_Yes ActParsMore_Yes) { visit(); }
     public void visit(ActPars ActPars) { visit(); }
-    public void visit(DesignatorStatement_Second DesignatorStatement_Second) { visit(); }
+    public void visit(DesignatorStatement_Set DesignatorStatement_Set) { visit(); }
     public void visit(DesignatorStatement_Dec DesignatorStatement_Dec) { visit(); }
     public void visit(DesignatorStatement_Inc DesignatorStatement_Inc) { visit(); }
     public void visit(DesignatorStatement_ActPars DesignatorStatement_ActPars) { visit(); }
@@ -104,6 +104,7 @@ public abstract class VisitorAdaptor implements Visitor {
     public void visit(Statement_ReturnExpr_Yes Statement_ReturnExpr_Yes) { visit(); }
     public void visit(Statement_IfElse_Epsilon Statement_IfElse_Epsilon) { visit(); }
     public void visit(Statement_IfElse_Yes Statement_IfElse_Yes) { visit(); }
+    public void visit(DoNonterm DoNonterm) { visit(); }
     public void visit(Statement_List Statement_List) { visit(); }
     public void visit(Statement_DoWhile Statement_DoWhile) { visit(); }
     public void visit(Statement_Print Statement_Print) { visit(); }

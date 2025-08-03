@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/6/2025 12:44:2
+// 3/7/2025 18:35:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,6 +9,8 @@ public class Condition implements SyntaxNode {
 
     private SyntaxNode parent;
     private int line;
+    public rs.etf.pp1.symboltable.concepts.Struct struct = null;
+
     private CondTerm CondTerm;
     private CondTermMore CondTermMore;
 

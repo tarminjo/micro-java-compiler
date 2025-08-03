@@ -28,8 +28,97 @@ char x, y[];
 		
 		//eol++; //error
 		
-		a++; //ok
+		//a++; //ok
+		
+		//read(a); //ok
+		//read(eol); //ok
+		//read(x); //error
+		
+		//print(1, 4); //ok
+		//print(a, 4); //ok
+		//print(x); //error
+		//print(x[2], 4); //ok
+		//print(eol, 4); //ok
+		//print(false, 2); //ok
+		
+		x = null;
 		
 		//print(x['a']);
+		return;
 	}
+	
+	bool m1(int fp1, char fp2[], bool fp3) int a, b[]; int x[], y; char eol;{
+		
+		//main(); //ok
+		
+		//m2(); //error
+		
+		return true; //ok
+		//return; //error
+	}
+	
+	int m2() int a; bool b; int c[];{
+	
+		//m1(); //ok
+		//a = m1(); //error
+		//b = m1(); //ok
+		
+		//a = mainn(); //error
+		
+		//break; //error
+		//continue; //error
+		
+		do {
+		    //break; //ok
+			//continue; //ok
+			do {
+				break; //ok
+				continue; //ok
+			} while(true);
+			break; //ok
+			continue; //ok
+		} while(true);
+		
+		//read(a); //ok
+		
+		//if(false) a++; //ok
+		
+		do{
+		
+		} while (true); //ok
+		
+		if(true && a == 2 || b && a < 2) a++; //ok
+		
+		//if (c < c) c = null; //error;
+		
+		//if(c != null) c = null; //ok
+		
+		//return 'a'; //error 
+		
+		return 1; //ok
+	}
+	
+	int f1(int x) { return x; }
+	int f2(int x, bool b) int a; { return f1(x) + a + 1; }
+	
+	int f3() { 
+		
+		//f2(f2(1, true), false); //ok
+		//f2(f2(f2(1, true), false), false); //ok
+		f2(pi, true); //ok
+		f2(f2(g, true), false); //ok
+		
+		
+		return 1; //ok
+	}
+	
 }
+
+
+
+
+
+
+
+
+

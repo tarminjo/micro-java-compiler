@@ -1,13 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/6/2025 12:44:2
+// 3/7/2025 18:35:42
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class ActParsList_Epsilon extends ActParsList {
 
-    public ActParsList_Epsilon () {
+    private ActParsListBegin ActParsListBegin;
+
+    public ActParsList_Epsilon (ActParsListBegin ActParsListBegin) {
+        this.ActParsListBegin=ActParsListBegin;
+        if(ActParsListBegin!=null) ActParsListBegin.setParent(this);
+    }
+
+    public ActParsListBegin getActParsListBegin() {
+        return ActParsListBegin;
+    }
+
+    public void setActParsListBegin(ActParsListBegin ActParsListBegin) {
+        this.ActParsListBegin=ActParsListBegin;
     }
 
     public void accept(Visitor visitor) {
@@ -15,13 +27,16 @@ public class ActParsList_Epsilon extends ActParsList {
     }
 
     public void childrenAccept(Visitor visitor) {
+        if(ActParsListBegin!=null) ActParsListBegin.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
+        if(ActParsListBegin!=null) ActParsListBegin.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
+        if(ActParsListBegin!=null) ActParsListBegin.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -29,6 +44,12 @@ public class ActParsList_Epsilon extends ActParsList {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("ActParsList_Epsilon(\n");
+
+        if(ActParsListBegin!=null)
+            buffer.append(ActParsListBegin.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
 
         buffer.append(tab);
         buffer.append(") [ActParsList_Epsilon]");

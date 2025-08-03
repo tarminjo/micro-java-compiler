@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 30/6/2025 12:44:2
+// 3/7/2025 18:35:42
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -16,12 +16,12 @@ public interface Visitor {
     public void visit(StatementList StatementList);
     public void visit(ConstVarDeclList ConstVarDeclList);
     public void visit(Addop Addop);
-    public void visit(Factor Factor);
     public void visit(CondTermMore CondTermMore);
+    public void visit(Factor Factor);
     public void visit(Designator Designator);
     public void visit(FormParsList FormParsList);
-    public void visit(FactorMore FactorMore);
     public void visit(StatementReturnExpr StatementReturnExpr);
+    public void visit(FactorMore FactorMore);
     public void visit(StatementPrintNumConst StatementPrintNumConst);
     public void visit(StatementIfElse StatementIfElse);
     public void visit(ActParsList ActParsList);
@@ -60,14 +60,13 @@ public interface Visitor {
     public void visit(DesignatorArrayName DesignatorArrayName);
     public void visit(Designator_Array Designator_Array);
     public void visit(Designator_Regular Designator_Regular);
-    public void visit(FactorActPars_Epsilon FactorActPars_Epsilon);
-    public void visit(FactorActPars_Yes FactorActPars_Yes);
     public void visit(Factor_Expr Factor_Expr);
     public void visit(Factor_New Factor_New);
     public void visit(Factor_BoolConst Factor_BoolConst);
     public void visit(Factor_CharConst Factor_CharConst);
     public void visit(Factor_NumConst Factor_NumConst);
-    public void visit(Factor_Designator Factor_Designator);
+    public void visit(Factor_Meth Factor_Meth);
+    public void visit(Factor_Var Factor_Var);
     public void visit(FactorMore_Epsilon FactorMore_Epsilon);
     public void visit(FactorMore_Yes FactorMore_Yes);
     public void visit(Term Term);
@@ -84,12 +83,13 @@ public interface Visitor {
     public void visit(CondTermMore_Epsilon CondTermMore_Epsilon);
     public void visit(CondTermMore_Yes CondTermMore_Yes);
     public void visit(Condition Condition);
+    public void visit(ActParsListBegin ActParsListBegin);
     public void visit(ActParsList_Epsilon ActParsList_Epsilon);
     public void visit(ActParsList_Yes ActParsList_Yes);
     public void visit(ActParsMore_Epsilon ActParsMore_Epsilon);
     public void visit(ActParsMore_Yes ActParsMore_Yes);
     public void visit(ActPars ActPars);
-    public void visit(DesignatorStatement_Second DesignatorStatement_Second);
+    public void visit(DesignatorStatement_Set DesignatorStatement_Set);
     public void visit(DesignatorStatement_Dec DesignatorStatement_Dec);
     public void visit(DesignatorStatement_Inc DesignatorStatement_Inc);
     public void visit(DesignatorStatement_ActPars DesignatorStatement_ActPars);
@@ -104,6 +104,7 @@ public interface Visitor {
     public void visit(Statement_ReturnExpr_Yes Statement_ReturnExpr_Yes);
     public void visit(Statement_IfElse_Epsilon Statement_IfElse_Epsilon);
     public void visit(Statement_IfElse_Yes Statement_IfElse_Yes);
+    public void visit(DoNonterm DoNonterm);
     public void visit(Statement_List Statement_List);
     public void visit(Statement_DoWhile Statement_DoWhile);
     public void visit(Statement_Print Statement_Print);
