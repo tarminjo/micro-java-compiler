@@ -47,7 +47,7 @@ char x, y[];
 		return;
 	}
 	
-	bool m1(int fp1, char fp2[], bool fp3) int a, b[]; int x[], y; char eol;{
+	bool m1(int fp1, char fp2[], bool fp3) int a, b[]; int x[], y; char eol; {
 		
 		//main(); //ok
 		
@@ -101,15 +101,27 @@ char x, y[];
 	int f1(int x) { return x; }
 	int f2(int x, bool b) int a; { return f1(x) + a + 1; }
 	
-	int f3() { 
+	int f3(int x) set s1, s2, s3; int i; int j[]; char k[]; { 
 		
 		//f2(f2(1, true), false); //ok
 		//f2(f2(f2(1, true), false), false); //ok
 		f2(pi, true); //ok
 		f2(f2(g, true), false); //ok
 		
+		//print(s1); //ok
+		//s1 = new set [5];//ok
 		
-		return 1; //ok
+		//x = s1 union s2; //error
+		s3 = s1 union s2; //ok
+		
+		do {
+		  i = 0;
+		} while(i < 5, i++); //ok
+		
+		//x =  f1 map j; //ok
+		//x = f1 map k; //error
+		
+		return f1 map j; //ok
 	}
 	
 }

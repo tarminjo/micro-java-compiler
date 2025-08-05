@@ -36,6 +36,7 @@ public class SemAnalyzer extends VisitorAdaptor {
 	public static final int SET = 10;
 	public static final Struct setType = new Struct(SET);
 	
+	
 	/* ================================= LOG MESSAGES ================================= */
 	public void report_error(String message, SyntaxNode info) {
     	errorDetected = true;
@@ -235,20 +236,25 @@ public class SemAnalyzer extends VisitorAdaptor {
 	
 	@Override
 	public void visit(Type type) {
-		Obj typeObj = Tab.find(type.getI1());
-		// ako nismo nasli objekat naseg tipa, ovde ce biti noObj i to znaci semanticka greska
-		// zbog toga radimo ovu proveru
-		if(typeObj == Tab.noObj) {
-			report_error("Nepostojeci tip podatka: " + type.getI1(), type);
-			currentType = Tab.noType;
+		// prvo ide provera da li je tip set
+		if(type.getI1().equals("set")) {
+			currentType = setType;
+		} else {
+			Obj typeObj = Tab.find(type.getI1());
+			// ako nismo nasli objekat naseg tipa, ovde ce biti noObj i to znaci semanticka greska
+			// zbog toga radimo ovu proveru
+			if(typeObj == Tab.noObj) {
+				report_error("Nepostojeci tip podatka: " + type.getI1(), type);
+				currentType = Tab.noType;
+			}
+			// obj koji trazimo ima Kind = Type i to ovde proveravamo
+			else if(typeObj.getKind() != Obj.Type) {
+				report_error("Neadekvatan tip podatka: " + type.getI1(), type);
+				currentType = Tab.noType;
+			}
+			else
+				currentType = typeObj.getType();
 		}
-		// obj koji trazimo ima Kind = Type i to ovde proveravamo
-		else if(typeObj.getKind() != Obj.Type) {
-			report_error("Neadekvatan tip podatka: " + type.getI1(), type);
-			currentType = Tab.noType;
-		}
-		else
-			currentType = typeObj.getType();
 	}
 	
 	/* ================================= CONTEXT CONDITIONS ================================= */
@@ -375,14 +381,6 @@ public class SemAnalyzer extends VisitorAdaptor {
 	public void visit(Factor_Var factor_Var) {
 		
 		factor_Var.struct = factor_Var.getDesignator().obj.getType();
-		
-//		if(factor_Var.getDesignator().obj == Tab.noObj) {
-//			report_error("Nepostojeca promenljiva: " + factor_Var.getDesignator().obj.getName(), 
-//					factor_Var);
-//			factor_Var.struct = Tab.noType;
-//		} else {
-//			factor_Var.struct = factor_Var.getDesignator().obj.getType();
-//		}
 	}
 	
 	@Override
@@ -403,9 +401,10 @@ public class SemAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(Factor_New factor_New) {
 		if(!factor_New.getExpr().struct.equals(Tab.intType)) {
-			// TODO: Mozda drugacije ispisati gresku
 			report_error("Velicina niza/skupa nije int tipa.", factor_New);
 			factor_New.struct = Tab.noType;
+		} else if (currentType.equals(setType)) {
+			factor_New.struct = setType;
 		} else {
 			factor_New.struct = new Struct(Struct.Array, currentType);
 		}
@@ -486,14 +485,6 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// TODO: Odradi map metodu
-	@Override
-	public void visit(Expr_Designator expr_Designator) {
-		
-	}
-	
-	
-	// novo
 	@Override
 	public void visit(Expr_Minus expr_Minus) {
 		Struct term = expr_Minus.getTerm().struct;
@@ -502,7 +493,7 @@ public class SemAnalyzer extends VisitorAdaptor {
 		if(term.equals(Tab.intType) && more.equals(Tab.intType)) {
 			expr_Minus.struct = Tab.intType;
 		} else if(!term.equals(Tab.intType)) {
-			report_error("	Negacija ne int vrednosti", expr_Minus);
+			report_error("Negacija ne int vrednosti", expr_Minus);
 			expr_Minus.struct = Tab.noType;
 		} else if(more.equals(Tab.noType)) {
 			expr_Minus.struct = term;
@@ -511,6 +502,53 @@ public class SemAnalyzer extends VisitorAdaptor {
 			expr_Minus.struct = Tab.noType;
 		}
 	}
+	
+	// TODO - uradi detaljniju proveru
+		@Override
+		public void visit(Expr_Designator expr_Designator) {
+			
+			Obj d1 = expr_Designator.getDesignator().obj;
+			Obj d2 = expr_Designator.getDesignator1().obj;
+			
+			if(d1.getKind() != Obj.Meth || !d1.getType().assignableTo(Tab.intType)) {
+				
+				report_error("Neadekvatna funkcija kao prvi argument u operaciji map: " + d1.getName(),
+					expr_Designator);
+				expr_Designator.struct = Tab.noType;
+			} else if(d2.getType().getKind() != Struct.Array || d2.getType().getElemType() != Tab.intType) {
+				
+				report_error("Neadekvatan drugi argument operacije map: " + d2.getName(), expr_Designator);
+				expr_Designator.struct = Tab.noType;
+			} else {
+				
+				List<Struct> fpList = new ArrayList<>();
+				
+				for(Obj local: d1.getLocalSymbols()) {
+					if(local.getKind() == Obj.Var && local.getLevel() == 1 && local.getFpPos() == 1) {
+						fpList.add(0, local.getType());
+					}
+				}
+				
+				if(fpList.size() != 1) {
+					
+					report_error("Neadekvatna funkcija kao prvi argument u operaciji map: " + d1.getName(),
+						expr_Designator);
+					expr_Designator.struct = Tab.noType;
+				} else {
+					
+					Struct arg = fpList.get(0);
+					
+					if(!arg.assignableTo(Tab.intType)) {
+						
+						report_error("Neadekvatna funkcija kao prvi argument u operaciji map: " + d1.getName(),
+							expr_Designator);
+						expr_Designator.struct = Tab.noType;
+					} else {
+						expr_Designator.struct = Tab.intType;
+					}
+				}
+			}
+		}
 	
 	/* ================================= DESIGNATOR ================================= */
 	
@@ -532,7 +570,6 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
-	// TODO: dodela povratne vrednosti metode
 	@Override
 	public void visit(DesignatorStatement_ActPars designatorStatement_ActPars) {
 		if(designatorStatement_ActPars.getDesignator().obj.getKind() != Obj.Meth) {
@@ -599,6 +636,18 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
+	@Override
+	public void visit(DesignatorStatement_Set designatorStatement_Set) {
+		
+		Struct d1 = designatorStatement_Set.getDesignator().obj.getType();
+		Struct d2 = designatorStatement_Set.getDesignator1().obj.getType();
+		Struct d3 = designatorStatement_Set.getDesignator2().obj.getType();
+		
+		if(!d1.equals(setType) || !d2.equals(setType) || !d3.equals(setType)) {
+			report_error("Union operacija neadekvatnih promenljivih.", designatorStatement_Set);
+		}
+	}
+	
 	/* ================================= STATEMENT ================================= */
 	
 	public void visit(Statement_Read statement_Read) {
@@ -633,9 +682,9 @@ public class SemAnalyzer extends VisitorAdaptor {
 		
 		Struct type = statement_Print.getExpr().struct;
 		
-		//TODO: Logika za set
-		if(!type.equals(Tab.intType) && !type.equals(Tab.charType) && !type.equals(boolType)) {
-			report_error("Print operacija ne int/char/bool vrednosti.", statement_Print);
+		if (!type.equals(Tab.intType) && !type.equals(Tab.charType)
+				&& !type.equals(boolType) && !type.equals(setType)) {
+			report_error("Print operacija ne int/char/bool/set vrednosti.", statement_Print);
 		}
 	}
 	
