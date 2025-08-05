@@ -14,17 +14,27 @@ import rs.etf.pp1.symboltable.concepts.Struct;
 public class SemAnalyzer extends VisitorAdaptor {
 	
 	private boolean errorDetected = false;
+	
 	Logger log = Logger.getLogger(getClass());
+	
 	private Obj currentProgram; // cuvanje naziva programa prilikom prolaska kroz ProgramName
 	private Struct currentType; // cuvanje tipa za ConstDecl (kroz njega se prolazi pre ConstDecl)
+	
 	private int constant; // vrednost kontante kod ConstDecl
 	private Struct constantType; // tip kontante prilikom provere podudaranja tipova
+	
 	private Struct boolType = Tab.find("bool").getType(); // u vreme kreiranja cvora ce se inicijalizovati
+	
 	//private boolean mainHappened = false;
 	private Obj currentMethod;
 	private Obj mainMethod;
+	
 	private boolean returnHappened = false; // da li je bilo return-a u bilo kojoj metodi
 	private int loopCnt = 0;
+	
+	// logika za set-ove
+	public static final int SET = 10;
+	public static final Struct setType = new Struct(SET);
 	
 	/* ================================= LOG MESSAGES ================================= */
 	public void report_error(String message, SyntaxNode info) {
@@ -393,7 +403,8 @@ public class SemAnalyzer extends VisitorAdaptor {
 	@Override
 	public void visit(Factor_New factor_New) {
 		if(!factor_New.getExpr().struct.equals(Tab.intType)) {
-			report_error("Velicina niza nije int tipa.", factor_New);
+			// TODO: Mozda drugacije ispisati gresku
+			report_error("Velicina niza/skupa nije int tipa.", factor_New);
 			factor_New.struct = Tab.noType;
 		} else {
 			factor_New.struct = new Struct(Struct.Array, currentType);
@@ -440,12 +451,12 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
+	/* ================================= EXPRESSION ================================= */
+	
 	@Override
 	public void visit(ExprAddopTerms_Epsilon exprAddopTerms_Epsilon) {
 		exprAddopTerms_Epsilon.struct = Tab.noType;
 	}
-	
-	/* ================================= EXPRESSION ================================= */
 	
 	@Override
 	public void visit(ExprAddopTerms_More exprAddopTerms_More) {
@@ -588,6 +599,8 @@ public class SemAnalyzer extends VisitorAdaptor {
 		}
 	}
 	
+	/* ================================= STATEMENT ================================= */
+	
 	public void visit(Statement_Read statement_Read) {
 		
 		int kind = statement_Read.getDesignator().obj.getKind();
@@ -669,6 +682,8 @@ public class SemAnalyzer extends VisitorAdaptor {
 			report_error("Continue naredba se ne nalazi unutar tela petlje.", statement_Continue);
 		}
 	}
+	
+	/* ================================= CONDITION ================================= */
 	
 	@Override
 	public void visit(CondFact_1 condFact_1) {
@@ -792,13 +807,6 @@ public class SemAnalyzer extends VisitorAdaptor {
 			condition.struct = boolType;
 		}
 	}
-	
-	
-	
-	
-	
-	
-	
 	
 }
 

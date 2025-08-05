@@ -56,6 +56,7 @@ terminal SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE, RSQBRACKET, LS
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
+terminal SET;
 
 nonterminal Program Program;
 nonterminal ConstVarDeclList ConstVarDeclList;
