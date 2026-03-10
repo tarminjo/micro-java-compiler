@@ -1,136 +1,35 @@
-program Tarmi
+//Test 302
 
-const int pi = 3, g = 33;
-char x, y[];
+program test302
+
+enum Broj {NULA, JEDAN, DVA}
+
+Broj nula;
+Broj jedan;
+int i, j;
+bool b;
+
+int niz[];
 {
-	void main() int a, b[]; int x[], y; char eol; {
-		//a = b;
+	
+	void main()
+	{
+		niz = new int[Broj.DVA];
+		niz[Broj.NULA] = 1;
+		i = Broj.DVA;
+		nula = Broj.NULA;
+		//jedan = Broj.JEDAN;
+		//print(Broj.JEDAN);
+		b = true;
+		//print(b == true ? Broj.JEDAN : nula);
 		
-		//a = 3 + b;
-		
-		//a = 3 + b*2;
-		
-		//a = 3 + b[2]*2;
-		
-		//g = 3;
-		
-		//x = new int[5];
-		
-		//x[2] = a;
-		//x[3] = x[5];
-		//x = null;
-		
-		//x++; //error
-		
-		//x[3]--; //ok
-		
-		//pi--; //error
-		
-		//eol++; //error
-		
-		//a++; //ok
-		
-		//read(a); //ok
-		//read(eol); //ok
-		//read(x); //error
-		
-		//print(1, 4); //ok
-		//print(a, 4); //ok
-		//print(x); //error
-		//print(x[2], 4); //ok
-		//print(eol, 4); //ok
-		//print(false, 2); //ok
-		
-		x = null;
-		
-		//print(x['a']);
-		return;
+		for(i = 0; i < 4; i++) {
+			for(;;) {
+				print(i + 2);
+			 	break;	
+			}
+			print(i);
+			print(eol);
+		}
 	}
-	
-	bool m1(int fp1, char fp2[], bool fp3) int a, b[]; int x[], y; char eol; {
-		
-		//main(); //ok
-		
-		//m2(); //error
-		
-		return true; //ok
-		//return; //error
-	}
-	
-	int m2() int a; bool b; int c[];{
-	
-		//m1(); //ok
-		//a = m1(); //error
-		//b = m1(); //ok
-		
-		//a = mainn(); //error
-		
-		//break; //error
-		//continue; //error
-		
-		do {
-		    //break; //ok
-			//continue; //ok
-			do {
-				break; //ok
-				continue; //ok
-			} while(true);
-			break; //ok
-			continue; //ok
-		} while(true);
-		
-		//read(a); //ok
-		
-		//if(false) a++; //ok
-		
-		do{
-		
-		} while (true); //ok
-		
-		if(true && a == 2 || b && a < 2) a++; //ok
-		
-		//if (c < c) c = null; //error;
-		
-		//if(c != null) c = null; //ok
-		
-		//return 'a'; //error 
-		
-		return 1; //ok
-	}
-	
-	int f1(int x) { return x; }
-	int f2(int x, bool b) int a; { return f1(x) + a + 1; }
-	
-	int f3(int x) set s1, s2, s3; int i; int j[]; char k[]; { 
-		
-		//f2(f2(1, true), false); //ok
-		//f2(f2(f2(1, true), false), false); //ok
-		f2(pi, true); //ok
-		f2(f2(g, true), false); //ok
-		
-		//print(s1); //ok
-		//s1 = new set [5];//ok
-		
-		//x = s1 union s2; //error
-		s3 = s1 union s2; //ok
-		
-		do {
-		  i = 0;
-		} while(i < 5, i++); //ok
-		
-		//x =  f1 map j; //ok
-		//x = f1 map k; //error
-		
-		return f1 map j; //ok
-	}
-	
 }
-
-
-
-
-
-
-
-
-

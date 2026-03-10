@@ -49,15 +49,17 @@ scan with {:
 :}
 
 
-terminal PROG, PRINT, RETURN, VOID, CONST, NEW, READ, UNION, BREAK, IF, ELSE, CONTINUE, MAP, DO, WHILE;
+terminal PROG, PRINT, RETURN, VOID, CONST, NEW, READ, BREAK, IF, ELSE, CONTINUE, DO, WHILE;
 terminal PLUS, INC, ASSIGN, MINUS, DECR, MULT, DIV, MOD;
 terminal EQUAL, NOTEQUAL, GREATER, GREATEREQUAL, LESS, LESSEQUAL, LOGAND, LOGOR;
 terminal SEMI, COLON, COMMA, DOT, LPAREN, RPAREN, LBRACE, RBRACE, RSQBRACKET, LSQBRACKET;
 terminal String IDENT;
 terminal Integer NUMBER, BOOL;
 terminal Character CHARACTER;
+terminal FOR, SWITCH, CASE, LENGTH, QUESTION, ENUM;
+terminal UNION, MAP;
 
-nonterminal Program, ConstVarDeclList, MethodDeclList, ConstDeclList, VarDeclList, Type;
+nonterminal Program, ConstVarDeclEnumList, MethodDeclList, ConstDeclList, VarDeclList;
 nonterminal ConstDecl, ConstDeclMore, Constant, VarDecl, VarDeclMore;
 nonterminal MethodSignature, MethodSignatureType, FormParsList, FormParsMore, MethodDecl;
 nonterminal Statement, StatementList, DesignatorStatement;
@@ -66,29 +68,41 @@ nonterminal StatementDoWhileCond, StatementDoWhileCondDesignatorSt;
 nonterminal ActPars, ActParsList, ActParsMore;
 nonterminal TermList, SimpleDesignator;
 nonterminal MethodDeclVarDeclList, FormPars;
-nonterminal Label, Assignop, Relop, Addop, Mulop, Setop;
-nonterminal ProgramName, MethodRetAndName;
+nonterminal Label, Assignop, Relop, Addop, Mulop;
+nonterminal ProgramName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Factor, FactorMore, Term, ExprAddopTerms;
-nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr, FactorActPars, StatementPrintNumConst;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Expr;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct FactorActPars, StatementPrintNumConst;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct Condition;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct CondTerm, CondTermMore, CondFact, CondFactMore;
-nonterminal	rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorArrayName;
+nonterminal	rs.etf.pp1.symboltable.concepts.Obj Designator, DesignatorName, MethodRetAndName;
 nonterminal rs.etf.pp1.symboltable.concepts.Struct StatementReturnExpr;
-nonterminal DoNonterm, ActParsListBegin;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct Type;
+nonterminal DoNonterm, ActParsListBegin, Else, WhileNonTerm;
+
+nonterminal EnumBegin, EnumDecl, EnumConst, EnumNumConst, EnumConstMore;
+nonterminal SwitchCaseList, SwitchNonTerm, ForCondition, ForNonTerm;
+nonterminal	rs.etf.pp1.symboltable.concepts.Obj DesignatorSuffix;
+nonterminal rs.etf.pp1.symboltable.concepts.Struct NonTernaryExpr;
+nonterminal TernaryColon, SwitchCaseNumber, SwitchCaseColon, SwitchEndStatement;
+nonterminal ForDesignatorStatement_1, ForDesignatorStatement_2;
+
 
 precedence left ELSE;
 
 
-Program ::= (Program) PROG ProgramName ConstVarDeclList LBRACE MethodDeclList RBRACE;
+Program ::= (Program) PROG ProgramName ConstVarDeclEnumList LBRACE MethodDeclList RBRACE;
 
 ProgramName ::= (ProgramName) IDENT;
 
-ConstVarDeclList ::= (ConstVarDeclList_Const) ConstVarDeclList ConstDeclList
-					 |
-					 (ConstVarDeclList_Var) ConstVarDeclList VarDeclList
-					 | 
-					 (ConstVarDeclList_Epsilon) /*epsilon*/
-					 ;
+ConstVarDeclEnumList ::= (ConstVarDeclEnumList_Const) ConstVarDeclEnumList ConstDeclList
+						 |
+						 (ConstVarDeclEnumList_Var) ConstVarDeclEnumList VarDeclList
+						 |
+						 (ConstVarDeclEnumList_Enum) ConstVarDeclEnumList EnumDecl
+						 |
+						 (ConstVarDeclEnumList_Epsilon) /*epsilon*/
+						 ;
 
 ConstDeclList ::= (ConstDeclList) CONST Type ConstDecl ConstDeclMore SEMI;
 
@@ -119,6 +133,22 @@ VarDeclMore ::= (VarDeclMore_Comma) COMMA VarDecl VarDeclMore
 				|
 				(VarDeclMore_Semi) /* Epsilon */
 				;
+				
+EnumDecl ::= (EnumDecl) ENUM EnumBegin LBRACE EnumConst EnumConstMore RBRACE;
+
+EnumBegin ::= (EnumBegin) IDENT;
+
+EnumConst ::= (EnumConst) IDENT EnumNumConst;
+				 
+EnumConstMore ::= (EnumConstMore_Yes) COMMA EnumConst EnumConstMore
+				  |
+				  (EnumConstMore_Epsilon) /* Epsilon */
+				  ;
+
+EnumNumConst ::= (EnumNumConst_Yes) ASSIGN NUMBER
+				 |
+				 (EnumNumConst_Epsilon) /* Epsilon */
+				 ;
 
 MethodSignature ::= (MethodSignature) MethodRetAndName LPAREN FormParsList RPAREN;
 
@@ -173,17 +203,55 @@ Statement ::= (Statement_Designator) DesignatorStatement SEMI
 			  |
 			  (Statement_Print) PRINT LPAREN Expr StatementPrintNumConst RPAREN SEMI
 			  |
-			  (Statement_DoWhile) DoNonterm Statement WHILE LPAREN StatementDoWhileCond RPAREN SEMI
+			  (Statement_DoWhile) DoNonterm Statement WhileNonTerm LPAREN StatementDoWhileCond RPAREN SEMI
+			  |
+			  (Statement_Switch) SwitchNonTerm LPAREN Expr RPAREN LBRACE SwitchCaseList RBRACE
+			  |
+			  (Statement_For) ForNonTerm LPAREN ForDesignatorStatement_1 SEMI ForCondition SEMI ForDesignatorStatement_2 RPAREN Statement
 			  |
 			  (Statement_List) LBRACE StatementList RBRACE
 			  ;
 			  
-DoNonterm ::= (DoNonterm) DO;
+SwitchNonTerm ::= (SwitchNonTerm) SWITCH;
 			  
-StatementIfElse ::= (Statement_IfElse_Yes) ELSE Statement
+SwitchCaseList ::= (SwitchCaseList_More) CASE SwitchCaseNumber SwitchCaseColon StatementList SwitchEndStatement SwitchCaseList
+				   |
+				   (SwitchCaseList_Epsilon) /* Epsilon */
+				   ;
+				   
+SwitchCaseNumber ::= (SwitchCaseNumber) NUMBER;
+
+SwitchCaseColon ::= (SwitchCaseColon) COLON;
+
+SwitchEndStatement ::= (SwitchEndStatement) /* Epsilon */;
+				   
+ForDesignatorStatement_1 ::= (ForDesignatorStatement_1_Yes) DesignatorStatement
+						     |
+						     (ForDesignatorStatement_1_Epsilon) /* Epsilon */
+						     ;
+
+ForDesignatorStatement_2 ::= (ForDesignatorStatement_2_Yes) DesignatorStatement
+						     |
+						     (ForDesignatorStatement_2_Epsilon) /* Epsilon */
+						     ;
+
+ForCondition ::= (ForCondition_Yes) Condition
+				 |
+				 (ForCondition_Epsilon) /* Epsilon */
+				 ;
+				 
+ForNonTerm ::= (ForNonTerm) FOR;
+
+DoNonterm ::= (DoNonterm) DO;
+
+WhileNonTerm ::= (WhileNonTerm) WHILE;
+			  
+StatementIfElse ::= (Statement_IfElse_Yes) Else Statement
 					 |
 					 (Statement_IfElse_Epsilon) /* Epsilon */
 					 ;
+
+Else ::= (Else) ELSE;
 
 StatementReturnExpr ::= (Statement_ReturnExpr_Yes) Expr
 						 |
@@ -212,10 +280,7 @@ DesignatorStatement ::= (DesignatorStatement_Assign) Designator Assignop Expr
 						(DesignatorStatement_Inc) Designator INC
 						|
 						(DesignatorStatement_Dec) Designator DECR
-						|
-						(DesignatorStatement_Set) Designator Assignop Designator Setop Designator
-						;
-					 
+						;		 
 
 ActPars ::= (ActPars) Expr ActParsMore;
 
@@ -245,18 +310,23 @@ CondFactMore ::= (CondFactMore_Yes) LOGAND CondFact CondFactMore
 				 (CondFactMore_Epsilon) /* Epsilon */
 				 ;
 
-CondFact ::= (CondFact_1) Expr
+CondFact ::= (CondFact_1) NonTernaryExpr
 			 |
-			 (CondFact_2) Expr Relop Expr
+			 (CondFact_2) NonTernaryExpr Relop NonTernaryExpr
 			 ;
 
-Expr ::= (Expr_Regular) Term ExprAddopTerms
+Expr ::= (Expr_NonTernary) NonTernaryExpr
 		 |
-		 (Expr_Minus) MINUS Term ExprAddopTerms
-		 |
-		 (Expr_Designator) Designator MAP Designator
+		 (Expr_Ternary) Condition QUESTION Expr TernaryColon Expr
 		 ;
 		 
+TernaryColon ::= (TernaryColon) COLON;
+
+NonTernaryExpr ::= (NonTernaryExpr_Regular) Term ExprAddopTerms
+				   |
+				   (NonTernaryExpr_Minus) MINUS Term ExprAddopTerms
+				   ;
+
 ExprAddopTerms ::= (ExprAddopTerms_More) Addop Term ExprAddopTerms
 				   |
 				   (ExprAddopTerms_Epsilon) /* Epsilon */
@@ -283,14 +353,20 @@ Factor ::= (Factor_Var) Designator
 		   |
 		   (Factor_Expr) LPAREN Expr RPAREN
 		   ;
-		   
 
-Designator ::= (Designator_Regular) IDENT
+Designator ::= (Designator_Suffix) DesignatorName DesignatorSuffix
 			   |
-			   (Designator_Array) DesignatorArrayName LSQBRACKET Expr RSQBRACKET
+			   (Designator_Regular) IDENT
 			   ;
+
+DesignatorSuffix ::= (Designator_Enum) DOT IDENT
+                   	 |
+                     (Designator_Length) DOT LENGTH
+                   	 |
+                   	 (Designator_Array) LSQBRACKET Expr RSQBRACKET
+                   	 ;
 	   
-DesignatorArrayName ::= (DesignatorArrayName) IDENT;
+DesignatorName ::= (DesignatorName) IDENT;
 					 
 Label ::= (Label) IDENT;
 
@@ -320,8 +396,6 @@ Mulop ::= (Mulop_Mult) MULT
 		  |
 		  (Mulop_Mod) MOD
 		  ;
-		  
-Setop ::= (Setop) UNION;
 					 
 					 
 					 

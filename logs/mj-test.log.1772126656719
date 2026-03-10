@@ -1,0 +1,140 @@
+INFO  18:23:27,034 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:23:27,066 - #2 program
+INFO  18:23:27,066 - #43 Tarmi
+INFO  18:23:27,066 - #6 const
+INFO  18:23:27,067 - #43 int
+INFO  18:23:27,067 - #43 pi
+INFO  18:23:27,067 - #19 =
+INFO  18:23:27,067 - #44 3
+INFO  18:23:27,067 - #33 ;
+INFO  18:23:27,069 - #43 int
+INFO  18:23:27,069 - #43 x
+INFO  18:23:27,070 - #35 ,
+INFO  18:23:27,070 - #43 y
+INFO  18:23:27,070 - #42 [
+INFO  18:23:27,070 - #41 ]
+INFO  18:23:27,070 - #33 ;
+INFO  18:23:27,070 - #52 enum
+INFO  18:23:27,071 - #43 Broj
+INFO  18:23:27,071 - #39 {
+INFO  18:23:27,071 - #43 JEDAN
+INFO  18:23:27,071 - #35 ,
+INFO  18:23:27,072 - #43 DVA
+INFO  18:23:27,072 - #19 =
+INFO  18:23:27,075 - #44 2
+INFO  18:23:27,075 - #35 ,
+INFO  18:23:27,076 - #43 TRI
+INFO  18:23:27,076 - #19 =
+INFO  18:23:27,076 - #44 3
+INFO  18:23:27,076 - #40 }
+INFO  18:23:27,077 - #39 {
+INFO  18:23:27,077 - #5 void
+INFO  18:23:27,078 - #43 main
+INFO  18:23:27,078 - #37 (
+INFO  18:23:27,078 - #38 )
+INFO  18:23:27,078 - #43 int
+INFO  18:23:27,079 - #43 i
+INFO  18:23:27,079 - #35 ,
+INFO  18:23:27,079 - #43 j
+INFO  18:23:27,079 - #33 ;
+INFO  18:23:27,079 - #39 {
+INFO  18:23:27,080 - #40 }
+INFO  18:23:27,080 - #40 }
+INFO  18:23:27,082 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclEnumList_Enum(
+    ConstVarDeclEnumList_Var(
+      ConstVarDeclEnumList_Const(
+        ConstVarDeclEnumList_Epsilon(
+        ) [ConstVarDeclEnumList_Epsilon]
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+          ConstDecl(
+           pi
+            Constant_Number(
+             3
+            ) [Constant_Number]
+          ) [ConstDecl]
+          ConstDeclMore_Epsilon(
+          ) [ConstDeclMore_Epsilon]
+        ) [ConstDeclList]
+      ) [ConstVarDeclEnumList_Const]
+      VarDeclList(
+        Type(
+         int
+        ) [Type]
+        VarDecl_Regular(
+         x
+        ) [VarDecl_Regular]
+        VarDeclMore_Comma(
+          VarDecl_Array(
+           y
+          ) [VarDecl_Array]
+          VarDeclMore_Semi(
+          ) [VarDeclMore_Semi]
+        ) [VarDeclMore_Comma]
+      ) [VarDeclList]
+    ) [ConstVarDeclEnumList_Var]
+    EnumDeclList(
+     Broj
+     JEDAN
+      EnumNumConst_Epsilon(
+      ) [EnumNumConst_Epsilon]
+      EnumDeclMore_Yes(
+       DVA
+        EnumNumConst_Yes(
+         2
+        ) [EnumNumConst_Yes]
+        EnumDeclMore_Yes(
+         TRI
+          EnumNumConst_Yes(
+           3
+          ) [EnumNumConst_Yes]
+          EnumDeclMore_Epsilon(
+          ) [EnumDeclMore_Epsilon]
+        ) [EnumDeclMore_Yes]
+      ) [EnumDeclMore_Yes]
+    ) [EnumDeclList]
+  ) [ConstVarDeclEnumList_Enum]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           i
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             j
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Epsilon(
+        ) [MethodDeclVarDeclList_Epsilon]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_Epsilon(
+      ) [StatementList_Epsilon]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:23:27,082 - =====================================================================
+INFO  18:23:27,089 - =====================================================================
+INFO  18:23:27,093 - Parsiranje uspesno zavrseno!

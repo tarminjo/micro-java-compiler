@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/7/2025 19:28:41
+// 10/2/2026 16:37:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,6 +10,8 @@ public abstract class MethodRetAndName implements SyntaxNode {
     private SyntaxNode parent;
 
     private int line;
+
+    public rs.etf.pp1.symboltable.concepts.Obj obj = null;
 
     public SyntaxNode getParent() {
         return parent;

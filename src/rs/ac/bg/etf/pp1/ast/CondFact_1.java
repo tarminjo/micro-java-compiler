@@ -1,25 +1,25 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/7/2025 19:28:40
+// 10/2/2026 16:37:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
 public class CondFact_1 extends CondFact {
 
-    private Expr Expr;
+    private NonTernaryExpr NonTernaryExpr;
 
-    public CondFact_1 (Expr Expr) {
-        this.Expr=Expr;
-        if(Expr!=null) Expr.setParent(this);
+    public CondFact_1 (NonTernaryExpr NonTernaryExpr) {
+        this.NonTernaryExpr=NonTernaryExpr;
+        if(NonTernaryExpr!=null) NonTernaryExpr.setParent(this);
     }
 
-    public Expr getExpr() {
-        return Expr;
+    public NonTernaryExpr getNonTernaryExpr() {
+        return NonTernaryExpr;
     }
 
-    public void setExpr(Expr Expr) {
-        this.Expr=Expr;
+    public void setNonTernaryExpr(NonTernaryExpr NonTernaryExpr) {
+        this.NonTernaryExpr=NonTernaryExpr;
     }
 
     public void accept(Visitor visitor) {
@@ -27,16 +27,16 @@ public class CondFact_1 extends CondFact {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(Expr!=null) Expr.accept(visitor);
+        if(NonTernaryExpr!=null) NonTernaryExpr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(Expr!=null) Expr.traverseTopDown(visitor);
+        if(NonTernaryExpr!=null) NonTernaryExpr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(Expr!=null) Expr.traverseBottomUp(visitor);
+        if(NonTernaryExpr!=null) NonTernaryExpr.traverseBottomUp(visitor);
         accept(visitor);
     }
 
@@ -45,8 +45,8 @@ public class CondFact_1 extends CondFact {
         buffer.append(tab);
         buffer.append("CondFact_1(\n");
 
-        if(Expr!=null)
-            buffer.append(Expr.toString("  "+tab));
+        if(NonTernaryExpr!=null)
+            buffer.append(NonTernaryExpr.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

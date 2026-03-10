@@ -1,0 +1,263 @@
+INFO  18:57:09,974 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:57:10,010 - #2 program
+INFO  18:57:10,011 - #43 Tarmi
+INFO  18:57:10,011 - #6 const
+INFO  18:57:10,011 - #43 int
+INFO  18:57:10,012 - #43 pi
+INFO  18:57:10,012 - #19 =
+INFO  18:57:10,012 - #44 3
+INFO  18:57:10,012 - #33 ;
+INFO  18:57:10,013 - #43 int
+INFO  18:57:10,013 - #43 x
+INFO  18:57:10,013 - #35 ,
+INFO  18:57:10,013 - #43 y
+INFO  18:57:10,015 - #42 [
+INFO  18:57:10,015 - #41 ]
+INFO  18:57:10,015 - #33 ;
+INFO  18:57:10,015 - #52 enum
+INFO  18:57:10,016 - #43 Broj
+INFO  18:57:10,016 - #39 {
+INFO  18:57:10,017 - #43 JEDAN
+INFO  18:57:10,017 - #35 ,
+INFO  18:57:10,018 - #43 DVA
+INFO  18:57:10,018 - #19 =
+INFO  18:57:10,023 - #44 2
+INFO  18:57:10,023 - #35 ,
+INFO  18:57:10,023 - #43 TRI
+INFO  18:57:10,023 - #19 =
+INFO  18:57:10,023 - #44 3
+INFO  18:57:10,024 - #40 }
+INFO  18:57:10,025 - #39 {
+INFO  18:57:10,025 - #5 void
+INFO  18:57:10,027 - #43 main
+INFO  18:57:10,027 - #37 (
+INFO  18:57:10,027 - #38 )
+INFO  18:57:10,027 - #43 int
+INFO  18:57:10,028 - #43 i
+INFO  18:57:10,028 - #35 ,
+INFO  18:57:10,028 - #43 j
+INFO  18:57:10,028 - #33 ;
+INFO  18:57:10,028 - #39 {
+INFO  18:57:10,029 - #43 i
+INFO  18:57:10,029 - #19 =
+INFO  18:57:10,029 - #43 JEDAN
+INFO  18:57:10,030 - #33 ;
+INFO  18:57:10,031 - #3 print
+INFO  18:57:10,031 - #37 (
+INFO  18:57:10,031 - #43 i
+INFO  18:57:10,032 - #27 >
+INFO  18:57:10,032 - #44 0
+INFO  18:57:10,032 - #51 ?
+INFO  18:57:10,034 - #46 v
+INFO  18:57:10,034 - #34 :
+INFO  18:57:10,034 - #46 m
+INFO  18:57:10,034 - #38 )
+INFO  18:57:10,034 - #33 ;
+INFO  18:57:10,035 - #40 }
+INFO  18:57:10,035 - #40 }
+INFO  18:57:10,037 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclEnumList_Enum(
+    ConstVarDeclEnumList_Var(
+      ConstVarDeclEnumList_Const(
+        ConstVarDeclEnumList_Epsilon(
+        ) [ConstVarDeclEnumList_Epsilon]
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+          ConstDecl(
+           pi
+            Constant_Number(
+             3
+            ) [Constant_Number]
+          ) [ConstDecl]
+          ConstDeclMore_Epsilon(
+          ) [ConstDeclMore_Epsilon]
+        ) [ConstDeclList]
+      ) [ConstVarDeclEnumList_Const]
+      VarDeclList(
+        Type(
+         int
+        ) [Type]
+        VarDecl_Regular(
+         x
+        ) [VarDecl_Regular]
+        VarDeclMore_Comma(
+          VarDecl_Array(
+           y
+          ) [VarDecl_Array]
+          VarDeclMore_Semi(
+          ) [VarDeclMore_Semi]
+        ) [VarDeclMore_Comma]
+      ) [VarDeclList]
+    ) [ConstVarDeclEnumList_Var]
+    EnumDecl(
+      EnumBegin(
+       Broj
+      ) [EnumBegin]
+      EnumConst(
+       JEDAN
+        EnumNumConst_Epsilon(
+        ) [EnumNumConst_Epsilon]
+      ) [EnumConst]
+      EnumConstMore_Yes(
+        EnumConst(
+         DVA
+          EnumNumConst_Yes(
+           2
+          ) [EnumNumConst_Yes]
+        ) [EnumConst]
+        EnumConstMore_Yes(
+          EnumConst(
+           TRI
+            EnumNumConst_Yes(
+             3
+            ) [EnumNumConst_Yes]
+          ) [EnumConst]
+          EnumConstMore_Epsilon(
+          ) [EnumConstMore_Epsilon]
+        ) [EnumConstMore_Yes]
+      ) [EnumConstMore_Yes]
+    ) [EnumDecl]
+  ) [ConstVarDeclEnumList_Enum]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           i
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             j
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Epsilon(
+        ) [MethodDeclVarDeclList_Epsilon]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_Assign(
+            Designator_Regular(
+             i
+            ) [Designator_Regular]
+            Assignop(
+            ) [Assignop]
+            Expr_NonTernary(
+              NonTernaryExpr_Regular(
+                Term(
+                  Factor_Var(
+                    Designator_Regular(
+                     JEDAN
+                    ) [Designator_Regular]
+                  ) [Factor_Var]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [NonTernaryExpr_Regular]
+            ) [Expr_NonTernary]
+          ) [DesignatorStatement_Assign]
+        ) [Statement_Designator]
+        StatementList_More(
+          Statement_Print(
+            Expr_Ternary(
+              Condition(
+                CondTerm(
+                  CondFact_2(
+                    NonTernaryExpr_Regular(
+                      Term(
+                        Factor_Var(
+                          Designator_Regular(
+                           i
+                          ) [Designator_Regular]
+                        ) [Factor_Var]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [NonTernaryExpr_Regular]
+                    Relop_Greater(
+                    ) [Relop_Greater]
+                    NonTernaryExpr_Regular(
+                      Term(
+                        Factor_NumConst(
+                         0
+                        ) [Factor_NumConst]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [NonTernaryExpr_Regular]
+                  ) [CondFact_2]
+                  CondFactMore_Epsilon(
+                  ) [CondFactMore_Epsilon]
+                ) [CondTerm]
+                CondTermMore_Epsilon(
+                ) [CondTermMore_Epsilon]
+              ) [Condition]
+              Expr_NonTernary(
+                NonTernaryExpr_Regular(
+                  Term(
+                    Factor_CharConst(
+                     v
+                    ) [Factor_CharConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [NonTernaryExpr_Regular]
+              ) [Expr_NonTernary]
+              Expr_NonTernary(
+                NonTernaryExpr_Regular(
+                  Term(
+                    Factor_CharConst(
+                     m
+                    ) [Factor_CharConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [NonTernaryExpr_Regular]
+              ) [Expr_NonTernary]
+            ) [Expr_Ternary]
+            Statement_PrintNumConst_Epsilon(
+            ) [Statement_PrintNumConst_Epsilon]
+          ) [Statement_Print]
+          StatementList_Epsilon(
+          ) [StatementList_Epsilon]
+        ) [StatementList_More]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:57:10,037 - =====================================================================
+ERROR 18:57:10,042 - Pristup lokalnoj promenljivoj: i na liniji 9
+ERROR 18:57:10,042 - Pristup nedefinisanoj promenljivi: JEDAN na liniji 9
+ERROR 18:57:10,042 - Neadekvatna dodela vrednosti u promenljivu: i na liniji 9
+ERROR 18:57:10,042 - Pristup lokalnoj promenljivoj: i na liniji 10
+INFO  18:57:10,044 - =====================================================================
+ERROR 18:57:10,044 - Parsiranje NIJE uspesno zavrseno!

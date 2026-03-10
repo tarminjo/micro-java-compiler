@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/7/2025 19:28:40
+// 10/2/2026 16:37:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -10,14 +10,14 @@ public class Program implements SyntaxNode {
     private SyntaxNode parent;
     private int line;
     private ProgramName ProgramName;
-    private ConstVarDeclList ConstVarDeclList;
+    private ConstVarDeclEnumList ConstVarDeclEnumList;
     private MethodDeclList MethodDeclList;
 
-    public Program (ProgramName ProgramName, ConstVarDeclList ConstVarDeclList, MethodDeclList MethodDeclList) {
+    public Program (ProgramName ProgramName, ConstVarDeclEnumList ConstVarDeclEnumList, MethodDeclList MethodDeclList) {
         this.ProgramName=ProgramName;
         if(ProgramName!=null) ProgramName.setParent(this);
-        this.ConstVarDeclList=ConstVarDeclList;
-        if(ConstVarDeclList!=null) ConstVarDeclList.setParent(this);
+        this.ConstVarDeclEnumList=ConstVarDeclEnumList;
+        if(ConstVarDeclEnumList!=null) ConstVarDeclEnumList.setParent(this);
         this.MethodDeclList=MethodDeclList;
         if(MethodDeclList!=null) MethodDeclList.setParent(this);
     }
@@ -30,12 +30,12 @@ public class Program implements SyntaxNode {
         this.ProgramName=ProgramName;
     }
 
-    public ConstVarDeclList getConstVarDeclList() {
-        return ConstVarDeclList;
+    public ConstVarDeclEnumList getConstVarDeclEnumList() {
+        return ConstVarDeclEnumList;
     }
 
-    public void setConstVarDeclList(ConstVarDeclList ConstVarDeclList) {
-        this.ConstVarDeclList=ConstVarDeclList;
+    public void setConstVarDeclEnumList(ConstVarDeclEnumList ConstVarDeclEnumList) {
+        this.ConstVarDeclEnumList=ConstVarDeclEnumList;
     }
 
     public MethodDeclList getMethodDeclList() {
@@ -68,20 +68,20 @@ public class Program implements SyntaxNode {
 
     public void childrenAccept(Visitor visitor) {
         if(ProgramName!=null) ProgramName.accept(visitor);
-        if(ConstVarDeclList!=null) ConstVarDeclList.accept(visitor);
+        if(ConstVarDeclEnumList!=null) ConstVarDeclEnumList.accept(visitor);
         if(MethodDeclList!=null) MethodDeclList.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
         if(ProgramName!=null) ProgramName.traverseTopDown(visitor);
-        if(ConstVarDeclList!=null) ConstVarDeclList.traverseTopDown(visitor);
+        if(ConstVarDeclEnumList!=null) ConstVarDeclEnumList.traverseTopDown(visitor);
         if(MethodDeclList!=null) MethodDeclList.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(ProgramName!=null) ProgramName.traverseBottomUp(visitor);
-        if(ConstVarDeclList!=null) ConstVarDeclList.traverseBottomUp(visitor);
+        if(ConstVarDeclEnumList!=null) ConstVarDeclEnumList.traverseBottomUp(visitor);
         if(MethodDeclList!=null) MethodDeclList.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -97,8 +97,8 @@ public class Program implements SyntaxNode {
             buffer.append(tab+"  null");
         buffer.append("\n");
 
-        if(ConstVarDeclList!=null)
-            buffer.append(ConstVarDeclList.toString("  "+tab));
+        if(ConstVarDeclEnumList!=null)
+            buffer.append(ConstVarDeclEnumList.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

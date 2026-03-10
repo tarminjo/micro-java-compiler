@@ -1,0 +1,269 @@
+INFO  19:14:26,322 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  19:14:26,357 - #2 program
+INFO  19:14:26,357 - #43 Tarmi
+INFO  19:14:26,357 - #6 const
+INFO  19:14:26,358 - #43 int
+INFO  19:14:26,358 - #43 pi
+INFO  19:14:26,358 - #19 =
+INFO  19:14:26,359 - #44 3
+INFO  19:14:26,359 - #33 ;
+INFO  19:14:26,360 - #43 int
+INFO  19:14:26,361 - #43 x
+INFO  19:14:26,361 - #35 ,
+INFO  19:14:26,361 - #43 y
+INFO  19:14:26,361 - #42 [
+INFO  19:14:26,361 - #41 ]
+INFO  19:14:26,361 - #33 ;
+INFO  19:14:26,364 - #52 enum
+INFO  19:14:26,367 - #43 Broj
+INFO  19:14:26,367 - #39 {
+INFO  19:14:26,369 - #43 JEDAN
+INFO  19:14:26,369 - #35 ,
+INFO  19:14:26,370 - #43 DVA
+INFO  19:14:26,370 - #19 =
+INFO  19:14:26,375 - #44 2
+INFO  19:14:26,375 - #35 ,
+INFO  19:14:26,375 - #43 TRI
+INFO  19:14:26,376 - #19 =
+INFO  19:14:26,376 - #44 3
+INFO  19:14:26,376 - #40 }
+INFO  19:14:26,377 - #39 {
+INFO  19:14:26,378 - #5 void
+INFO  19:14:26,378 - #43 main
+INFO  19:14:26,378 - #37 (
+INFO  19:14:26,378 - #38 )
+INFO  19:14:26,378 - #43 int
+INFO  19:14:26,379 - #43 i
+INFO  19:14:26,379 - #35 ,
+INFO  19:14:26,379 - #43 j
+INFO  19:14:26,379 - #33 ;
+INFO  19:14:26,379 - #39 {
+INFO  19:14:26,379 - #43 i
+INFO  19:14:26,380 - #19 =
+INFO  19:14:26,380 - #43 Broj
+INFO  19:14:26,380 - #36 .
+INFO  19:14:26,381 - #43 JEDAN
+INFO  19:14:26,381 - #33 ;
+INFO  19:14:26,383 - #3 print
+INFO  19:14:26,383 - #37 (
+INFO  19:14:26,383 - #43 i
+INFO  19:14:26,383 - #27 >
+INFO  19:14:26,383 - #44 0
+INFO  19:14:26,385 - #51 ?
+INFO  19:14:26,387 - #46 v
+INFO  19:14:26,387 - #34 :
+INFO  19:14:26,387 - #46 m
+INFO  19:14:26,387 - #38 )
+INFO  19:14:26,388 - #33 ;
+INFO  19:14:26,388 - #40 }
+INFO  19:14:26,389 - #40 }
+INFO  19:14:26,390 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclEnumList_Enum(
+    ConstVarDeclEnumList_Var(
+      ConstVarDeclEnumList_Const(
+        ConstVarDeclEnumList_Epsilon(
+        ) [ConstVarDeclEnumList_Epsilon]
+        ConstDeclList(
+          Type(
+           int
+          ) [Type]
+          ConstDecl(
+           pi
+            Constant_Number(
+             3
+            ) [Constant_Number]
+          ) [ConstDecl]
+          ConstDeclMore_Epsilon(
+          ) [ConstDeclMore_Epsilon]
+        ) [ConstDeclList]
+      ) [ConstVarDeclEnumList_Const]
+      VarDeclList(
+        Type(
+         int
+        ) [Type]
+        VarDecl_Regular(
+         x
+        ) [VarDecl_Regular]
+        VarDeclMore_Comma(
+          VarDecl_Array(
+           y
+          ) [VarDecl_Array]
+          VarDeclMore_Semi(
+          ) [VarDeclMore_Semi]
+        ) [VarDeclMore_Comma]
+      ) [VarDeclList]
+    ) [ConstVarDeclEnumList_Var]
+    EnumDecl(
+      EnumBegin(
+       Broj
+      ) [EnumBegin]
+      EnumConst(
+       JEDAN
+        EnumNumConst_Epsilon(
+        ) [EnumNumConst_Epsilon]
+      ) [EnumConst]
+      EnumConstMore_Yes(
+        EnumConst(
+         DVA
+          EnumNumConst_Yes(
+           2
+          ) [EnumNumConst_Yes]
+        ) [EnumConst]
+        EnumConstMore_Yes(
+          EnumConst(
+           TRI
+            EnumNumConst_Yes(
+             3
+            ) [EnumNumConst_Yes]
+          ) [EnumConst]
+          EnumConstMore_Epsilon(
+          ) [EnumConstMore_Epsilon]
+        ) [EnumConstMore_Yes]
+      ) [EnumConstMore_Yes]
+    ) [EnumDecl]
+  ) [ConstVarDeclEnumList_Enum]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           i
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             j
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Epsilon(
+        ) [MethodDeclVarDeclList_Epsilon]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_Assign(
+            Designator_Regular(
+             i
+            ) [Designator_Regular]
+            Assignop(
+            ) [Assignop]
+            Expr_NonTernary(
+              NonTernaryExpr_Regular(
+                Term(
+                  Factor_Var(
+                    Designator_Suffix(
+                      DesignatorName(
+                       Broj
+                      ) [DesignatorName]
+                      Designator_Enum(
+                       JEDAN
+                      ) [Designator_Enum]
+                    ) [Designator_Suffix]
+                  ) [Factor_Var]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [NonTernaryExpr_Regular]
+            ) [Expr_NonTernary]
+          ) [DesignatorStatement_Assign]
+        ) [Statement_Designator]
+        StatementList_More(
+          Statement_Print(
+            Expr_Ternary(
+              Condition(
+                CondTerm(
+                  CondFact_2(
+                    NonTernaryExpr_Regular(
+                      Term(
+                        Factor_Var(
+                          Designator_Regular(
+                           i
+                          ) [Designator_Regular]
+                        ) [Factor_Var]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [NonTernaryExpr_Regular]
+                    Relop_Greater(
+                    ) [Relop_Greater]
+                    NonTernaryExpr_Regular(
+                      Term(
+                        Factor_NumConst(
+                         0
+                        ) [Factor_NumConst]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [NonTernaryExpr_Regular]
+                  ) [CondFact_2]
+                  CondFactMore_Epsilon(
+                  ) [CondFactMore_Epsilon]
+                ) [CondTerm]
+                CondTermMore_Epsilon(
+                ) [CondTermMore_Epsilon]
+              ) [Condition]
+              Expr_NonTernary(
+                NonTernaryExpr_Regular(
+                  Term(
+                    Factor_CharConst(
+                     v
+                    ) [Factor_CharConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [NonTernaryExpr_Regular]
+              ) [Expr_NonTernary]
+              Expr_NonTernary(
+                NonTernaryExpr_Regular(
+                  Term(
+                    Factor_CharConst(
+                     m
+                    ) [Factor_CharConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [NonTernaryExpr_Regular]
+              ) [Expr_NonTernary]
+            ) [Expr_Ternary]
+            Statement_PrintNumConst_Epsilon(
+            ) [Statement_PrintNumConst_Epsilon]
+          ) [Statement_Print]
+          StatementList_Epsilon(
+          ) [StatementList_Epsilon]
+        ) [StatementList_More]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  19:14:26,390 - =====================================================================
+ERROR 19:14:26,398 - Pristup lokalnoj promenljivoj: i na liniji 9
+ERROR 19:14:26,398 - Pristup konstanti nabrajanja: JEDAN na liniji 9
+ERROR 19:14:26,398 - Pristup lokalnoj promenljivoj: i na liniji 10
+INFO  19:14:26,398 - =====================================================================
+INFO  19:14:26,401 - Parsiranje uspesno zavrseno!

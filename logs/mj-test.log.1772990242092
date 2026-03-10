@@ -1,0 +1,150 @@
+INFO  18:16:24,562 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:16:24,618 - #2 program
+INFO  18:16:24,618 - #41 test302
+INFO  18:16:24,618 - #50 enum
+INFO  18:16:24,619 - #41 Broj
+INFO  18:16:24,620 - #37 {
+INFO  18:16:24,620 - #41 NULA
+INFO  18:16:24,620 - #33 ,
+INFO  18:16:24,621 - #41 JEDAN
+INFO  18:16:24,622 - #33 ,
+INFO  18:16:24,622 - #41 DVA
+INFO  18:16:24,622 - #38 }
+INFO  18:16:24,623 - #41 int
+INFO  18:16:24,623 - #41 niz
+INFO  18:16:24,626 - #40 [
+INFO  18:16:24,626 - #39 ]
+INFO  18:16:24,626 - #31 ;
+INFO  18:16:24,627 - #37 {
+INFO  18:16:24,628 - #5 void
+INFO  18:16:24,628 - #41 main
+INFO  18:16:24,628 - #35 (
+INFO  18:16:24,629 - #36 )
+INFO  18:16:24,631 - #37 {
+INFO  18:16:24,638 - #41 niz
+INFO  18:16:24,638 - #17 =
+INFO  18:16:24,638 - #7 new
+INFO  18:16:24,639 - #41 int
+INFO  18:16:24,639 - #40 [
+INFO  18:16:24,639 - #41 Broj
+INFO  18:16:24,639 - #34 .
+INFO  18:16:24,640 - #41 DVA
+INFO  18:16:24,640 - #39 ]
+INFO  18:16:24,643 - #31 ;
+INFO  18:16:24,644 - #38 }
+INFO  18:16:24,645 - #38 }
+INFO  18:16:24,648 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclEnumList_Var(
+    ConstVarDeclEnumList_Enum(
+      ConstVarDeclEnumList_Epsilon(
+      ) [ConstVarDeclEnumList_Epsilon]
+      EnumDecl(
+        EnumBegin(
+         Broj
+        ) [EnumBegin]
+        EnumConst(
+         NULA
+          EnumNumConst_Epsilon(
+          ) [EnumNumConst_Epsilon]
+        ) [EnumConst]
+        EnumConstMore_Yes(
+          EnumConst(
+           JEDAN
+            EnumNumConst_Epsilon(
+            ) [EnumNumConst_Epsilon]
+          ) [EnumConst]
+          EnumConstMore_Yes(
+            EnumConst(
+             DVA
+              EnumNumConst_Epsilon(
+              ) [EnumNumConst_Epsilon]
+            ) [EnumConst]
+            EnumConstMore_Epsilon(
+            ) [EnumConstMore_Epsilon]
+          ) [EnumConstMore_Yes]
+        ) [EnumConstMore_Yes]
+      ) [EnumDecl]
+    ) [ConstVarDeclEnumList_Enum]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Array(
+       niz
+      ) [VarDecl_Array]
+      VarDeclMore_Semi(
+      ) [VarDeclMore_Semi]
+    ) [VarDeclList]
+  ) [ConstVarDeclEnumList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_Assign(
+            Designator_Regular(
+             niz
+            ) [Designator_Regular]
+            Assignop(
+            ) [Assignop]
+            Expr_NonTernary(
+              NonTernaryExpr_Regular(
+                Term(
+                  Factor_New(
+                    Type(
+                     int
+                    ) [Type]
+                    Expr_NonTernary(
+                      NonTernaryExpr_Regular(
+                        Term(
+                          Factor_Var(
+                            Designator_Suffix(
+                              DesignatorName(
+                               Broj
+                              ) [DesignatorName]
+                              Designator_Enum(
+                               DVA
+                              ) [Designator_Enum]
+                            ) [Designator_Suffix]
+                          ) [Factor_Var]
+                          FactorMore_Epsilon(
+                          ) [FactorMore_Epsilon]
+                        ) [Term]
+                        ExprAddopTerms_Epsilon(
+                        ) [ExprAddopTerms_Epsilon]
+                      ) [NonTernaryExpr_Regular]
+                    ) [Expr_NonTernary]
+                  ) [Factor_New]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [NonTernaryExpr_Regular]
+            ) [Expr_NonTernary]
+          ) [DesignatorStatement_Assign]
+        ) [Statement_Designator]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:16:24,648 - =====================================================================
+ERROR 18:16:24,659 - Pristup globalnoj promenljivoj: niz na liniji 12
+ERROR 18:16:24,659 - Pristup konstanti nabrajanja: DVA na liniji 12
+INFO  18:16:24,660 - =====================================================================
+INFO  18:16:24,663 - Parsiranje uspesno zavrseno!

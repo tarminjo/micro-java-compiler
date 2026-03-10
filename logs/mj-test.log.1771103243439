@@ -1,0 +1,261 @@
+INFO  22:03:36,413 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  22:03:36,462 - #2 program
+INFO  22:03:36,462 - #43 Tarmi
+INFO  22:03:36,462 - #6 const
+INFO  22:03:36,464 - #43 int
+INFO  22:03:36,464 - #43 pi
+INFO  22:03:36,465 - #19 =
+INFO  22:03:36,465 - #44 3
+INFO  22:03:36,465 - #33 ;
+INFO  22:03:36,467 - #43 int
+INFO  22:03:36,468 - #43 x
+INFO  22:03:36,468 - #35 ,
+INFO  22:03:36,469 - #43 y
+INFO  22:03:36,469 - #42 [
+INFO  22:03:36,469 - #41 ]
+INFO  22:03:36,469 - #33 ;
+INFO  22:03:36,471 - #39 {
+INFO  22:03:36,472 - #5 void
+INFO  22:03:36,472 - #43 main
+INFO  22:03:36,472 - #37 (
+INFO  22:03:36,472 - #38 )
+INFO  22:03:36,473 - #43 int
+INFO  22:03:36,474 - #43 a
+INFO  22:03:36,479 - #35 ,
+INFO  22:03:36,479 - #43 b
+INFO  22:03:36,479 - #33 ;
+INFO  22:03:36,479 - #43 char
+INFO  22:03:36,479 - #43 carr
+INFO  22:03:36,480 - #42 [
+INFO  22:03:36,480 - #41 ]
+INFO  22:03:36,480 - #33 ;
+INFO  22:03:36,480 - #39 {
+INFO  22:03:36,481 - #43 carr
+INFO  22:03:36,481 - #19 =
+INFO  22:03:36,481 - #7 new
+INFO  22:03:36,483 - #43 char
+INFO  22:03:36,483 - #42 [
+INFO  22:03:36,483 - #44 2
+INFO  22:03:36,483 - #41 ]
+INFO  22:03:36,486 - #33 ;
+INFO  22:03:36,486 - #43 carr
+INFO  22:03:36,487 - #42 [
+INFO  22:03:36,488 - #44 1
+INFO  22:03:36,488 - #41 ]
+INFO  22:03:36,488 - #19 =
+INFO  22:03:36,489 - #46 a
+INFO  22:03:36,489 - #33 ;
+INFO  22:03:36,489 - #43 a
+INFO  22:03:36,489 - #19 =
+INFO  22:03:36,490 - #44 5
+INFO  22:03:36,490 - #33 ;
+INFO  22:03:36,490 - #3 print
+INFO  22:03:36,490 - #37 (
+INFO  22:03:36,490 - #43 a
+INFO  22:03:36,490 - #38 )
+INFO  22:03:36,492 - #33 ;
+INFO  22:03:36,492 - #40 }
+INFO  22:03:36,494 - #40 }
+INFO  22:03:36,497 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Regular(
+       x
+      ) [VarDecl_Regular]
+      VarDeclMore_Comma(
+        VarDecl_Array(
+         y
+        ) [VarDecl_Array]
+        VarDeclMore_Semi(
+        ) [VarDeclMore_Semi]
+      ) [VarDeclMore_Comma]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           a
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             b
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Yes(
+          VarDeclList(
+            Type(
+             char
+            ) [Type]
+            VarDecl_Array(
+             carr
+            ) [VarDecl_Array]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclList]
+          MethodDeclVarDeclList_Epsilon(
+          ) [MethodDeclVarDeclList_Epsilon]
+        ) [MethodDeclVarDeclList_Yes]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Designator(
+          DesignatorStatement_Assign(
+            Designator_Regular(
+             carr
+            ) [Designator_Regular]
+            Assignop(
+            ) [Assignop]
+            Expr_Regular(
+              Term(
+                Factor_New(
+                  Type(
+                   char
+                  ) [Type]
+                  Expr_Regular(
+                    Term(
+                      Factor_NumConst(
+                       2
+                      ) [Factor_NumConst]
+                      FactorMore_Epsilon(
+                      ) [FactorMore_Epsilon]
+                    ) [Term]
+                    ExprAddopTerms_Epsilon(
+                    ) [ExprAddopTerms_Epsilon]
+                  ) [Expr_Regular]
+                ) [Factor_New]
+                FactorMore_Epsilon(
+                ) [FactorMore_Epsilon]
+              ) [Term]
+              ExprAddopTerms_Epsilon(
+              ) [ExprAddopTerms_Epsilon]
+            ) [Expr_Regular]
+          ) [DesignatorStatement_Assign]
+        ) [Statement_Designator]
+        StatementList_More(
+          Statement_Designator(
+            DesignatorStatement_Assign(
+              Designator_Array(
+                DesignatorArrayName(
+                 carr
+                ) [DesignatorArrayName]
+                Expr_Regular(
+                  Term(
+                    Factor_NumConst(
+                     1
+                    ) [Factor_NumConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [Expr_Regular]
+              ) [Designator_Array]
+              Assignop(
+              ) [Assignop]
+              Expr_Regular(
+                Term(
+                  Factor_CharConst(
+                   a
+                  ) [Factor_CharConst]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [Expr_Regular]
+            ) [DesignatorStatement_Assign]
+          ) [Statement_Designator]
+          StatementList_More(
+            Statement_Designator(
+              DesignatorStatement_Assign(
+                Designator_Regular(
+                 a
+                ) [Designator_Regular]
+                Assignop(
+                ) [Assignop]
+                Expr_Regular(
+                  Term(
+                    Factor_NumConst(
+                     5
+                    ) [Factor_NumConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [Expr_Regular]
+              ) [DesignatorStatement_Assign]
+            ) [Statement_Designator]
+            StatementList_More(
+              Statement_Print(
+                Expr_Regular(
+                  Term(
+                    Factor_Var(
+                      Designator_Regular(
+                       a
+                      ) [Designator_Regular]
+                    ) [Factor_Var]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [Expr_Regular]
+                Statement_PrintNumConst_Epsilon(
+                ) [Statement_PrintNumConst_Epsilon]
+              ) [Statement_Print]
+              StatementList_Epsilon(
+              ) [StatementList_Epsilon]
+            ) [StatementList_More]
+          ) [StatementList_More]
+        ) [StatementList_More]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  22:03:36,497 - =====================================================================
+ERROR 22:03:36,510 - Pristup lokalnoj promenljivoj: carr na liniji 8
+ERROR 22:03:36,511 - Pristup elementu niza: carr na liniji 9
+ERROR 22:03:36,511 - Pristup lokalnoj promenljivoj: a na liniji 10
+ERROR 22:03:36,511 - Pristup lokalnoj promenljivoj: a na liniji 11
+INFO  22:03:36,511 - =====================================================================
+INFO  22:03:36,516 - Parsiranje uspesno zavrseno!

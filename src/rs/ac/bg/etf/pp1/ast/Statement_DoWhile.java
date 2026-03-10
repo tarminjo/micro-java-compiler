@@ -1,6 +1,6 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/7/2025 19:28:40
+// 10/2/2026 16:37:22
 
 
 package rs.ac.bg.etf.pp1.ast;
@@ -9,13 +9,16 @@ public class Statement_DoWhile extends Statement {
 
     private DoNonterm DoNonterm;
     private Statement Statement;
+    private WhileNonTerm WhileNonTerm;
     private StatementDoWhileCond StatementDoWhileCond;
 
-    public Statement_DoWhile (DoNonterm DoNonterm, Statement Statement, StatementDoWhileCond StatementDoWhileCond) {
+    public Statement_DoWhile (DoNonterm DoNonterm, Statement Statement, WhileNonTerm WhileNonTerm, StatementDoWhileCond StatementDoWhileCond) {
         this.DoNonterm=DoNonterm;
         if(DoNonterm!=null) DoNonterm.setParent(this);
         this.Statement=Statement;
         if(Statement!=null) Statement.setParent(this);
+        this.WhileNonTerm=WhileNonTerm;
+        if(WhileNonTerm!=null) WhileNonTerm.setParent(this);
         this.StatementDoWhileCond=StatementDoWhileCond;
         if(StatementDoWhileCond!=null) StatementDoWhileCond.setParent(this);
     }
@@ -36,6 +39,14 @@ public class Statement_DoWhile extends Statement {
         this.Statement=Statement;
     }
 
+    public WhileNonTerm getWhileNonTerm() {
+        return WhileNonTerm;
+    }
+
+    public void setWhileNonTerm(WhileNonTerm WhileNonTerm) {
+        this.WhileNonTerm=WhileNonTerm;
+    }
+
     public StatementDoWhileCond getStatementDoWhileCond() {
         return StatementDoWhileCond;
     }
@@ -51,6 +62,7 @@ public class Statement_DoWhile extends Statement {
     public void childrenAccept(Visitor visitor) {
         if(DoNonterm!=null) DoNonterm.accept(visitor);
         if(Statement!=null) Statement.accept(visitor);
+        if(WhileNonTerm!=null) WhileNonTerm.accept(visitor);
         if(StatementDoWhileCond!=null) StatementDoWhileCond.accept(visitor);
     }
 
@@ -58,12 +70,14 @@ public class Statement_DoWhile extends Statement {
         accept(visitor);
         if(DoNonterm!=null) DoNonterm.traverseTopDown(visitor);
         if(Statement!=null) Statement.traverseTopDown(visitor);
+        if(WhileNonTerm!=null) WhileNonTerm.traverseTopDown(visitor);
         if(StatementDoWhileCond!=null) StatementDoWhileCond.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
         if(DoNonterm!=null) DoNonterm.traverseBottomUp(visitor);
         if(Statement!=null) Statement.traverseBottomUp(visitor);
+        if(WhileNonTerm!=null) WhileNonTerm.traverseBottomUp(visitor);
         if(StatementDoWhileCond!=null) StatementDoWhileCond.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -81,6 +95,12 @@ public class Statement_DoWhile extends Statement {
 
         if(Statement!=null)
             buffer.append(Statement.toString("  "+tab));
+        else
+            buffer.append(tab+"  null");
+        buffer.append("\n");
+
+        if(WhileNonTerm!=null)
+            buffer.append(WhileNonTerm.toString("  "+tab));
         else
             buffer.append(tab+"  null");
         buffer.append("\n");

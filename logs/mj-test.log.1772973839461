@@ -1,0 +1,2163 @@
+INFO  13:39:30,946 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  13:39:30,981 - #2 program
+INFO  13:39:30,981 - #41 Prog
+INFO  13:39:30,981 - #6 const
+INFO  13:39:30,982 - #41 int
+INFO  13:39:30,982 - #41 CI
+INFO  13:39:30,982 - #17 =
+INFO  13:39:30,983 - #42 3
+INFO  13:39:30,983 - #31 ;
+INFO  13:39:30,985 - #6 const
+INFO  13:39:30,985 - #41 bool
+INFO  13:39:30,985 - #41 CB
+INFO  13:39:30,986 - #17 =
+INFO  13:39:30,986 - #43 1
+INFO  13:39:30,986 - #31 ;
+INFO  13:39:30,986 - #50 enum
+INFO  13:39:30,986 - #41 Tip
+INFO  13:39:30,986 - #37 {
+INFO  13:39:30,987 - #41 NULA
+INFO  13:39:30,987 - #33 ,
+INFO  13:39:30,988 - #41 JEDAN
+INFO  13:39:30,988 - #33 ,
+INFO  13:39:30,988 - #41 PET
+INFO  13:39:30,990 - #17 =
+INFO  13:39:30,990 - #42 5
+INFO  13:39:30,990 - #33 ,
+INFO  13:39:30,990 - #41 DESET
+INFO  13:39:30,990 - #17 =
+INFO  13:39:30,990 - #42 10
+INFO  13:39:30,990 - #38 }
+INFO  13:39:30,991 - #50 enum
+INFO  13:39:30,992 - #41 Tip2
+INFO  13:39:30,992 - #37 {
+INFO  13:39:30,992 - #41 GAS
+INFO  13:39:30,992 - #33 ,
+INFO  13:39:30,992 - #41 JEDAN
+INFO  13:39:30,992 - #33 ,
+INFO  13:39:30,992 - #41 PET
+INFO  13:39:30,993 - #17 =
+INFO  13:39:30,993 - #42 5
+INFO  13:39:30,993 - #33 ,
+INFO  13:39:30,993 - #41 DESET
+INFO  13:39:30,993 - #17 =
+INFO  13:39:30,993 - #42 10
+INFO  13:39:30,993 - #38 }
+INFO  13:39:30,993 - #41 Tip
+INFO  13:39:30,993 - #41 e1
+INFO  13:39:30,993 - #33 ,
+INFO  13:39:30,993 - #41 e2
+INFO  13:39:30,993 - #31 ;
+INFO  13:39:30,994 - #41 int
+INFO  13:39:30,995 - #41 i1
+INFO  13:39:30,995 - #33 ,
+INFO  13:39:30,995 - #41 i2
+INFO  13:39:30,995 - #31 ;
+INFO  13:39:30,995 - #41 bool
+INFO  13:39:30,995 - #41 b1
+INFO  13:39:30,995 - #31 ;
+INFO  13:39:30,995 - #37 {
+INFO  13:39:30,995 - #41 Tip
+INFO  13:39:30,995 - #41 vratiEnum
+INFO  13:39:30,995 - #35 (
+INFO  13:39:30,995 - #36 )
+INFO  13:39:30,997 - #37 {
+INFO  13:39:30,997 - #4 return
+INFO  13:39:30,998 - #41 Tip
+INFO  13:39:30,998 - #34 .
+INFO  13:39:30,998 - #41 PET
+INFO  13:39:30,998 - #31 ;
+INFO  13:39:31,000 - #38 }
+INFO  13:39:31,001 - #41 int
+INFO  13:39:31,003 - #41 vratiInt
+INFO  13:39:31,004 - #35 (
+INFO  13:39:31,004 - #36 )
+INFO  13:39:31,004 - #37 {
+INFO  13:39:31,004 - #4 return
+INFO  13:39:31,004 - #42 7
+INFO  13:39:31,004 - #31 ;
+INFO  13:39:31,004 - #38 }
+INFO  13:39:31,004 - #41 int
+INFO  13:39:31,004 - #41 primiInt
+INFO  13:39:31,004 - #35 (
+INFO  13:39:31,004 - #41 int
+INFO  13:39:31,004 - #41 x
+INFO  13:39:31,004 - #36 )
+INFO  13:39:31,005 - #37 {
+INFO  13:39:31,005 - #4 return
+INFO  13:39:31,005 - #41 x
+INFO  13:39:31,005 - #15 +
+INFO  13:39:31,005 - #42 1
+INFO  13:39:31,006 - #31 ;
+INFO  13:39:31,006 - #38 }
+INFO  13:39:31,006 - #41 Tip
+INFO  13:39:31,006 - #41 primiEnum
+INFO  13:39:31,006 - #35 (
+INFO  13:39:31,006 - #41 Tip
+INFO  13:39:31,006 - #41 x
+INFO  13:39:31,006 - #36 )
+INFO  13:39:31,006 - #37 {
+INFO  13:39:31,006 - #4 return
+INFO  13:39:31,006 - #41 x
+INFO  13:39:31,006 - #31 ;
+INFO  13:39:31,006 - #38 }
+INFO  13:39:31,006 - #5 void
+INFO  13:39:31,007 - #41 main
+INFO  13:39:31,007 - #35 (
+INFO  13:39:31,007 - #36 )
+INFO  13:39:31,007 - #41 int
+INFO  13:39:31,007 - #41 arrInt
+INFO  13:39:31,007 - #40 [
+INFO  13:39:31,007 - #39 ]
+INFO  13:39:31,007 - #31 ;
+INFO  13:39:31,007 - #41 Tip
+INFO  13:39:31,007 - #41 arrEnum
+INFO  13:39:31,007 - #40 [
+INFO  13:39:31,007 - #39 ]
+INFO  13:39:31,007 - #31 ;
+INFO  13:39:31,007 - #37 {
+INFO  13:39:31,008 - #41 e1
+INFO  13:39:31,008 - #17 =
+INFO  13:39:31,008 - #41 Tip
+INFO  13:39:31,008 - #34 .
+INFO  13:39:31,008 - #41 JEDAN
+INFO  13:39:31,008 - #31 ;
+INFO  13:39:31,010 - #41 e1
+INFO  13:39:31,010 - #17 =
+INFO  13:39:31,010 - #41 e1
+INFO  13:39:31,010 - #31 ;
+INFO  13:39:31,010 - #41 e2
+INFO  13:39:31,010 - #17 =
+INFO  13:39:31,010 - #41 Tip
+INFO  13:39:31,010 - #34 .
+INFO  13:39:31,010 - #41 DESET
+INFO  13:39:31,010 - #31 ;
+INFO  13:39:31,010 - #41 i1
+INFO  13:39:31,010 - #17 =
+INFO  13:39:31,010 - #42 5
+INFO  13:39:31,010 - #31 ;
+INFO  13:39:31,010 - #41 i1
+INFO  13:39:31,010 - #17 =
+INFO  13:39:31,010 - #41 Tip
+INFO  13:39:31,010 - #34 .
+INFO  13:39:31,010 - #41 JEDAN
+INFO  13:39:31,010 - #31 ;
+INFO  13:39:31,010 - #41 i1
+INFO  13:39:31,010 - #17 =
+INFO  13:39:31,010 - #41 e1
+INFO  13:39:31,010 - #31 ;
+INFO  13:39:31,011 - #41 e1
+INFO  13:39:31,011 - #17 =
+INFO  13:39:31,011 - #41 vratiEnum
+INFO  13:39:31,011 - #35 (
+INFO  13:39:31,011 - #36 )
+INFO  13:39:31,011 - #31 ;
+INFO  13:39:31,012 - #41 i1
+INFO  13:39:31,012 - #17 =
+INFO  13:39:31,012 - #41 Tip
+INFO  13:39:31,012 - #34 .
+INFO  13:39:31,012 - #41 JEDAN
+INFO  13:39:31,012 - #15 +
+INFO  13:39:31,012 - #42 2
+INFO  13:39:31,012 - #31 ;
+INFO  13:39:31,012 - #41 i1
+INFO  13:39:31,012 - #17 =
+INFO  13:39:31,012 - #41 Tip
+INFO  13:39:31,012 - #34 .
+INFO  13:39:31,012 - #41 JEDAN
+INFO  13:39:31,012 - #20 *
+INFO  13:39:31,012 - #41 Tip
+INFO  13:39:31,013 - #34 .
+INFO  13:39:31,013 - #41 PET
+INFO  13:39:31,013 - #31 ;
+INFO  13:39:31,013 - #41 i1
+INFO  13:39:31,013 - #17 =
+INFO  13:39:31,013 - #41 Tip
+INFO  13:39:31,013 - #34 .
+INFO  13:39:31,013 - #41 DESET
+INFO  13:39:31,013 - #15 +
+INFO  13:39:31,013 - #41 Tip2
+INFO  13:39:31,013 - #34 .
+INFO  13:39:31,013 - #41 PET
+INFO  13:39:31,013 - #31 ;
+INFO  13:39:31,013 - #41 i1
+INFO  13:39:31,013 - #17 =
+INFO  13:39:31,013 - #41 i1
+INFO  13:39:31,013 - #15 +
+INFO  13:39:31,015 - #41 Tip
+INFO  13:39:31,015 - #34 .
+INFO  13:39:31,015 - #41 JEDAN
+INFO  13:39:31,015 - #31 ;
+INFO  13:39:31,015 - #41 i1
+INFO  13:39:31,015 - #17 =
+INFO  13:39:31,015 - #42 2
+INFO  13:39:31,015 - #20 *
+INFO  13:39:31,015 - #41 Tip
+INFO  13:39:31,015 - #34 .
+INFO  13:39:31,015 - #41 PET
+INFO  13:39:31,015 - #15 +
+INFO  13:39:31,015 - #42 3
+INFO  13:39:31,015 - #31 ;
+INFO  13:39:31,015 - #41 i1
+INFO  13:39:31,015 - #17 =
+INFO  13:39:31,015 - #41 e1
+INFO  13:39:31,015 - #15 +
+INFO  13:39:31,015 - #42 1
+INFO  13:39:31,015 - #31 ;
+INFO  13:39:31,015 - #41 i1
+INFO  13:39:31,015 - #17 =
+INFO  13:39:31,015 - #41 e1
+INFO  13:39:31,015 - #20 *
+INFO  13:39:31,015 - #41 e2
+INFO  13:39:31,015 - #31 ;
+INFO  13:39:31,015 - #41 i1
+INFO  13:39:31,016 - #17 =
+INFO  13:39:31,016 - #41 primiInt
+INFO  13:39:31,016 - #35 (
+INFO  13:39:31,016 - #41 Tip
+INFO  13:39:31,016 - #34 .
+INFO  13:39:31,016 - #41 JEDAN
+INFO  13:39:31,016 - #36 )
+INFO  13:39:31,017 - #31 ;
+INFO  13:39:31,017 - #41 i1
+INFO  13:39:31,017 - #17 =
+INFO  13:39:31,017 - #41 primiInt
+INFO  13:39:31,017 - #35 (
+INFO  13:39:31,017 - #41 e1
+INFO  13:39:31,017 - #36 )
+INFO  13:39:31,017 - #31 ;
+INFO  13:39:31,017 - #41 primiEnum
+INFO  13:39:31,017 - #35 (
+INFO  13:39:31,017 - #41 Tip
+INFO  13:39:31,017 - #34 .
+INFO  13:39:31,017 - #41 JEDAN
+INFO  13:39:31,017 - #36 )
+INFO  13:39:31,018 - #31 ;
+INFO  13:39:31,018 - #41 primiEnum
+INFO  13:39:31,018 - #35 (
+INFO  13:39:31,018 - #41 e1
+INFO  13:39:31,018 - #36 )
+INFO  13:39:31,018 - #31 ;
+INFO  13:39:31,018 - #41 i1
+INFO  13:39:31,018 - #17 =
+INFO  13:39:31,018 - #41 vratiEnum
+INFO  13:39:31,018 - #35 (
+INFO  13:39:31,018 - #36 )
+INFO  13:39:31,018 - #31 ;
+INFO  13:39:31,018 - #41 e1
+INFO  13:39:31,018 - #17 =
+INFO  13:39:31,018 - #41 vratiEnum
+INFO  13:39:31,018 - #35 (
+INFO  13:39:31,018 - #36 )
+INFO  13:39:31,018 - #31 ;
+INFO  13:39:31,018 - #41 i1
+INFO  13:39:31,018 - #17 =
+INFO  13:39:31,018 - #41 vratiEnum
+INFO  13:39:31,018 - #35 (
+INFO  13:39:31,018 - #36 )
+INFO  13:39:31,018 - #15 +
+INFO  13:39:31,018 - #42 3
+INFO  13:39:31,019 - #31 ;
+INFO  13:39:31,019 - #41 i1
+INFO  13:39:31,019 - #17 =
+INFO  13:39:31,019 - #41 primiInt
+INFO  13:39:31,019 - #35 (
+INFO  13:39:31,019 - #41 vratiEnum
+INFO  13:39:31,019 - #35 (
+INFO  13:39:31,019 - #36 )
+INFO  13:39:31,019 - #36 )
+INFO  13:39:31,019 - #31 ;
+INFO  13:39:31,019 - #41 arrInt
+INFO  13:39:31,019 - #17 =
+INFO  13:39:31,019 - #7 new
+INFO  13:39:31,019 - #41 int
+INFO  13:39:31,019 - #40 [
+INFO  13:39:31,019 - #41 Tip
+INFO  13:39:31,019 - #34 .
+INFO  13:39:31,019 - #41 PET
+INFO  13:39:31,019 - #39 ]
+INFO  13:39:31,019 - #31 ;
+INFO  13:39:31,020 - #41 arrEnum
+INFO  13:39:31,020 - #17 =
+INFO  13:39:31,020 - #7 new
+INFO  13:39:31,020 - #41 Tip
+INFO  13:39:31,020 - #40 [
+INFO  13:39:31,020 - #41 Tip2
+INFO  13:39:31,020 - #34 .
+INFO  13:39:31,020 - #41 PET
+INFO  13:39:31,020 - #39 ]
+INFO  13:39:31,020 - #31 ;
+INFO  13:39:31,020 - #41 arrInt
+INFO  13:39:31,020 - #40 [
+INFO  13:39:31,020 - #41 Tip
+INFO  13:39:31,020 - #34 .
+INFO  13:39:31,020 - #41 JEDAN
+INFO  13:39:31,020 - #39 ]
+INFO  13:39:31,020 - #17 =
+INFO  13:39:31,020 - #42 5
+INFO  13:39:31,020 - #31 ;
+INFO  13:39:31,020 - #41 arrInt
+INFO  13:39:31,020 - #40 [
+INFO  13:39:31,020 - #41 Tip
+INFO  13:39:31,020 - #34 .
+INFO  13:39:31,020 - #41 PET
+INFO  13:39:31,020 - #15 +
+INFO  13:39:31,020 - #42 2
+INFO  13:39:31,020 - #39 ]
+INFO  13:39:31,020 - #17 =
+INFO  13:39:31,020 - #42 1
+INFO  13:39:31,020 - #31 ;
+INFO  13:39:31,020 - #41 arrInt
+INFO  13:39:31,020 - #40 [
+INFO  13:39:31,020 - #41 e1
+INFO  13:39:31,020 - #39 ]
+INFO  13:39:31,020 - #17 =
+INFO  13:39:31,021 - #42 3
+INFO  13:39:31,021 - #31 ;
+INFO  13:39:31,021 - #41 arrEnum
+INFO  13:39:31,021 - #40 [
+INFO  13:39:31,021 - #42 1
+INFO  13:39:31,021 - #39 ]
+INFO  13:39:31,021 - #17 =
+INFO  13:39:31,021 - #41 Tip
+INFO  13:39:31,021 - #34 .
+INFO  13:39:31,021 - #41 JEDAN
+INFO  13:39:31,021 - #31 ;
+INFO  13:39:31,021 - #41 arrEnum
+INFO  13:39:31,021 - #40 [
+INFO  13:39:31,021 - #41 Tip
+INFO  13:39:31,021 - #34 .
+INFO  13:39:31,021 - #41 JEDAN
+INFO  13:39:31,021 - #39 ]
+INFO  13:39:31,021 - #17 =
+INFO  13:39:31,021 - #41 Tip
+INFO  13:39:31,021 - #34 .
+INFO  13:39:31,021 - #41 NULA
+INFO  13:39:31,021 - #31 ;
+INFO  13:39:31,021 - #41 i2
+INFO  13:39:31,021 - #17 =
+INFO  13:39:31,021 - #35 (
+INFO  13:39:31,021 - #41 Tip2
+INFO  13:39:31,021 - #34 .
+INFO  13:39:31,022 - #41 PET
+INFO  13:39:31,022 - #15 +
+INFO  13:39:31,022 - #41 Tip
+INFO  13:39:31,022 - #34 .
+INFO  13:39:31,022 - #41 PET
+INFO  13:39:31,022 - #36 )
+INFO  13:39:31,022 - #20 *
+INFO  13:39:31,022 - #42 2
+INFO  13:39:31,022 - #15 +
+INFO  13:39:31,022 - #42 3
+INFO  13:39:31,022 - #20 *
+INFO  13:39:31,022 - #41 Tip
+INFO  13:39:31,022 - #34 .
+INFO  13:39:31,022 - #41 DESET
+INFO  13:39:31,022 - #31 ;
+INFO  13:39:31,022 - #41 i2
+INFO  13:39:31,022 - #17 =
+INFO  13:39:31,022 - #35 (
+INFO  13:39:31,022 - #41 Tip
+INFO  13:39:31,022 - #34 .
+INFO  13:39:31,022 - #41 PET
+INFO  13:39:31,022 - #15 +
+INFO  13:39:31,022 - #41 e1
+INFO  13:39:31,022 - #36 )
+INFO  13:39:31,022 - #20 *
+INFO  13:39:31,022 - #42 2
+INFO  13:39:31,022 - #31 ;
+INFO  13:39:31,022 - #38 }
+INFO  13:39:31,023 - #38 }
+INFO  13:39:31,032 - Program(
+  ProgramName(
+   Prog
+  ) [ProgramName]
+  ConstVarDeclEnumList_Var(
+    ConstVarDeclEnumList_Var(
+      ConstVarDeclEnumList_Var(
+        ConstVarDeclEnumList_Enum(
+          ConstVarDeclEnumList_Enum(
+            ConstVarDeclEnumList_Const(
+              ConstVarDeclEnumList_Const(
+                ConstVarDeclEnumList_Epsilon(
+                ) [ConstVarDeclEnumList_Epsilon]
+                ConstDeclList(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDecl(
+                   CI
+                    Constant_Number(
+                     3
+                    ) [Constant_Number]
+                  ) [ConstDecl]
+                  ConstDeclMore_Epsilon(
+                  ) [ConstDeclMore_Epsilon]
+                ) [ConstDeclList]
+              ) [ConstVarDeclEnumList_Const]
+              ConstDeclList(
+                Type(
+                 bool
+                ) [Type]
+                ConstDecl(
+                 CB
+                  Constant_Bool(
+                   1
+                  ) [Constant_Bool]
+                ) [ConstDecl]
+                ConstDeclMore_Epsilon(
+                ) [ConstDeclMore_Epsilon]
+              ) [ConstDeclList]
+            ) [ConstVarDeclEnumList_Const]
+            EnumDecl(
+              EnumBegin(
+               Tip
+              ) [EnumBegin]
+              EnumConst(
+               NULA
+                EnumNumConst_Epsilon(
+                ) [EnumNumConst_Epsilon]
+              ) [EnumConst]
+              EnumConstMore_Yes(
+                EnumConst(
+                 JEDAN
+                  EnumNumConst_Epsilon(
+                  ) [EnumNumConst_Epsilon]
+                ) [EnumConst]
+                EnumConstMore_Yes(
+                  EnumConst(
+                   PET
+                    EnumNumConst_Yes(
+                     5
+                    ) [EnumNumConst_Yes]
+                  ) [EnumConst]
+                  EnumConstMore_Yes(
+                    EnumConst(
+                     DESET
+                      EnumNumConst_Yes(
+                       10
+                      ) [EnumNumConst_Yes]
+                    ) [EnumConst]
+                    EnumConstMore_Epsilon(
+                    ) [EnumConstMore_Epsilon]
+                  ) [EnumConstMore_Yes]
+                ) [EnumConstMore_Yes]
+              ) [EnumConstMore_Yes]
+            ) [EnumDecl]
+          ) [ConstVarDeclEnumList_Enum]
+          EnumDecl(
+            EnumBegin(
+             Tip2
+            ) [EnumBegin]
+            EnumConst(
+             GAS
+              EnumNumConst_Epsilon(
+              ) [EnumNumConst_Epsilon]
+            ) [EnumConst]
+            EnumConstMore_Yes(
+              EnumConst(
+               JEDAN
+                EnumNumConst_Epsilon(
+                ) [EnumNumConst_Epsilon]
+              ) [EnumConst]
+              EnumConstMore_Yes(
+                EnumConst(
+                 PET
+                  EnumNumConst_Yes(
+                   5
+                  ) [EnumNumConst_Yes]
+                ) [EnumConst]
+                EnumConstMore_Yes(
+                  EnumConst(
+                   DESET
+                    EnumNumConst_Yes(
+                     10
+                    ) [EnumNumConst_Yes]
+                  ) [EnumConst]
+                  EnumConstMore_Epsilon(
+                  ) [EnumConstMore_Epsilon]
+                ) [EnumConstMore_Yes]
+              ) [EnumConstMore_Yes]
+            ) [EnumConstMore_Yes]
+          ) [EnumDecl]
+        ) [ConstVarDeclEnumList_Enum]
+        VarDeclList(
+          Type(
+           Tip
+          ) [Type]
+          VarDecl_Regular(
+           e1
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             e2
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+      ) [ConstVarDeclEnumList_Var]
+      VarDeclList(
+        Type(
+         int
+        ) [Type]
+        VarDecl_Regular(
+         i1
+        ) [VarDecl_Regular]
+        VarDeclMore_Comma(
+          VarDecl_Regular(
+           i2
+          ) [VarDecl_Regular]
+          VarDeclMore_Semi(
+          ) [VarDeclMore_Semi]
+        ) [VarDeclMore_Comma]
+      ) [VarDeclList]
+    ) [ConstVarDeclEnumList_Var]
+    VarDeclList(
+      Type(
+       bool
+      ) [Type]
+      VarDecl_Regular(
+       b1
+      ) [VarDecl_Regular]
+      VarDeclMore_Semi(
+      ) [VarDeclMore_Semi]
+    ) [VarDeclList]
+  ) [ConstVarDeclEnumList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Type(
+          Type(
+           Tip
+          ) [Type]
+         vratiEnum
+        ) [MethodRetAndName_Type]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Return(
+          Statement_ReturnExpr_Yes(
+            Expr_NonTernary(
+              NonTernaryExpr_Regular(
+                Term(
+                  Factor_Var(
+                    Designator_Suffix(
+                      DesignatorName(
+                       Tip
+                      ) [DesignatorName]
+                      Designator_Enum(
+                       PET
+                      ) [Designator_Enum]
+                    ) [Designator_Suffix]
+                  ) [Factor_Var]
+                  FactorMore_Epsilon(
+                  ) [FactorMore_Epsilon]
+                ) [Term]
+                ExprAddopTerms_Epsilon(
+                ) [ExprAddopTerms_Epsilon]
+              ) [NonTernaryExpr_Regular]
+            ) [Expr_NonTernary]
+          ) [Statement_ReturnExpr_Yes]
+        ) [Statement_Return]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_More(
+      MethodDecl(
+        MethodSignature(
+          MethodRetAndName_Type(
+            Type(
+             int
+            ) [Type]
+           vratiInt
+          ) [MethodRetAndName_Type]
+          FormParsList_Epsilon(
+          ) [FormParsList_Epsilon]
+        ) [MethodSignature]
+        MethodDeclVarDeclList_Epsilon(
+        ) [MethodDeclVarDeclList_Epsilon]
+        StatementList_More(
+          Statement_Return(
+            Statement_ReturnExpr_Yes(
+              Expr_NonTernary(
+                NonTernaryExpr_Regular(
+                  Term(
+                    Factor_NumConst(
+                     7
+                    ) [Factor_NumConst]
+                    FactorMore_Epsilon(
+                    ) [FactorMore_Epsilon]
+                  ) [Term]
+                  ExprAddopTerms_Epsilon(
+                  ) [ExprAddopTerms_Epsilon]
+                ) [NonTernaryExpr_Regular]
+              ) [Expr_NonTernary]
+            ) [Statement_ReturnExpr_Yes]
+          ) [Statement_Return]
+          StatementList_Epsilon(
+          ) [StatementList_Epsilon]
+        ) [StatementList_More]
+      ) [MethodDecl]
+      MethodDeclList_More(
+        MethodDecl(
+          MethodSignature(
+            MethodRetAndName_Type(
+              Type(
+               int
+              ) [Type]
+             primiInt
+            ) [MethodRetAndName_Type]
+            FormParsList_Yes(
+              FormPars_Regular(
+                Type(
+                 int
+                ) [Type]
+               x
+              ) [FormPars_Regular]
+              FormParsMore_Epsilon(
+              ) [FormParsMore_Epsilon]
+            ) [FormParsList_Yes]
+          ) [MethodSignature]
+          MethodDeclVarDeclList_Epsilon(
+          ) [MethodDeclVarDeclList_Epsilon]
+          StatementList_More(
+            Statement_Return(
+              Statement_ReturnExpr_Yes(
+                Expr_NonTernary(
+                  NonTernaryExpr_Regular(
+                    Term(
+                      Factor_Var(
+                        Designator_Regular(
+                         x
+                        ) [Designator_Regular]
+                      ) [Factor_Var]
+                      FactorMore_Epsilon(
+                      ) [FactorMore_Epsilon]
+                    ) [Term]
+                    ExprAddopTerms_More(
+                      Addop_Plus(
+                      ) [Addop_Plus]
+                      Term(
+                        Factor_NumConst(
+                         1
+                        ) [Factor_NumConst]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [ExprAddopTerms_More]
+                  ) [NonTernaryExpr_Regular]
+                ) [Expr_NonTernary]
+              ) [Statement_ReturnExpr_Yes]
+            ) [Statement_Return]
+            StatementList_Epsilon(
+            ) [StatementList_Epsilon]
+          ) [StatementList_More]
+        ) [MethodDecl]
+        MethodDeclList_More(
+          MethodDecl(
+            MethodSignature(
+              MethodRetAndName_Type(
+                Type(
+                 Tip
+                ) [Type]
+               primiEnum
+              ) [MethodRetAndName_Type]
+              FormParsList_Yes(
+                FormPars_Regular(
+                  Type(
+                   Tip
+                  ) [Type]
+                 x
+                ) [FormPars_Regular]
+                FormParsMore_Epsilon(
+                ) [FormParsMore_Epsilon]
+              ) [FormParsList_Yes]
+            ) [MethodSignature]
+            MethodDeclVarDeclList_Epsilon(
+            ) [MethodDeclVarDeclList_Epsilon]
+            StatementList_More(
+              Statement_Return(
+                Statement_ReturnExpr_Yes(
+                  Expr_NonTernary(
+                    NonTernaryExpr_Regular(
+                      Term(
+                        Factor_Var(
+                          Designator_Regular(
+                           x
+                          ) [Designator_Regular]
+                        ) [Factor_Var]
+                        FactorMore_Epsilon(
+                        ) [FactorMore_Epsilon]
+                      ) [Term]
+                      ExprAddopTerms_Epsilon(
+                      ) [ExprAddopTerms_Epsilon]
+                    ) [NonTernaryExpr_Regular]
+                  ) [Expr_NonTernary]
+                ) [Statement_ReturnExpr_Yes]
+              ) [Statement_Return]
+              StatementList_Epsilon(
+              ) [StatementList_Epsilon]
+            ) [StatementList_More]
+          ) [MethodDecl]
+          MethodDeclList_More(
+            MethodDecl(
+              MethodSignature(
+                MethodRetAndName_Void(
+                 main
+                ) [MethodRetAndName_Void]
+                FormParsList_Epsilon(
+                ) [FormParsList_Epsilon]
+              ) [MethodSignature]
+              MethodDeclVarDeclList_Yes(
+                VarDeclList(
+                  Type(
+                   int
+                  ) [Type]
+                  VarDecl_Array(
+                   arrInt
+                  ) [VarDecl_Array]
+                  VarDeclMore_Semi(
+                  ) [VarDeclMore_Semi]
+                ) [VarDeclList]
+                MethodDeclVarDeclList_Yes(
+                  VarDeclList(
+                    Type(
+                     Tip
+                    ) [Type]
+                    VarDecl_Array(
+                     arrEnum
+                    ) [VarDecl_Array]
+                    VarDeclMore_Semi(
+                    ) [VarDeclMore_Semi]
+                  ) [VarDeclList]
+                  MethodDeclVarDeclList_Epsilon(
+                  ) [MethodDeclVarDeclList_Epsilon]
+                ) [MethodDeclVarDeclList_Yes]
+              ) [MethodDeclVarDeclList_Yes]
+              StatementList_More(
+                Statement_Designator(
+                  DesignatorStatement_Assign(
+                    Designator_Regular(
+                     e1
+                    ) [Designator_Regular]
+                    Assignop(
+                    ) [Assignop]
+                    Expr_NonTernary(
+                      NonTernaryExpr_Regular(
+                        Term(
+                          Factor_Var(
+                            Designator_Suffix(
+                              DesignatorName(
+                               Tip
+                              ) [DesignatorName]
+                              Designator_Enum(
+                               JEDAN
+                              ) [Designator_Enum]
+                            ) [Designator_Suffix]
+                          ) [Factor_Var]
+                          FactorMore_Epsilon(
+                          ) [FactorMore_Epsilon]
+                        ) [Term]
+                        ExprAddopTerms_Epsilon(
+                        ) [ExprAddopTerms_Epsilon]
+                      ) [NonTernaryExpr_Regular]
+                    ) [Expr_NonTernary]
+                  ) [DesignatorStatement_Assign]
+                ) [Statement_Designator]
+                StatementList_More(
+                  Statement_Designator(
+                    DesignatorStatement_Assign(
+                      Designator_Regular(
+                       e1
+                      ) [Designator_Regular]
+                      Assignop(
+                      ) [Assignop]
+                      Expr_NonTernary(
+                        NonTernaryExpr_Regular(
+                          Term(
+                            Factor_Var(
+                              Designator_Regular(
+                               e1
+                              ) [Designator_Regular]
+                            ) [Factor_Var]
+                            FactorMore_Epsilon(
+                            ) [FactorMore_Epsilon]
+                          ) [Term]
+                          ExprAddopTerms_Epsilon(
+                          ) [ExprAddopTerms_Epsilon]
+                        ) [NonTernaryExpr_Regular]
+                      ) [Expr_NonTernary]
+                    ) [DesignatorStatement_Assign]
+                  ) [Statement_Designator]
+                  StatementList_More(
+                    Statement_Designator(
+                      DesignatorStatement_Assign(
+                        Designator_Regular(
+                         e2
+                        ) [Designator_Regular]
+                        Assignop(
+                        ) [Assignop]
+                        Expr_NonTernary(
+                          NonTernaryExpr_Regular(
+                            Term(
+                              Factor_Var(
+                                Designator_Suffix(
+                                  DesignatorName(
+                                   Tip
+                                  ) [DesignatorName]
+                                  Designator_Enum(
+                                   DESET
+                                  ) [Designator_Enum]
+                                ) [Designator_Suffix]
+                              ) [Factor_Var]
+                              FactorMore_Epsilon(
+                              ) [FactorMore_Epsilon]
+                            ) [Term]
+                            ExprAddopTerms_Epsilon(
+                            ) [ExprAddopTerms_Epsilon]
+                          ) [NonTernaryExpr_Regular]
+                        ) [Expr_NonTernary]
+                      ) [DesignatorStatement_Assign]
+                    ) [Statement_Designator]
+                    StatementList_More(
+                      Statement_Designator(
+                        DesignatorStatement_Assign(
+                          Designator_Regular(
+                           i1
+                          ) [Designator_Regular]
+                          Assignop(
+                          ) [Assignop]
+                          Expr_NonTernary(
+                            NonTernaryExpr_Regular(
+                              Term(
+                                Factor_NumConst(
+                                 5
+                                ) [Factor_NumConst]
+                                FactorMore_Epsilon(
+                                ) [FactorMore_Epsilon]
+                              ) [Term]
+                              ExprAddopTerms_Epsilon(
+                              ) [ExprAddopTerms_Epsilon]
+                            ) [NonTernaryExpr_Regular]
+                          ) [Expr_NonTernary]
+                        ) [DesignatorStatement_Assign]
+                      ) [Statement_Designator]
+                      StatementList_More(
+                        Statement_Designator(
+                          DesignatorStatement_Assign(
+                            Designator_Regular(
+                             i1
+                            ) [Designator_Regular]
+                            Assignop(
+                            ) [Assignop]
+                            Expr_NonTernary(
+                              NonTernaryExpr_Regular(
+                                Term(
+                                  Factor_Var(
+                                    Designator_Suffix(
+                                      DesignatorName(
+                                       Tip
+                                      ) [DesignatorName]
+                                      Designator_Enum(
+                                       JEDAN
+                                      ) [Designator_Enum]
+                                    ) [Designator_Suffix]
+                                  ) [Factor_Var]
+                                  FactorMore_Epsilon(
+                                  ) [FactorMore_Epsilon]
+                                ) [Term]
+                                ExprAddopTerms_Epsilon(
+                                ) [ExprAddopTerms_Epsilon]
+                              ) [NonTernaryExpr_Regular]
+                            ) [Expr_NonTernary]
+                          ) [DesignatorStatement_Assign]
+                        ) [Statement_Designator]
+                        StatementList_More(
+                          Statement_Designator(
+                            DesignatorStatement_Assign(
+                              Designator_Regular(
+                               i1
+                              ) [Designator_Regular]
+                              Assignop(
+                              ) [Assignop]
+                              Expr_NonTernary(
+                                NonTernaryExpr_Regular(
+                                  Term(
+                                    Factor_Var(
+                                      Designator_Regular(
+                                       e1
+                                      ) [Designator_Regular]
+                                    ) [Factor_Var]
+                                    FactorMore_Epsilon(
+                                    ) [FactorMore_Epsilon]
+                                  ) [Term]
+                                  ExprAddopTerms_Epsilon(
+                                  ) [ExprAddopTerms_Epsilon]
+                                ) [NonTernaryExpr_Regular]
+                              ) [Expr_NonTernary]
+                            ) [DesignatorStatement_Assign]
+                          ) [Statement_Designator]
+                          StatementList_More(
+                            Statement_Designator(
+                              DesignatorStatement_Assign(
+                                Designator_Regular(
+                                 e1
+                                ) [Designator_Regular]
+                                Assignop(
+                                ) [Assignop]
+                                Expr_NonTernary(
+                                  NonTernaryExpr_Regular(
+                                    Term(
+                                      Factor_Meth(
+                                        Designator_Regular(
+                                         vratiEnum
+                                        ) [Designator_Regular]
+                                        ActParsList_Epsilon(
+                                          ActParsListBegin(
+                                          ) [ActParsListBegin]
+                                        ) [ActParsList_Epsilon]
+                                      ) [Factor_Meth]
+                                      FactorMore_Epsilon(
+                                      ) [FactorMore_Epsilon]
+                                    ) [Term]
+                                    ExprAddopTerms_Epsilon(
+                                    ) [ExprAddopTerms_Epsilon]
+                                  ) [NonTernaryExpr_Regular]
+                                ) [Expr_NonTernary]
+                              ) [DesignatorStatement_Assign]
+                            ) [Statement_Designator]
+                            StatementList_More(
+                              Statement_Designator(
+                                DesignatorStatement_Assign(
+                                  Designator_Regular(
+                                   i1
+                                  ) [Designator_Regular]
+                                  Assignop(
+                                  ) [Assignop]
+                                  Expr_NonTernary(
+                                    NonTernaryExpr_Regular(
+                                      Term(
+                                        Factor_Var(
+                                          Designator_Suffix(
+                                            DesignatorName(
+                                             Tip
+                                            ) [DesignatorName]
+                                            Designator_Enum(
+                                             JEDAN
+                                            ) [Designator_Enum]
+                                          ) [Designator_Suffix]
+                                        ) [Factor_Var]
+                                        FactorMore_Epsilon(
+                                        ) [FactorMore_Epsilon]
+                                      ) [Term]
+                                      ExprAddopTerms_More(
+                                        Addop_Plus(
+                                        ) [Addop_Plus]
+                                        Term(
+                                          Factor_NumConst(
+                                           2
+                                          ) [Factor_NumConst]
+                                          FactorMore_Epsilon(
+                                          ) [FactorMore_Epsilon]
+                                        ) [Term]
+                                        ExprAddopTerms_Epsilon(
+                                        ) [ExprAddopTerms_Epsilon]
+                                      ) [ExprAddopTerms_More]
+                                    ) [NonTernaryExpr_Regular]
+                                  ) [Expr_NonTernary]
+                                ) [DesignatorStatement_Assign]
+                              ) [Statement_Designator]
+                              StatementList_More(
+                                Statement_Designator(
+                                  DesignatorStatement_Assign(
+                                    Designator_Regular(
+                                     i1
+                                    ) [Designator_Regular]
+                                    Assignop(
+                                    ) [Assignop]
+                                    Expr_NonTernary(
+                                      NonTernaryExpr_Regular(
+                                        Term(
+                                          Factor_Var(
+                                            Designator_Suffix(
+                                              DesignatorName(
+                                               Tip
+                                              ) [DesignatorName]
+                                              Designator_Enum(
+                                               JEDAN
+                                              ) [Designator_Enum]
+                                            ) [Designator_Suffix]
+                                          ) [Factor_Var]
+                                          FactorMore_Yes(
+                                            Mulop_Mult(
+                                            ) [Mulop_Mult]
+                                            Factor_Var(
+                                              Designator_Suffix(
+                                                DesignatorName(
+                                                 Tip
+                                                ) [DesignatorName]
+                                                Designator_Enum(
+                                                 PET
+                                                ) [Designator_Enum]
+                                              ) [Designator_Suffix]
+                                            ) [Factor_Var]
+                                            FactorMore_Epsilon(
+                                            ) [FactorMore_Epsilon]
+                                          ) [FactorMore_Yes]
+                                        ) [Term]
+                                        ExprAddopTerms_Epsilon(
+                                        ) [ExprAddopTerms_Epsilon]
+                                      ) [NonTernaryExpr_Regular]
+                                    ) [Expr_NonTernary]
+                                  ) [DesignatorStatement_Assign]
+                                ) [Statement_Designator]
+                                StatementList_More(
+                                  Statement_Designator(
+                                    DesignatorStatement_Assign(
+                                      Designator_Regular(
+                                       i1
+                                      ) [Designator_Regular]
+                                      Assignop(
+                                      ) [Assignop]
+                                      Expr_NonTernary(
+                                        NonTernaryExpr_Regular(
+                                          Term(
+                                            Factor_Var(
+                                              Designator_Suffix(
+                                                DesignatorName(
+                                                 Tip
+                                                ) [DesignatorName]
+                                                Designator_Enum(
+                                                 DESET
+                                                ) [Designator_Enum]
+                                              ) [Designator_Suffix]
+                                            ) [Factor_Var]
+                                            FactorMore_Epsilon(
+                                            ) [FactorMore_Epsilon]
+                                          ) [Term]
+                                          ExprAddopTerms_More(
+                                            Addop_Plus(
+                                            ) [Addop_Plus]
+                                            Term(
+                                              Factor_Var(
+                                                Designator_Suffix(
+                                                  DesignatorName(
+                                                   Tip2
+                                                  ) [DesignatorName]
+                                                  Designator_Enum(
+                                                   PET
+                                                  ) [Designator_Enum]
+                                                ) [Designator_Suffix]
+                                              ) [Factor_Var]
+                                              FactorMore_Epsilon(
+                                              ) [FactorMore_Epsilon]
+                                            ) [Term]
+                                            ExprAddopTerms_Epsilon(
+                                            ) [ExprAddopTerms_Epsilon]
+                                          ) [ExprAddopTerms_More]
+                                        ) [NonTernaryExpr_Regular]
+                                      ) [Expr_NonTernary]
+                                    ) [DesignatorStatement_Assign]
+                                  ) [Statement_Designator]
+                                  StatementList_More(
+                                    Statement_Designator(
+                                      DesignatorStatement_Assign(
+                                        Designator_Regular(
+                                         i1
+                                        ) [Designator_Regular]
+                                        Assignop(
+                                        ) [Assignop]
+                                        Expr_NonTernary(
+                                          NonTernaryExpr_Regular(
+                                            Term(
+                                              Factor_Var(
+                                                Designator_Regular(
+                                                 i1
+                                                ) [Designator_Regular]
+                                              ) [Factor_Var]
+                                              FactorMore_Epsilon(
+                                              ) [FactorMore_Epsilon]
+                                            ) [Term]
+                                            ExprAddopTerms_More(
+                                              Addop_Plus(
+                                              ) [Addop_Plus]
+                                              Term(
+                                                Factor_Var(
+                                                  Designator_Suffix(
+                                                    DesignatorName(
+                                                     Tip
+                                                    ) [DesignatorName]
+                                                    Designator_Enum(
+                                                     JEDAN
+                                                    ) [Designator_Enum]
+                                                  ) [Designator_Suffix]
+                                                ) [Factor_Var]
+                                                FactorMore_Epsilon(
+                                                ) [FactorMore_Epsilon]
+                                              ) [Term]
+                                              ExprAddopTerms_Epsilon(
+                                              ) [ExprAddopTerms_Epsilon]
+                                            ) [ExprAddopTerms_More]
+                                          ) [NonTernaryExpr_Regular]
+                                        ) [Expr_NonTernary]
+                                      ) [DesignatorStatement_Assign]
+                                    ) [Statement_Designator]
+                                    StatementList_More(
+                                      Statement_Designator(
+                                        DesignatorStatement_Assign(
+                                          Designator_Regular(
+                                           i1
+                                          ) [Designator_Regular]
+                                          Assignop(
+                                          ) [Assignop]
+                                          Expr_NonTernary(
+                                            NonTernaryExpr_Regular(
+                                              Term(
+                                                Factor_NumConst(
+                                                 2
+                                                ) [Factor_NumConst]
+                                                FactorMore_Yes(
+                                                  Mulop_Mult(
+                                                  ) [Mulop_Mult]
+                                                  Factor_Var(
+                                                    Designator_Suffix(
+                                                      DesignatorName(
+                                                       Tip
+                                                      ) [DesignatorName]
+                                                      Designator_Enum(
+                                                       PET
+                                                      ) [Designator_Enum]
+                                                    ) [Designator_Suffix]
+                                                  ) [Factor_Var]
+                                                  FactorMore_Epsilon(
+                                                  ) [FactorMore_Epsilon]
+                                                ) [FactorMore_Yes]
+                                              ) [Term]
+                                              ExprAddopTerms_More(
+                                                Addop_Plus(
+                                                ) [Addop_Plus]
+                                                Term(
+                                                  Factor_NumConst(
+                                                   3
+                                                  ) [Factor_NumConst]
+                                                  FactorMore_Epsilon(
+                                                  ) [FactorMore_Epsilon]
+                                                ) [Term]
+                                                ExprAddopTerms_Epsilon(
+                                                ) [ExprAddopTerms_Epsilon]
+                                              ) [ExprAddopTerms_More]
+                                            ) [NonTernaryExpr_Regular]
+                                          ) [Expr_NonTernary]
+                                        ) [DesignatorStatement_Assign]
+                                      ) [Statement_Designator]
+                                      StatementList_More(
+                                        Statement_Designator(
+                                          DesignatorStatement_Assign(
+                                            Designator_Regular(
+                                             i1
+                                            ) [Designator_Regular]
+                                            Assignop(
+                                            ) [Assignop]
+                                            Expr_NonTernary(
+                                              NonTernaryExpr_Regular(
+                                                Term(
+                                                  Factor_Var(
+                                                    Designator_Regular(
+                                                     e1
+                                                    ) [Designator_Regular]
+                                                  ) [Factor_Var]
+                                                  FactorMore_Epsilon(
+                                                  ) [FactorMore_Epsilon]
+                                                ) [Term]
+                                                ExprAddopTerms_More(
+                                                  Addop_Plus(
+                                                  ) [Addop_Plus]
+                                                  Term(
+                                                    Factor_NumConst(
+                                                     1
+                                                    ) [Factor_NumConst]
+                                                    FactorMore_Epsilon(
+                                                    ) [FactorMore_Epsilon]
+                                                  ) [Term]
+                                                  ExprAddopTerms_Epsilon(
+                                                  ) [ExprAddopTerms_Epsilon]
+                                                ) [ExprAddopTerms_More]
+                                              ) [NonTernaryExpr_Regular]
+                                            ) [Expr_NonTernary]
+                                          ) [DesignatorStatement_Assign]
+                                        ) [Statement_Designator]
+                                        StatementList_More(
+                                          Statement_Designator(
+                                            DesignatorStatement_Assign(
+                                              Designator_Regular(
+                                               i1
+                                              ) [Designator_Regular]
+                                              Assignop(
+                                              ) [Assignop]
+                                              Expr_NonTernary(
+                                                NonTernaryExpr_Regular(
+                                                  Term(
+                                                    Factor_Var(
+                                                      Designator_Regular(
+                                                       e1
+                                                      ) [Designator_Regular]
+                                                    ) [Factor_Var]
+                                                    FactorMore_Yes(
+                                                      Mulop_Mult(
+                                                      ) [Mulop_Mult]
+                                                      Factor_Var(
+                                                        Designator_Regular(
+                                                         e2
+                                                        ) [Designator_Regular]
+                                                      ) [Factor_Var]
+                                                      FactorMore_Epsilon(
+                                                      ) [FactorMore_Epsilon]
+                                                    ) [FactorMore_Yes]
+                                                  ) [Term]
+                                                  ExprAddopTerms_Epsilon(
+                                                  ) [ExprAddopTerms_Epsilon]
+                                                ) [NonTernaryExpr_Regular]
+                                              ) [Expr_NonTernary]
+                                            ) [DesignatorStatement_Assign]
+                                          ) [Statement_Designator]
+                                          StatementList_More(
+                                            Statement_Designator(
+                                              DesignatorStatement_Assign(
+                                                Designator_Regular(
+                                                 i1
+                                                ) [Designator_Regular]
+                                                Assignop(
+                                                ) [Assignop]
+                                                Expr_NonTernary(
+                                                  NonTernaryExpr_Regular(
+                                                    Term(
+                                                      Factor_Meth(
+                                                        Designator_Regular(
+                                                         primiInt
+                                                        ) [Designator_Regular]
+                                                        ActParsList_Yes(
+                                                          ActParsListBegin(
+                                                          ) [ActParsListBegin]
+                                                          ActPars(
+                                                            Expr_NonTernary(
+                                                              NonTernaryExpr_Regular(
+                                                                Term(
+                                                                  Factor_Var(
+                                                                    Designator_Suffix(
+                                                                      DesignatorName(
+                                                                       Tip
+                                                                      ) [DesignatorName]
+                                                                      Designator_Enum(
+                                                                       JEDAN
+                                                                      ) [Designator_Enum]
+                                                                    ) [Designator_Suffix]
+                                                                  ) [Factor_Var]
+                                                                  FactorMore_Epsilon(
+                                                                  ) [FactorMore_Epsilon]
+                                                                ) [Term]
+                                                                ExprAddopTerms_Epsilon(
+                                                                ) [ExprAddopTerms_Epsilon]
+                                                              ) [NonTernaryExpr_Regular]
+                                                            ) [Expr_NonTernary]
+                                                            ActParsMore_Epsilon(
+                                                            ) [ActParsMore_Epsilon]
+                                                          ) [ActPars]
+                                                        ) [ActParsList_Yes]
+                                                      ) [Factor_Meth]
+                                                      FactorMore_Epsilon(
+                                                      ) [FactorMore_Epsilon]
+                                                    ) [Term]
+                                                    ExprAddopTerms_Epsilon(
+                                                    ) [ExprAddopTerms_Epsilon]
+                                                  ) [NonTernaryExpr_Regular]
+                                                ) [Expr_NonTernary]
+                                              ) [DesignatorStatement_Assign]
+                                            ) [Statement_Designator]
+                                            StatementList_More(
+                                              Statement_Designator(
+                                                DesignatorStatement_Assign(
+                                                  Designator_Regular(
+                                                   i1
+                                                  ) [Designator_Regular]
+                                                  Assignop(
+                                                  ) [Assignop]
+                                                  Expr_NonTernary(
+                                                    NonTernaryExpr_Regular(
+                                                      Term(
+                                                        Factor_Meth(
+                                                          Designator_Regular(
+                                                           primiInt
+                                                          ) [Designator_Regular]
+                                                          ActParsList_Yes(
+                                                            ActParsListBegin(
+                                                            ) [ActParsListBegin]
+                                                            ActPars(
+                                                              Expr_NonTernary(
+                                                                NonTernaryExpr_Regular(
+                                                                  Term(
+                                                                    Factor_Var(
+                                                                      Designator_Regular(
+                                                                       e1
+                                                                      ) [Designator_Regular]
+                                                                    ) [Factor_Var]
+                                                                    FactorMore_Epsilon(
+                                                                    ) [FactorMore_Epsilon]
+                                                                  ) [Term]
+                                                                  ExprAddopTerms_Epsilon(
+                                                                  ) [ExprAddopTerms_Epsilon]
+                                                                ) [NonTernaryExpr_Regular]
+                                                              ) [Expr_NonTernary]
+                                                              ActParsMore_Epsilon(
+                                                              ) [ActParsMore_Epsilon]
+                                                            ) [ActPars]
+                                                          ) [ActParsList_Yes]
+                                                        ) [Factor_Meth]
+                                                        FactorMore_Epsilon(
+                                                        ) [FactorMore_Epsilon]
+                                                      ) [Term]
+                                                      ExprAddopTerms_Epsilon(
+                                                      ) [ExprAddopTerms_Epsilon]
+                                                    ) [NonTernaryExpr_Regular]
+                                                  ) [Expr_NonTernary]
+                                                ) [DesignatorStatement_Assign]
+                                              ) [Statement_Designator]
+                                              StatementList_More(
+                                                Statement_Designator(
+                                                  DesignatorStatement_ActPars(
+                                                    Designator_Regular(
+                                                     primiEnum
+                                                    ) [Designator_Regular]
+                                                    ActParsList_Yes(
+                                                      ActParsListBegin(
+                                                      ) [ActParsListBegin]
+                                                      ActPars(
+                                                        Expr_NonTernary(
+                                                          NonTernaryExpr_Regular(
+                                                            Term(
+                                                              Factor_Var(
+                                                                Designator_Suffix(
+                                                                  DesignatorName(
+                                                                   Tip
+                                                                  ) [DesignatorName]
+                                                                  Designator_Enum(
+                                                                   JEDAN
+                                                                  ) [Designator_Enum]
+                                                                ) [Designator_Suffix]
+                                                              ) [Factor_Var]
+                                                              FactorMore_Epsilon(
+                                                              ) [FactorMore_Epsilon]
+                                                            ) [Term]
+                                                            ExprAddopTerms_Epsilon(
+                                                            ) [ExprAddopTerms_Epsilon]
+                                                          ) [NonTernaryExpr_Regular]
+                                                        ) [Expr_NonTernary]
+                                                        ActParsMore_Epsilon(
+                                                        ) [ActParsMore_Epsilon]
+                                                      ) [ActPars]
+                                                    ) [ActParsList_Yes]
+                                                  ) [DesignatorStatement_ActPars]
+                                                ) [Statement_Designator]
+                                                StatementList_More(
+                                                  Statement_Designator(
+                                                    DesignatorStatement_ActPars(
+                                                      Designator_Regular(
+                                                       primiEnum
+                                                      ) [Designator_Regular]
+                                                      ActParsList_Yes(
+                                                        ActParsListBegin(
+                                                        ) [ActParsListBegin]
+                                                        ActPars(
+                                                          Expr_NonTernary(
+                                                            NonTernaryExpr_Regular(
+                                                              Term(
+                                                                Factor_Var(
+                                                                  Designator_Regular(
+                                                                   e1
+                                                                  ) [Designator_Regular]
+                                                                ) [Factor_Var]
+                                                                FactorMore_Epsilon(
+                                                                ) [FactorMore_Epsilon]
+                                                              ) [Term]
+                                                              ExprAddopTerms_Epsilon(
+                                                              ) [ExprAddopTerms_Epsilon]
+                                                            ) [NonTernaryExpr_Regular]
+                                                          ) [Expr_NonTernary]
+                                                          ActParsMore_Epsilon(
+                                                          ) [ActParsMore_Epsilon]
+                                                        ) [ActPars]
+                                                      ) [ActParsList_Yes]
+                                                    ) [DesignatorStatement_ActPars]
+                                                  ) [Statement_Designator]
+                                                  StatementList_More(
+                                                    Statement_Designator(
+                                                      DesignatorStatement_Assign(
+                                                        Designator_Regular(
+                                                         i1
+                                                        ) [Designator_Regular]
+                                                        Assignop(
+                                                        ) [Assignop]
+                                                        Expr_NonTernary(
+                                                          NonTernaryExpr_Regular(
+                                                            Term(
+                                                              Factor_Meth(
+                                                                Designator_Regular(
+                                                                 vratiEnum
+                                                                ) [Designator_Regular]
+                                                                ActParsList_Epsilon(
+                                                                  ActParsListBegin(
+                                                                  ) [ActParsListBegin]
+                                                                ) [ActParsList_Epsilon]
+                                                              ) [Factor_Meth]
+                                                              FactorMore_Epsilon(
+                                                              ) [FactorMore_Epsilon]
+                                                            ) [Term]
+                                                            ExprAddopTerms_Epsilon(
+                                                            ) [ExprAddopTerms_Epsilon]
+                                                          ) [NonTernaryExpr_Regular]
+                                                        ) [Expr_NonTernary]
+                                                      ) [DesignatorStatement_Assign]
+                                                    ) [Statement_Designator]
+                                                    StatementList_More(
+                                                      Statement_Designator(
+                                                        DesignatorStatement_Assign(
+                                                          Designator_Regular(
+                                                           e1
+                                                          ) [Designator_Regular]
+                                                          Assignop(
+                                                          ) [Assignop]
+                                                          Expr_NonTernary(
+                                                            NonTernaryExpr_Regular(
+                                                              Term(
+                                                                Factor_Meth(
+                                                                  Designator_Regular(
+                                                                   vratiEnum
+                                                                  ) [Designator_Regular]
+                                                                  ActParsList_Epsilon(
+                                                                    ActParsListBegin(
+                                                                    ) [ActParsListBegin]
+                                                                  ) [ActParsList_Epsilon]
+                                                                ) [Factor_Meth]
+                                                                FactorMore_Epsilon(
+                                                                ) [FactorMore_Epsilon]
+                                                              ) [Term]
+                                                              ExprAddopTerms_Epsilon(
+                                                              ) [ExprAddopTerms_Epsilon]
+                                                            ) [NonTernaryExpr_Regular]
+                                                          ) [Expr_NonTernary]
+                                                        ) [DesignatorStatement_Assign]
+                                                      ) [Statement_Designator]
+                                                      StatementList_More(
+                                                        Statement_Designator(
+                                                          DesignatorStatement_Assign(
+                                                            Designator_Regular(
+                                                             i1
+                                                            ) [Designator_Regular]
+                                                            Assignop(
+                                                            ) [Assignop]
+                                                            Expr_NonTernary(
+                                                              NonTernaryExpr_Regular(
+                                                                Term(
+                                                                  Factor_Meth(
+                                                                    Designator_Regular(
+                                                                     vratiEnum
+                                                                    ) [Designator_Regular]
+                                                                    ActParsList_Epsilon(
+                                                                      ActParsListBegin(
+                                                                      ) [ActParsListBegin]
+                                                                    ) [ActParsList_Epsilon]
+                                                                  ) [Factor_Meth]
+                                                                  FactorMore_Epsilon(
+                                                                  ) [FactorMore_Epsilon]
+                                                                ) [Term]
+                                                                ExprAddopTerms_More(
+                                                                  Addop_Plus(
+                                                                  ) [Addop_Plus]
+                                                                  Term(
+                                                                    Factor_NumConst(
+                                                                     3
+                                                                    ) [Factor_NumConst]
+                                                                    FactorMore_Epsilon(
+                                                                    ) [FactorMore_Epsilon]
+                                                                  ) [Term]
+                                                                  ExprAddopTerms_Epsilon(
+                                                                  ) [ExprAddopTerms_Epsilon]
+                                                                ) [ExprAddopTerms_More]
+                                                              ) [NonTernaryExpr_Regular]
+                                                            ) [Expr_NonTernary]
+                                                          ) [DesignatorStatement_Assign]
+                                                        ) [Statement_Designator]
+                                                        StatementList_More(
+                                                          Statement_Designator(
+                                                            DesignatorStatement_Assign(
+                                                              Designator_Regular(
+                                                               i1
+                                                              ) [Designator_Regular]
+                                                              Assignop(
+                                                              ) [Assignop]
+                                                              Expr_NonTernary(
+                                                                NonTernaryExpr_Regular(
+                                                                  Term(
+                                                                    Factor_Meth(
+                                                                      Designator_Regular(
+                                                                       primiInt
+                                                                      ) [Designator_Regular]
+                                                                      ActParsList_Yes(
+                                                                        ActParsListBegin(
+                                                                        ) [ActParsListBegin]
+                                                                        ActPars(
+                                                                          Expr_NonTernary(
+                                                                            NonTernaryExpr_Regular(
+                                                                              Term(
+                                                                                Factor_Meth(
+                                                                                  Designator_Regular(
+                                                                                   vratiEnum
+                                                                                  ) [Designator_Regular]
+                                                                                  ActParsList_Epsilon(
+                                                                                    ActParsListBegin(
+                                                                                    ) [ActParsListBegin]
+                                                                                  ) [ActParsList_Epsilon]
+                                                                                ) [Factor_Meth]
+                                                                                FactorMore_Epsilon(
+                                                                                ) [FactorMore_Epsilon]
+                                                                              ) [Term]
+                                                                              ExprAddopTerms_Epsilon(
+                                                                              ) [ExprAddopTerms_Epsilon]
+                                                                            ) [NonTernaryExpr_Regular]
+                                                                          ) [Expr_NonTernary]
+                                                                          ActParsMore_Epsilon(
+                                                                          ) [ActParsMore_Epsilon]
+                                                                        ) [ActPars]
+                                                                      ) [ActParsList_Yes]
+                                                                    ) [Factor_Meth]
+                                                                    FactorMore_Epsilon(
+                                                                    ) [FactorMore_Epsilon]
+                                                                  ) [Term]
+                                                                  ExprAddopTerms_Epsilon(
+                                                                  ) [ExprAddopTerms_Epsilon]
+                                                                ) [NonTernaryExpr_Regular]
+                                                              ) [Expr_NonTernary]
+                                                            ) [DesignatorStatement_Assign]
+                                                          ) [Statement_Designator]
+                                                          StatementList_More(
+                                                            Statement_Designator(
+                                                              DesignatorStatement_Assign(
+                                                                Designator_Regular(
+                                                                 arrInt
+                                                                ) [Designator_Regular]
+                                                                Assignop(
+                                                                ) [Assignop]
+                                                                Expr_NonTernary(
+                                                                  NonTernaryExpr_Regular(
+                                                                    Term(
+                                                                      Factor_New(
+                                                                        Type(
+                                                                         int
+                                                                        ) [Type]
+                                                                        Expr_NonTernary(
+                                                                          NonTernaryExpr_Regular(
+                                                                            Term(
+                                                                              Factor_Var(
+                                                                                Designator_Suffix(
+                                                                                  DesignatorName(
+                                                                                   Tip
+                                                                                  ) [DesignatorName]
+                                                                                  Designator_Enum(
+                                                                                   PET
+                                                                                  ) [Designator_Enum]
+                                                                                ) [Designator_Suffix]
+                                                                              ) [Factor_Var]
+                                                                              FactorMore_Epsilon(
+                                                                              ) [FactorMore_Epsilon]
+                                                                            ) [Term]
+                                                                            ExprAddopTerms_Epsilon(
+                                                                            ) [ExprAddopTerms_Epsilon]
+                                                                          ) [NonTernaryExpr_Regular]
+                                                                        ) [Expr_NonTernary]
+                                                                      ) [Factor_New]
+                                                                      FactorMore_Epsilon(
+                                                                      ) [FactorMore_Epsilon]
+                                                                    ) [Term]
+                                                                    ExprAddopTerms_Epsilon(
+                                                                    ) [ExprAddopTerms_Epsilon]
+                                                                  ) [NonTernaryExpr_Regular]
+                                                                ) [Expr_NonTernary]
+                                                              ) [DesignatorStatement_Assign]
+                                                            ) [Statement_Designator]
+                                                            StatementList_More(
+                                                              Statement_Designator(
+                                                                DesignatorStatement_Assign(
+                                                                  Designator_Regular(
+                                                                   arrEnum
+                                                                  ) [Designator_Regular]
+                                                                  Assignop(
+                                                                  ) [Assignop]
+                                                                  Expr_NonTernary(
+                                                                    NonTernaryExpr_Regular(
+                                                                      Term(
+                                                                        Factor_New(
+                                                                          Type(
+                                                                           Tip
+                                                                          ) [Type]
+                                                                          Expr_NonTernary(
+                                                                            NonTernaryExpr_Regular(
+                                                                              Term(
+                                                                                Factor_Var(
+                                                                                  Designator_Suffix(
+                                                                                    DesignatorName(
+                                                                                     Tip2
+                                                                                    ) [DesignatorName]
+                                                                                    Designator_Enum(
+                                                                                     PET
+                                                                                    ) [Designator_Enum]
+                                                                                  ) [Designator_Suffix]
+                                                                                ) [Factor_Var]
+                                                                                FactorMore_Epsilon(
+                                                                                ) [FactorMore_Epsilon]
+                                                                              ) [Term]
+                                                                              ExprAddopTerms_Epsilon(
+                                                                              ) [ExprAddopTerms_Epsilon]
+                                                                            ) [NonTernaryExpr_Regular]
+                                                                          ) [Expr_NonTernary]
+                                                                        ) [Factor_New]
+                                                                        FactorMore_Epsilon(
+                                                                        ) [FactorMore_Epsilon]
+                                                                      ) [Term]
+                                                                      ExprAddopTerms_Epsilon(
+                                                                      ) [ExprAddopTerms_Epsilon]
+                                                                    ) [NonTernaryExpr_Regular]
+                                                                  ) [Expr_NonTernary]
+                                                                ) [DesignatorStatement_Assign]
+                                                              ) [Statement_Designator]
+                                                              StatementList_More(
+                                                                Statement_Designator(
+                                                                  DesignatorStatement_Assign(
+                                                                    Designator_Suffix(
+                                                                      DesignatorName(
+                                                                       arrInt
+                                                                      ) [DesignatorName]
+                                                                      Designator_Array(
+                                                                        Expr_NonTernary(
+                                                                          NonTernaryExpr_Regular(
+                                                                            Term(
+                                                                              Factor_Var(
+                                                                                Designator_Suffix(
+                                                                                  DesignatorName(
+                                                                                   Tip
+                                                                                  ) [DesignatorName]
+                                                                                  Designator_Enum(
+                                                                                   JEDAN
+                                                                                  ) [Designator_Enum]
+                                                                                ) [Designator_Suffix]
+                                                                              ) [Factor_Var]
+                                                                              FactorMore_Epsilon(
+                                                                              ) [FactorMore_Epsilon]
+                                                                            ) [Term]
+                                                                            ExprAddopTerms_Epsilon(
+                                                                            ) [ExprAddopTerms_Epsilon]
+                                                                          ) [NonTernaryExpr_Regular]
+                                                                        ) [Expr_NonTernary]
+                                                                      ) [Designator_Array]
+                                                                    ) [Designator_Suffix]
+                                                                    Assignop(
+                                                                    ) [Assignop]
+                                                                    Expr_NonTernary(
+                                                                      NonTernaryExpr_Regular(
+                                                                        Term(
+                                                                          Factor_NumConst(
+                                                                           5
+                                                                          ) [Factor_NumConst]
+                                                                          FactorMore_Epsilon(
+                                                                          ) [FactorMore_Epsilon]
+                                                                        ) [Term]
+                                                                        ExprAddopTerms_Epsilon(
+                                                                        ) [ExprAddopTerms_Epsilon]
+                                                                      ) [NonTernaryExpr_Regular]
+                                                                    ) [Expr_NonTernary]
+                                                                  ) [DesignatorStatement_Assign]
+                                                                ) [Statement_Designator]
+                                                                StatementList_More(
+                                                                  Statement_Designator(
+                                                                    DesignatorStatement_Assign(
+                                                                      Designator_Suffix(
+                                                                        DesignatorName(
+                                                                         arrInt
+                                                                        ) [DesignatorName]
+                                                                        Designator_Array(
+                                                                          Expr_NonTernary(
+                                                                            NonTernaryExpr_Regular(
+                                                                              Term(
+                                                                                Factor_Var(
+                                                                                  Designator_Suffix(
+                                                                                    DesignatorName(
+                                                                                     Tip
+                                                                                    ) [DesignatorName]
+                                                                                    Designator_Enum(
+                                                                                     PET
+                                                                                    ) [Designator_Enum]
+                                                                                  ) [Designator_Suffix]
+                                                                                ) [Factor_Var]
+                                                                                FactorMore_Epsilon(
+                                                                                ) [FactorMore_Epsilon]
+                                                                              ) [Term]
+                                                                              ExprAddopTerms_More(
+                                                                                Addop_Plus(
+                                                                                ) [Addop_Plus]
+                                                                                Term(
+                                                                                  Factor_NumConst(
+                                                                                   2
+                                                                                  ) [Factor_NumConst]
+                                                                                  FactorMore_Epsilon(
+                                                                                  ) [FactorMore_Epsilon]
+                                                                                ) [Term]
+                                                                                ExprAddopTerms_Epsilon(
+                                                                                ) [ExprAddopTerms_Epsilon]
+                                                                              ) [ExprAddopTerms_More]
+                                                                            ) [NonTernaryExpr_Regular]
+                                                                          ) [Expr_NonTernary]
+                                                                        ) [Designator_Array]
+                                                                      ) [Designator_Suffix]
+                                                                      Assignop(
+                                                                      ) [Assignop]
+                                                                      Expr_NonTernary(
+                                                                        NonTernaryExpr_Regular(
+                                                                          Term(
+                                                                            Factor_NumConst(
+                                                                             1
+                                                                            ) [Factor_NumConst]
+                                                                            FactorMore_Epsilon(
+                                                                            ) [FactorMore_Epsilon]
+                                                                          ) [Term]
+                                                                          ExprAddopTerms_Epsilon(
+                                                                          ) [ExprAddopTerms_Epsilon]
+                                                                        ) [NonTernaryExpr_Regular]
+                                                                      ) [Expr_NonTernary]
+                                                                    ) [DesignatorStatement_Assign]
+                                                                  ) [Statement_Designator]
+                                                                  StatementList_More(
+                                                                    Statement_Designator(
+                                                                      DesignatorStatement_Assign(
+                                                                        Designator_Suffix(
+                                                                          DesignatorName(
+                                                                           arrInt
+                                                                          ) [DesignatorName]
+                                                                          Designator_Array(
+                                                                            Expr_NonTernary(
+                                                                              NonTernaryExpr_Regular(
+                                                                                Term(
+                                                                                  Factor_Var(
+                                                                                    Designator_Regular(
+                                                                                     e1
+                                                                                    ) [Designator_Regular]
+                                                                                  ) [Factor_Var]
+                                                                                  FactorMore_Epsilon(
+                                                                                  ) [FactorMore_Epsilon]
+                                                                                ) [Term]
+                                                                                ExprAddopTerms_Epsilon(
+                                                                                ) [ExprAddopTerms_Epsilon]
+                                                                              ) [NonTernaryExpr_Regular]
+                                                                            ) [Expr_NonTernary]
+                                                                          ) [Designator_Array]
+                                                                        ) [Designator_Suffix]
+                                                                        Assignop(
+                                                                        ) [Assignop]
+                                                                        Expr_NonTernary(
+                                                                          NonTernaryExpr_Regular(
+                                                                            Term(
+                                                                              Factor_NumConst(
+                                                                               3
+                                                                              ) [Factor_NumConst]
+                                                                              FactorMore_Epsilon(
+                                                                              ) [FactorMore_Epsilon]
+                                                                            ) [Term]
+                                                                            ExprAddopTerms_Epsilon(
+                                                                            ) [ExprAddopTerms_Epsilon]
+                                                                          ) [NonTernaryExpr_Regular]
+                                                                        ) [Expr_NonTernary]
+                                                                      ) [DesignatorStatement_Assign]
+                                                                    ) [Statement_Designator]
+                                                                    StatementList_More(
+                                                                      Statement_Designator(
+                                                                        DesignatorStatement_Assign(
+                                                                          Designator_Suffix(
+                                                                            DesignatorName(
+                                                                             arrEnum
+                                                                            ) [DesignatorName]
+                                                                            Designator_Array(
+                                                                              Expr_NonTernary(
+                                                                                NonTernaryExpr_Regular(
+                                                                                  Term(
+                                                                                    Factor_NumConst(
+                                                                                     1
+                                                                                    ) [Factor_NumConst]
+                                                                                    FactorMore_Epsilon(
+                                                                                    ) [FactorMore_Epsilon]
+                                                                                  ) [Term]
+                                                                                  ExprAddopTerms_Epsilon(
+                                                                                  ) [ExprAddopTerms_Epsilon]
+                                                                                ) [NonTernaryExpr_Regular]
+                                                                              ) [Expr_NonTernary]
+                                                                            ) [Designator_Array]
+                                                                          ) [Designator_Suffix]
+                                                                          Assignop(
+                                                                          ) [Assignop]
+                                                                          Expr_NonTernary(
+                                                                            NonTernaryExpr_Regular(
+                                                                              Term(
+                                                                                Factor_Var(
+                                                                                  Designator_Suffix(
+                                                                                    DesignatorName(
+                                                                                     Tip
+                                                                                    ) [DesignatorName]
+                                                                                    Designator_Enum(
+                                                                                     JEDAN
+                                                                                    ) [Designator_Enum]
+                                                                                  ) [Designator_Suffix]
+                                                                                ) [Factor_Var]
+                                                                                FactorMore_Epsilon(
+                                                                                ) [FactorMore_Epsilon]
+                                                                              ) [Term]
+                                                                              ExprAddopTerms_Epsilon(
+                                                                              ) [ExprAddopTerms_Epsilon]
+                                                                            ) [NonTernaryExpr_Regular]
+                                                                          ) [Expr_NonTernary]
+                                                                        ) [DesignatorStatement_Assign]
+                                                                      ) [Statement_Designator]
+                                                                      StatementList_More(
+                                                                        Statement_Designator(
+                                                                          DesignatorStatement_Assign(
+                                                                            Designator_Suffix(
+                                                                              DesignatorName(
+                                                                               arrEnum
+                                                                              ) [DesignatorName]
+                                                                              Designator_Array(
+                                                                                Expr_NonTernary(
+                                                                                  NonTernaryExpr_Regular(
+                                                                                    Term(
+                                                                                      Factor_Var(
+                                                                                        Designator_Suffix(
+                                                                                          DesignatorName(
+                                                                                           Tip
+                                                                                          ) [DesignatorName]
+                                                                                          Designator_Enum(
+                                                                                           JEDAN
+                                                                                          ) [Designator_Enum]
+                                                                                        ) [Designator_Suffix]
+                                                                                      ) [Factor_Var]
+                                                                                      FactorMore_Epsilon(
+                                                                                      ) [FactorMore_Epsilon]
+                                                                                    ) [Term]
+                                                                                    ExprAddopTerms_Epsilon(
+                                                                                    ) [ExprAddopTerms_Epsilon]
+                                                                                  ) [NonTernaryExpr_Regular]
+                                                                                ) [Expr_NonTernary]
+                                                                              ) [Designator_Array]
+                                                                            ) [Designator_Suffix]
+                                                                            Assignop(
+                                                                            ) [Assignop]
+                                                                            Expr_NonTernary(
+                                                                              NonTernaryExpr_Regular(
+                                                                                Term(
+                                                                                  Factor_Var(
+                                                                                    Designator_Suffix(
+                                                                                      DesignatorName(
+                                                                                       Tip
+                                                                                      ) [DesignatorName]
+                                                                                      Designator_Enum(
+                                                                                       NULA
+                                                                                      ) [Designator_Enum]
+                                                                                    ) [Designator_Suffix]
+                                                                                  ) [Factor_Var]
+                                                                                  FactorMore_Epsilon(
+                                                                                  ) [FactorMore_Epsilon]
+                                                                                ) [Term]
+                                                                                ExprAddopTerms_Epsilon(
+                                                                                ) [ExprAddopTerms_Epsilon]
+                                                                              ) [NonTernaryExpr_Regular]
+                                                                            ) [Expr_NonTernary]
+                                                                          ) [DesignatorStatement_Assign]
+                                                                        ) [Statement_Designator]
+                                                                        StatementList_More(
+                                                                          Statement_Designator(
+                                                                            DesignatorStatement_Assign(
+                                                                              Designator_Regular(
+                                                                               i2
+                                                                              ) [Designator_Regular]
+                                                                              Assignop(
+                                                                              ) [Assignop]
+                                                                              Expr_NonTernary(
+                                                                                NonTernaryExpr_Regular(
+                                                                                  Term(
+                                                                                    Factor_Expr(
+                                                                                      Expr_NonTernary(
+                                                                                        NonTernaryExpr_Regular(
+                                                                                          Term(
+                                                                                            Factor_Var(
+                                                                                              Designator_Suffix(
+                                                                                                DesignatorName(
+                                                                                                 Tip2
+                                                                                                ) [DesignatorName]
+                                                                                                Designator_Enum(
+                                                                                                 PET
+                                                                                                ) [Designator_Enum]
+                                                                                              ) [Designator_Suffix]
+                                                                                            ) [Factor_Var]
+                                                                                            FactorMore_Epsilon(
+                                                                                            ) [FactorMore_Epsilon]
+                                                                                          ) [Term]
+                                                                                          ExprAddopTerms_More(
+                                                                                            Addop_Plus(
+                                                                                            ) [Addop_Plus]
+                                                                                            Term(
+                                                                                              Factor_Var(
+                                                                                                Designator_Suffix(
+                                                                                                  DesignatorName(
+                                                                                                   Tip
+                                                                                                  ) [DesignatorName]
+                                                                                                  Designator_Enum(
+                                                                                                   PET
+                                                                                                  ) [Designator_Enum]
+                                                                                                ) [Designator_Suffix]
+                                                                                              ) [Factor_Var]
+                                                                                              FactorMore_Epsilon(
+                                                                                              ) [FactorMore_Epsilon]
+                                                                                            ) [Term]
+                                                                                            ExprAddopTerms_Epsilon(
+                                                                                            ) [ExprAddopTerms_Epsilon]
+                                                                                          ) [ExprAddopTerms_More]
+                                                                                        ) [NonTernaryExpr_Regular]
+                                                                                      ) [Expr_NonTernary]
+                                                                                    ) [Factor_Expr]
+                                                                                    FactorMore_Yes(
+                                                                                      Mulop_Mult(
+                                                                                      ) [Mulop_Mult]
+                                                                                      Factor_NumConst(
+                                                                                       2
+                                                                                      ) [Factor_NumConst]
+                                                                                      FactorMore_Epsilon(
+                                                                                      ) [FactorMore_Epsilon]
+                                                                                    ) [FactorMore_Yes]
+                                                                                  ) [Term]
+                                                                                  ExprAddopTerms_More(
+                                                                                    Addop_Plus(
+                                                                                    ) [Addop_Plus]
+                                                                                    Term(
+                                                                                      Factor_NumConst(
+                                                                                       3
+                                                                                      ) [Factor_NumConst]
+                                                                                      FactorMore_Yes(
+                                                                                        Mulop_Mult(
+                                                                                        ) [Mulop_Mult]
+                                                                                        Factor_Var(
+                                                                                          Designator_Suffix(
+                                                                                            DesignatorName(
+                                                                                             Tip
+                                                                                            ) [DesignatorName]
+                                                                                            Designator_Enum(
+                                                                                             DESET
+                                                                                            ) [Designator_Enum]
+                                                                                          ) [Designator_Suffix]
+                                                                                        ) [Factor_Var]
+                                                                                        FactorMore_Epsilon(
+                                                                                        ) [FactorMore_Epsilon]
+                                                                                      ) [FactorMore_Yes]
+                                                                                    ) [Term]
+                                                                                    ExprAddopTerms_Epsilon(
+                                                                                    ) [ExprAddopTerms_Epsilon]
+                                                                                  ) [ExprAddopTerms_More]
+                                                                                ) [NonTernaryExpr_Regular]
+                                                                              ) [Expr_NonTernary]
+                                                                            ) [DesignatorStatement_Assign]
+                                                                          ) [Statement_Designator]
+                                                                          StatementList_More(
+                                                                            Statement_Designator(
+                                                                              DesignatorStatement_Assign(
+                                                                                Designator_Regular(
+                                                                                 i2
+                                                                                ) [Designator_Regular]
+                                                                                Assignop(
+                                                                                ) [Assignop]
+                                                                                Expr_NonTernary(
+                                                                                  NonTernaryExpr_Regular(
+                                                                                    Term(
+                                                                                      Factor_Expr(
+                                                                                        Expr_NonTernary(
+                                                                                          NonTernaryExpr_Regular(
+                                                                                            Term(
+                                                                                              Factor_Var(
+                                                                                                Designator_Suffix(
+                                                                                                  DesignatorName(
+                                                                                                   Tip
+                                                                                                  ) [DesignatorName]
+                                                                                                  Designator_Enum(
+                                                                                                   PET
+                                                                                                  ) [Designator_Enum]
+                                                                                                ) [Designator_Suffix]
+                                                                                              ) [Factor_Var]
+                                                                                              FactorMore_Epsilon(
+                                                                                              ) [FactorMore_Epsilon]
+                                                                                            ) [Term]
+                                                                                            ExprAddopTerms_More(
+                                                                                              Addop_Plus(
+                                                                                              ) [Addop_Plus]
+                                                                                              Term(
+                                                                                                Factor_Var(
+                                                                                                  Designator_Regular(
+                                                                                                   e1
+                                                                                                  ) [Designator_Regular]
+                                                                                                ) [Factor_Var]
+                                                                                                FactorMore_Epsilon(
+                                                                                                ) [FactorMore_Epsilon]
+                                                                                              ) [Term]
+                                                                                              ExprAddopTerms_Epsilon(
+                                                                                              ) [ExprAddopTerms_Epsilon]
+                                                                                            ) [ExprAddopTerms_More]
+                                                                                          ) [NonTernaryExpr_Regular]
+                                                                                        ) [Expr_NonTernary]
+                                                                                      ) [Factor_Expr]
+                                                                                      FactorMore_Yes(
+                                                                                        Mulop_Mult(
+                                                                                        ) [Mulop_Mult]
+                                                                                        Factor_NumConst(
+                                                                                         2
+                                                                                        ) [Factor_NumConst]
+                                                                                        FactorMore_Epsilon(
+                                                                                        ) [FactorMore_Epsilon]
+                                                                                      ) [FactorMore_Yes]
+                                                                                    ) [Term]
+                                                                                    ExprAddopTerms_Epsilon(
+                                                                                    ) [ExprAddopTerms_Epsilon]
+                                                                                  ) [NonTernaryExpr_Regular]
+                                                                                ) [Expr_NonTernary]
+                                                                              ) [DesignatorStatement_Assign]
+                                                                            ) [Statement_Designator]
+                                                                            StatementList_Epsilon(
+                                                                            ) [StatementList_Epsilon]
+                                                                          ) [StatementList_More]
+                                                                        ) [StatementList_More]
+                                                                      ) [StatementList_More]
+                                                                    ) [StatementList_More]
+                                                                  ) [StatementList_More]
+                                                                ) [StatementList_More]
+                                                              ) [StatementList_More]
+                                                            ) [StatementList_More]
+                                                          ) [StatementList_More]
+                                                        ) [StatementList_More]
+                                                      ) [StatementList_More]
+                                                    ) [StatementList_More]
+                                                  ) [StatementList_More]
+                                                ) [StatementList_More]
+                                              ) [StatementList_More]
+                                            ) [StatementList_More]
+                                          ) [StatementList_More]
+                                        ) [StatementList_More]
+                                      ) [StatementList_More]
+                                    ) [StatementList_More]
+                                  ) [StatementList_More]
+                                ) [StatementList_More]
+                              ) [StatementList_More]
+                            ) [StatementList_More]
+                          ) [StatementList_More]
+                        ) [StatementList_More]
+                      ) [StatementList_More]
+                    ) [StatementList_More]
+                  ) [StatementList_More]
+                ) [StatementList_More]
+              ) [StatementList_More]
+            ) [MethodDecl]
+            MethodDeclList_Epsilon(
+            ) [MethodDeclList_Epsilon]
+          ) [MethodDeclList_More]
+        ) [MethodDeclList_More]
+      ) [MethodDeclList_More]
+    ) [MethodDeclList_More]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  13:39:31,035 - =====================================================================
+ERROR 13:39:31,042 - Pristup konstanti nabrajanja: PET na liniji 19
+ERROR 13:39:31,042 - Pristup lokalnoj promenljivoj: x na liniji 27
+ERROR 13:39:31,042 - Pristup formalnom argumentu: x na liniji 27
+ERROR 13:39:31,042 - Pristup lokalnoj promenljivoj: x na liniji 31
+ERROR 13:39:31,042 - Pristup formalnom argumentu: x na liniji 31
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e1 na liniji 46
+ERROR 13:39:31,042 - Pristup konstanti nabrajanja: JEDAN na liniji 46
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e1 na liniji 47
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e1 na liniji 47
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e2 na liniji 48
+ERROR 13:39:31,042 - Pristup konstanti nabrajanja: DESET na liniji 48
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: i1 na liniji 50
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: i1 na liniji 51
+ERROR 13:39:31,042 - Pristup konstanti nabrajanja: JEDAN na liniji 51
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: i1 na liniji 52
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e1 na liniji 52
+ERROR 13:39:31,042 - Pristup globalnoj promenljivoj: e1 na liniji 56
+ERROR 13:39:31,042 - Pristup globalnoj funkciji: vratiEnum na liniji 56
+ERROR 13:39:31,043 - Neadekvatna dodela vrednosti u enum promenljivu. na liniji 56
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 62
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: JEDAN na liniji 62
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 63
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: JEDAN na liniji 63
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: PET na liniji 63
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 64
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: DESET na liniji 64
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: PET na liniji 64
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 66
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 66
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: JEDAN na liniji 66
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 67
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: PET na liniji 67
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 69
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e1 na liniji 69
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 70
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e1 na liniji 70
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e2 na liniji 70
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 78
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: primiInt na liniji 78
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: JEDAN na liniji 78
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 79
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: primiInt na liniji 79
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e1 na liniji 79
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: primiEnum na liniji 82
+ERROR 13:39:31,043 - Pristup konstanti nabrajanja: JEDAN na liniji 82
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: primiEnum na liniji 83
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e1 na liniji 83
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 85
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: vratiEnum na liniji 85
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: e1 na liniji 86
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: vratiEnum na liniji 86
+ERROR 13:39:31,043 - Neadekvatna dodela vrednosti u enum promenljivu. na liniji 86
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 88
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: vratiEnum na liniji 88
+ERROR 13:39:31,043 - Pristup globalnoj promenljivoj: i1 na liniji 89
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: primiInt na liniji 89
+ERROR 13:39:31,043 - Pristup globalnoj funkciji: vratiEnum na liniji 89
+ERROR 13:39:31,043 - Pristup lokalnoj promenljivoj: arrInt na liniji 95
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 95
+ERROR 13:39:31,044 - Pristup lokalnoj promenljivoj: arrEnum na liniji 96
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 96
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: JEDAN na liniji 98
+ERROR 13:39:31,044 - Pristup elementu niza: arrInt na liniji 98
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 99
+ERROR 13:39:31,044 - Pristup elementu niza: arrInt na liniji 99
+ERROR 13:39:31,044 - Pristup globalnoj promenljivoj: e1 na liniji 100
+ERROR 13:39:31,044 - Pristup elementu niza: arrInt na liniji 100
+ERROR 13:39:31,044 - Pristup elementu niza: arrEnum na liniji 102
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: JEDAN na liniji 102
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: JEDAN na liniji 103
+ERROR 13:39:31,044 - Pristup elementu niza: arrEnum na liniji 103
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: NULA na liniji 103
+ERROR 13:39:31,044 - Pristup globalnoj promenljivoj: i2 na liniji 121
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 121
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 121
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: DESET na liniji 121
+ERROR 13:39:31,044 - Pristup globalnoj promenljivoj: i2 na liniji 122
+ERROR 13:39:31,044 - Pristup konstanti nabrajanja: PET na liniji 122
+ERROR 13:39:31,044 - Pristup globalnoj promenljivoj: e1 na liniji 122
+INFO  13:39:31,044 - =====================================================================
+ERROR 13:39:31,044 - Parsiranje NIJE uspesno zavrseno!

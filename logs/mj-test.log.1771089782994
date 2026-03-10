@@ -1,0 +1,157 @@
+INFO  17:56:43,990 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  17:56:44,020 - #2 program
+INFO  17:56:44,020 - #43 Tarmi
+INFO  17:56:44,020 - #6 const
+INFO  17:56:44,020 - #43 int
+INFO  17:56:44,020 - #43 pi
+INFO  17:56:44,021 - #19 =
+INFO  17:56:44,021 - #44 3
+INFO  17:56:44,021 - #33 ;
+INFO  17:56:44,023 - #43 int
+INFO  17:56:44,024 - #43 x
+INFO  17:56:44,024 - #35 ,
+INFO  17:56:44,025 - #43 y
+INFO  17:56:44,025 - #42 [
+INFO  17:56:44,025 - #41 ]
+INFO  17:56:44,025 - #33 ;
+INFO  17:56:44,025 - #39 {
+INFO  17:56:44,026 - #5 void
+INFO  17:56:44,026 - #43 main
+INFO  17:56:44,026 - #37 (
+INFO  17:56:44,026 - #38 )
+INFO  17:56:44,027 - #43 int
+INFO  17:56:44,028 - #43 a
+INFO  17:56:44,030 - #35 ,
+INFO  17:56:44,030 - #43 b
+INFO  17:56:44,030 - #33 ;
+INFO  17:56:44,030 - #43 char
+INFO  17:56:44,030 - #43 carr
+INFO  17:56:44,030 - #42 [
+INFO  17:56:44,030 - #41 ]
+INFO  17:56:44,030 - #33 ;
+INFO  17:56:44,030 - #39 {
+INFO  17:56:44,031 - #3 print
+INFO  17:56:44,031 - #37 (
+INFO  17:56:44,031 - #44 1
+INFO  17:56:44,031 - #17 +
+INFO  17:56:44,033 - #44 2
+INFO  17:56:44,034 - #38 )
+INFO  17:56:44,036 - #33 ;
+INFO  17:56:44,036 - #40 }
+INFO  17:56:44,037 - #40 }
+INFO  17:56:44,038 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Regular(
+       x
+      ) [VarDecl_Regular]
+      VarDeclMore_Comma(
+        VarDecl_Array(
+         y
+        ) [VarDecl_Array]
+        VarDeclMore_Semi(
+        ) [VarDeclMore_Semi]
+      ) [VarDeclMore_Comma]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           a
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             b
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Yes(
+          VarDeclList(
+            Type(
+             char
+            ) [Type]
+            VarDecl_Array(
+             carr
+            ) [VarDecl_Array]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclList]
+          MethodDeclVarDeclList_Epsilon(
+          ) [MethodDeclVarDeclList_Epsilon]
+        ) [MethodDeclVarDeclList_Yes]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Print(
+          Expr_Regular(
+            Term(
+              Factor_NumConst(
+               1
+              ) [Factor_NumConst]
+              FactorMore_Epsilon(
+              ) [FactorMore_Epsilon]
+            ) [Term]
+            ExprAddopTerms_More(
+              Addop_Plus(
+              ) [Addop_Plus]
+              Term(
+                Factor_NumConst(
+                 2
+                ) [Factor_NumConst]
+                FactorMore_Epsilon(
+                ) [FactorMore_Epsilon]
+              ) [Term]
+              ExprAddopTerms_Epsilon(
+              ) [ExprAddopTerms_Epsilon]
+            ) [ExprAddopTerms_More]
+          ) [Expr_Regular]
+          Statement_PrintNumConst_Epsilon(
+          ) [Statement_PrintNumConst_Epsilon]
+        ) [Statement_Print]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  17:56:44,039 - =====================================================================
+INFO  17:56:44,044 - =====================================================================
+INFO  17:56:44,046 - Parsiranje uspesno zavrseno!

@@ -1,0 +1,47 @@
+INFO  18:25:32,793 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:25:32,824 - #2 program
+INFO  18:25:32,824 - #43 Tarmi
+INFO  18:25:32,824 - #6 const
+INFO  18:25:32,825 - #43 int
+INFO  18:25:32,825 - #43 pi
+INFO  18:25:32,826 - #19 =
+INFO  18:25:32,826 - #44 3
+INFO  18:25:32,826 - #33 ;
+INFO  18:25:32,827 - #43 int
+INFO  18:25:32,827 - #43 x
+INFO  18:25:32,828 - #35 ,
+INFO  18:25:32,828 - #43 y
+INFO  18:25:32,828 - #42 [
+INFO  18:25:32,828 - #41 ]
+INFO  18:25:32,828 - #33 ;
+INFO  18:25:32,828 - #52 enum
+INFO  18:25:32,829 - #43 Broj
+INFO  18:25:32,829 - #39 {
+INFO  18:25:32,829 - #43 JEDAN
+INFO  18:25:32,829 - #35 ,
+INFO  18:25:32,830 - #43 DVA
+INFO  18:25:32,830 - #19 =
+INFO  18:25:32,833 - #44 2
+INFO  18:25:32,833 - #35 ,
+INFO  18:25:32,833 - #43 TRI
+INFO  18:25:32,833 - #19 =
+INFO  18:25:32,833 - #44 3
+INFO  18:25:32,833 - #40 }
+INFO  18:25:32,834 - #39 {
+INFO  18:25:32,834 - #5 void
+INFO  18:25:32,835 - #43 main
+INFO  18:25:32,835 - #37 (
+INFO  18:25:32,835 - #38 )
+INFO  18:25:32,835 - #43 int
+INFO  18:25:32,836 - #43 i
+INFO  18:25:32,836 - #35 ,
+INFO  18:25:32,836 - #43 j
+INFO  18:25:32,836 - #33 ;
+INFO  18:25:32,836 - #39 {
+INFO  18:25:32,836 - #43 i
+INFO  18:25:32,836 - #19 =
+INFO  18:25:32,837 - #44 1
+INFO  18:25:32,837 - #3 print
+ERROR 18:25:32,837 - 
+Sintaksna greska na liniji 10
+ERROR 18:25:32,837 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 10

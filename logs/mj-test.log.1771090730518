@@ -1,0 +1,147 @@
+INFO  18:38:44,081 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:38:44,110 - #2 program
+INFO  18:38:44,110 - #43 Tarmi
+INFO  18:38:44,110 - #6 const
+INFO  18:38:44,111 - #43 int
+INFO  18:38:44,111 - #43 pi
+INFO  18:38:44,112 - #19 =
+INFO  18:38:44,112 - #44 3
+INFO  18:38:44,112 - #33 ;
+INFO  18:38:44,114 - #43 int
+INFO  18:38:44,115 - #43 x
+INFO  18:38:44,115 - #35 ,
+INFO  18:38:44,115 - #43 y
+INFO  18:38:44,115 - #42 [
+INFO  18:38:44,115 - #41 ]
+INFO  18:38:44,115 - #33 ;
+INFO  18:38:44,116 - #39 {
+INFO  18:38:44,117 - #5 void
+INFO  18:38:44,117 - #43 main
+INFO  18:38:44,117 - #37 (
+INFO  18:38:44,117 - #38 )
+INFO  18:38:44,118 - #43 int
+INFO  18:38:44,119 - #43 a
+INFO  18:38:44,121 - #35 ,
+INFO  18:38:44,121 - #43 b
+INFO  18:38:44,121 - #33 ;
+INFO  18:38:44,121 - #43 char
+INFO  18:38:44,121 - #43 carr
+INFO  18:38:44,121 - #42 [
+INFO  18:38:44,121 - #41 ]
+INFO  18:38:44,121 - #33 ;
+INFO  18:38:44,122 - #39 {
+INFO  18:38:44,122 - #3 print
+INFO  18:38:44,122 - #37 (
+INFO  18:38:44,123 - #46 a
+INFO  18:38:44,123 - #35 ,
+INFO  18:38:44,125 - #44 3
+INFO  18:38:44,125 - #38 )
+INFO  18:38:44,125 - #33 ;
+INFO  18:38:44,125 - #40 }
+INFO  18:38:44,126 - #40 }
+INFO  18:38:44,129 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Regular(
+       x
+      ) [VarDecl_Regular]
+      VarDeclMore_Comma(
+        VarDecl_Array(
+         y
+        ) [VarDecl_Array]
+        VarDeclMore_Semi(
+        ) [VarDeclMore_Semi]
+      ) [VarDeclMore_Comma]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           a
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             b
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Yes(
+          VarDeclList(
+            Type(
+             char
+            ) [Type]
+            VarDecl_Array(
+             carr
+            ) [VarDecl_Array]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclList]
+          MethodDeclVarDeclList_Epsilon(
+          ) [MethodDeclVarDeclList_Epsilon]
+        ) [MethodDeclVarDeclList_Yes]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Print(
+          Expr_Regular(
+            Term(
+              Factor_CharConst(
+               a
+              ) [Factor_CharConst]
+              FactorMore_Epsilon(
+              ) [FactorMore_Epsilon]
+            ) [Term]
+            ExprAddopTerms_Epsilon(
+            ) [ExprAddopTerms_Epsilon]
+          ) [Expr_Regular]
+          Statement_PrintNumConst_Yes(
+           3
+          ) [Statement_PrintNumConst_Yes]
+        ) [Statement_Print]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:38:44,129 - =====================================================================
+INFO  18:38:44,137 - =====================================================================
+INFO  18:38:44,141 - Parsiranje uspesno zavrseno!

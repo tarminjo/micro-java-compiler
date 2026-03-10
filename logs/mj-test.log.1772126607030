@@ -1,0 +1,28 @@
+INFO  18:23:17,650 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:23:17,683 - #2 program
+INFO  18:23:17,683 - #43 Tarmi
+INFO  18:23:17,683 - #6 const
+INFO  18:23:17,684 - #43 int
+INFO  18:23:17,684 - #43 pi
+INFO  18:23:17,685 - #19 =
+INFO  18:23:17,685 - #44 3
+INFO  18:23:17,685 - #33 ;
+INFO  18:23:17,686 - #43 int
+INFO  18:23:17,686 - #43 x
+INFO  18:23:17,686 - #35 ,
+INFO  18:23:17,687 - #43 y
+INFO  18:23:17,687 - #42 [
+INFO  18:23:17,687 - #41 ]
+INFO  18:23:17,687 - #33 ;
+INFO  18:23:17,687 - #52 enum
+INFO  18:23:17,688 - #43 Broj
+INFO  18:23:17,690 - #39 {
+INFO  18:23:17,690 - #43 JEDAN
+INFO  18:23:17,690 - #35 ,
+INFO  18:23:17,691 - #43 DVA
+INFO  18:23:17,691 - #19 =
+INFO  18:23:17,693 - #44 2
+INFO  18:23:17,693 - #35 ,
+ERROR 18:23:17,693 - 
+Sintaksna greska na liniji 5
+ERROR 18:23:17,693 - Fatalna greska, parsiranje se ne moze nastaviti na liniji 5

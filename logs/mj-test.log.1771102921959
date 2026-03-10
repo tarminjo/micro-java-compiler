@@ -1,0 +1,147 @@
+INFO  21:50:07,034 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  21:50:07,088 - #2 program
+INFO  21:50:07,088 - #43 Tarmi
+INFO  21:50:07,089 - #6 const
+INFO  21:50:07,092 - #43 int
+INFO  21:50:07,092 - #43 pi
+INFO  21:50:07,093 - #19 =
+INFO  21:50:07,094 - #44 3
+INFO  21:50:07,094 - #33 ;
+INFO  21:50:07,095 - #43 int
+INFO  21:50:07,096 - #43 x
+INFO  21:50:07,097 - #35 ,
+INFO  21:50:07,097 - #43 y
+INFO  21:50:07,097 - #42 [
+INFO  21:50:07,097 - #41 ]
+INFO  21:50:07,097 - #33 ;
+INFO  21:50:07,099 - #39 {
+INFO  21:50:07,100 - #5 void
+INFO  21:50:07,101 - #43 main
+INFO  21:50:07,101 - #37 (
+INFO  21:50:07,101 - #38 )
+INFO  21:50:07,102 - #43 int
+INFO  21:50:07,103 - #43 a
+INFO  21:50:07,104 - #35 ,
+INFO  21:50:07,104 - #43 b
+INFO  21:50:07,104 - #33 ;
+INFO  21:50:07,104 - #43 char
+INFO  21:50:07,104 - #43 carr
+INFO  21:50:07,104 - #42 [
+INFO  21:50:07,104 - #41 ]
+INFO  21:50:07,104 - #33 ;
+INFO  21:50:07,104 - #39 {
+INFO  21:50:07,105 - #3 print
+INFO  21:50:07,105 - #37 (
+INFO  21:50:07,105 - #43 pi
+INFO  21:50:07,106 - #38 )
+INFO  21:50:07,111 - #33 ;
+INFO  21:50:07,111 - #40 }
+INFO  21:50:07,112 - #40 }
+INFO  21:50:07,115 - Program(
+  ProgramName(
+   Tarmi
+  ) [ProgramName]
+  ConstVarDeclList_Var(
+    ConstVarDeclList_Const(
+      ConstVarDeclList_Epsilon(
+      ) [ConstVarDeclList_Epsilon]
+      ConstDeclList(
+        Type(
+         int
+        ) [Type]
+        ConstDecl(
+         pi
+          Constant_Number(
+           3
+          ) [Constant_Number]
+        ) [ConstDecl]
+        ConstDeclMore_Epsilon(
+        ) [ConstDeclMore_Epsilon]
+      ) [ConstDeclList]
+    ) [ConstVarDeclList_Const]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Regular(
+       x
+      ) [VarDecl_Regular]
+      VarDeclMore_Comma(
+        VarDecl_Array(
+         y
+        ) [VarDecl_Array]
+        VarDeclMore_Semi(
+        ) [VarDeclMore_Semi]
+      ) [VarDeclMore_Comma]
+    ) [VarDeclList]
+  ) [ConstVarDeclList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Yes(
+        VarDeclList(
+          Type(
+           int
+          ) [Type]
+          VarDecl_Regular(
+           a
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             b
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+        MethodDeclVarDeclList_Yes(
+          VarDeclList(
+            Type(
+             char
+            ) [Type]
+            VarDecl_Array(
+             carr
+            ) [VarDecl_Array]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclList]
+          MethodDeclVarDeclList_Epsilon(
+          ) [MethodDeclVarDeclList_Epsilon]
+        ) [MethodDeclVarDeclList_Yes]
+      ) [MethodDeclVarDeclList_Yes]
+      StatementList_More(
+        Statement_Print(
+          Expr_Regular(
+            Term(
+              Factor_Var(
+                Designator_Regular(
+                 pi
+                ) [Designator_Regular]
+              ) [Factor_Var]
+              FactorMore_Epsilon(
+              ) [FactorMore_Epsilon]
+            ) [Term]
+            ExprAddopTerms_Epsilon(
+            ) [ExprAddopTerms_Epsilon]
+          ) [Expr_Regular]
+          Statement_PrintNumConst_Epsilon(
+          ) [Statement_PrintNumConst_Epsilon]
+        ) [Statement_Print]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  21:50:07,116 - =====================================================================
+ERROR 21:50:07,128 - Pristup simbolickoj konstanti: pi na liniji 8
+INFO  21:50:07,128 - =====================================================================
+INFO  21:50:07,134 - Parsiranje uspesno zavrseno!

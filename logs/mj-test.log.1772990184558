@@ -1,0 +1,127 @@
+INFO  18:15:54,725 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  18:15:54,773 - #2 program
+INFO  18:15:54,773 - #41 test302
+INFO  18:15:54,773 - #50 enum
+INFO  18:15:54,774 - #41 Broj
+INFO  18:15:54,774 - #37 {
+INFO  18:15:54,775 - #41 NULA
+INFO  18:15:54,776 - #33 ,
+INFO  18:15:54,777 - #41 JEDAN
+INFO  18:15:54,778 - #33 ,
+INFO  18:15:54,778 - #41 DVA
+INFO  18:15:54,778 - #38 }
+INFO  18:15:54,779 - #41 int
+INFO  18:15:54,779 - #41 niz
+INFO  18:15:54,780 - #40 [
+INFO  18:15:54,780 - #39 ]
+INFO  18:15:54,780 - #31 ;
+INFO  18:15:54,781 - #37 {
+INFO  18:15:54,783 - #5 void
+INFO  18:15:54,783 - #41 main
+INFO  18:15:54,783 - #35 (
+INFO  18:15:54,783 - #36 )
+INFO  18:15:54,784 - #37 {
+INFO  18:15:54,789 - #3 print
+INFO  18:15:54,789 - #35 (
+INFO  18:15:54,790 - #41 Broj
+INFO  18:15:54,790 - #34 .
+INFO  18:15:54,790 - #41 NULA
+INFO  18:15:54,790 - #36 )
+INFO  18:15:54,794 - #31 ;
+INFO  18:15:54,794 - #38 }
+INFO  18:15:54,795 - #38 }
+INFO  18:15:54,797 - Program(
+  ProgramName(
+   test302
+  ) [ProgramName]
+  ConstVarDeclEnumList_Var(
+    ConstVarDeclEnumList_Enum(
+      ConstVarDeclEnumList_Epsilon(
+      ) [ConstVarDeclEnumList_Epsilon]
+      EnumDecl(
+        EnumBegin(
+         Broj
+        ) [EnumBegin]
+        EnumConst(
+         NULA
+          EnumNumConst_Epsilon(
+          ) [EnumNumConst_Epsilon]
+        ) [EnumConst]
+        EnumConstMore_Yes(
+          EnumConst(
+           JEDAN
+            EnumNumConst_Epsilon(
+            ) [EnumNumConst_Epsilon]
+          ) [EnumConst]
+          EnumConstMore_Yes(
+            EnumConst(
+             DVA
+              EnumNumConst_Epsilon(
+              ) [EnumNumConst_Epsilon]
+            ) [EnumConst]
+            EnumConstMore_Epsilon(
+            ) [EnumConstMore_Epsilon]
+          ) [EnumConstMore_Yes]
+        ) [EnumConstMore_Yes]
+      ) [EnumDecl]
+    ) [ConstVarDeclEnumList_Enum]
+    VarDeclList(
+      Type(
+       int
+      ) [Type]
+      VarDecl_Array(
+       niz
+      ) [VarDecl_Array]
+      VarDeclMore_Semi(
+      ) [VarDeclMore_Semi]
+    ) [VarDeclList]
+  ) [ConstVarDeclEnumList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_More(
+        Statement_Print(
+          Expr_NonTernary(
+            NonTernaryExpr_Regular(
+              Term(
+                Factor_Var(
+                  Designator_Suffix(
+                    DesignatorName(
+                     Broj
+                    ) [DesignatorName]
+                    Designator_Enum(
+                     NULA
+                    ) [Designator_Enum]
+                  ) [Designator_Suffix]
+                ) [Factor_Var]
+                FactorMore_Epsilon(
+                ) [FactorMore_Epsilon]
+              ) [Term]
+              ExprAddopTerms_Epsilon(
+              ) [ExprAddopTerms_Epsilon]
+            ) [NonTernaryExpr_Regular]
+          ) [Expr_NonTernary]
+          Statement_PrintNumConst_Epsilon(
+          ) [Statement_PrintNumConst_Epsilon]
+        ) [Statement_Print]
+        StatementList_Epsilon(
+        ) [StatementList_Epsilon]
+      ) [StatementList_More]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  18:15:54,799 - =====================================================================
+ERROR 18:15:54,806 - Pristup konstanti nabrajanja: NULA na liniji 12
+ERROR 18:15:54,806 - Print operacija ne int/char/bool vrednosti. na liniji 12
+INFO  18:15:54,806 - =====================================================================
+ERROR 18:15:54,807 - Parsiranje NIJE uspesno zavrseno!

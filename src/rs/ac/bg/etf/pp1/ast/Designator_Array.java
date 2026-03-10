@@ -1,28 +1,17 @@
 // generated with ast extension for cup
 // version 0.8
-// 5/7/2025 19:28:40
+// 10/2/2026 16:37:22
 
 
 package rs.ac.bg.etf.pp1.ast;
 
-public class Designator_Array extends Designator {
+public class Designator_Array extends DesignatorSuffix {
 
-    private DesignatorArrayName DesignatorArrayName;
     private Expr Expr;
 
-    public Designator_Array (DesignatorArrayName DesignatorArrayName, Expr Expr) {
-        this.DesignatorArrayName=DesignatorArrayName;
-        if(DesignatorArrayName!=null) DesignatorArrayName.setParent(this);
+    public Designator_Array (Expr Expr) {
         this.Expr=Expr;
         if(Expr!=null) Expr.setParent(this);
-    }
-
-    public DesignatorArrayName getDesignatorArrayName() {
-        return DesignatorArrayName;
-    }
-
-    public void setDesignatorArrayName(DesignatorArrayName DesignatorArrayName) {
-        this.DesignatorArrayName=DesignatorArrayName;
     }
 
     public Expr getExpr() {
@@ -38,18 +27,15 @@ public class Designator_Array extends Designator {
     }
 
     public void childrenAccept(Visitor visitor) {
-        if(DesignatorArrayName!=null) DesignatorArrayName.accept(visitor);
         if(Expr!=null) Expr.accept(visitor);
     }
 
     public void traverseTopDown(Visitor visitor) {
         accept(visitor);
-        if(DesignatorArrayName!=null) DesignatorArrayName.traverseTopDown(visitor);
         if(Expr!=null) Expr.traverseTopDown(visitor);
     }
 
     public void traverseBottomUp(Visitor visitor) {
-        if(DesignatorArrayName!=null) DesignatorArrayName.traverseBottomUp(visitor);
         if(Expr!=null) Expr.traverseBottomUp(visitor);
         accept(visitor);
     }
@@ -58,12 +44,6 @@ public class Designator_Array extends Designator {
         StringBuffer buffer=new StringBuffer();
         buffer.append(tab);
         buffer.append("Designator_Array(\n");
-
-        if(DesignatorArrayName!=null)
-            buffer.append(DesignatorArrayName.toString("  "+tab));
-        else
-            buffer.append(tab+"  null");
-        buffer.append("\n");
 
         if(Expr!=null)
             buffer.append(Expr.toString("  "+tab));

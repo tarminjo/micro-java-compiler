@@ -1,0 +1,243 @@
+INFO  00:22:43,897 - Compiling source file: D:\FAKS 4\PP\Projekat\micro-java-compiler\test\program.mj
+INFO  00:22:43,927 - #2 program
+INFO  00:22:43,927 - #41 Prog
+INFO  00:22:43,927 - #6 const
+INFO  00:22:43,928 - #41 int
+INFO  00:22:43,928 - #41 CI
+INFO  00:22:43,928 - #17 =
+INFO  00:22:43,928 - #42 3
+INFO  00:22:43,928 - #31 ;
+INFO  00:22:43,929 - #6 const
+INFO  00:22:43,930 - #41 bool
+INFO  00:22:43,930 - #41 CB
+INFO  00:22:43,930 - #17 =
+INFO  00:22:43,930 - #43 1
+INFO  00:22:43,930 - #31 ;
+INFO  00:22:43,930 - #50 enum
+INFO  00:22:43,930 - #41 Tip
+INFO  00:22:43,930 - #37 {
+INFO  00:22:43,931 - #41 NULA
+INFO  00:22:43,931 - #33 ,
+INFO  00:22:43,933 - #41 JEDAN
+INFO  00:22:43,933 - #33 ,
+INFO  00:22:43,933 - #41 PET
+INFO  00:22:43,935 - #17 =
+INFO  00:22:43,935 - #42 5
+INFO  00:22:43,935 - #33 ,
+INFO  00:22:43,935 - #41 DESET
+INFO  00:22:43,935 - #17 =
+INFO  00:22:43,935 - #42 10
+INFO  00:22:43,935 - #38 }
+INFO  00:22:43,936 - #50 enum
+INFO  00:22:43,936 - #41 Tip2
+INFO  00:22:43,937 - #37 {
+INFO  00:22:43,937 - #41 GAS
+INFO  00:22:43,937 - #33 ,
+INFO  00:22:43,937 - #41 JEDAN
+INFO  00:22:43,937 - #33 ,
+INFO  00:22:43,937 - #41 PET
+INFO  00:22:43,937 - #17 =
+INFO  00:22:43,937 - #42 5
+INFO  00:22:43,937 - #33 ,
+INFO  00:22:43,937 - #41 DESET
+INFO  00:22:43,937 - #17 =
+INFO  00:22:43,937 - #42 10
+INFO  00:22:43,937 - #38 }
+INFO  00:22:43,937 - #41 Tip
+INFO  00:22:43,937 - #41 e1
+INFO  00:22:43,937 - #33 ,
+INFO  00:22:43,937 - #41 e2
+INFO  00:22:43,937 - #31 ;
+INFO  00:22:43,938 - #41 int
+INFO  00:22:43,938 - #41 i1
+INFO  00:22:43,940 - #33 ,
+INFO  00:22:43,940 - #41 i2
+INFO  00:22:43,940 - #31 ;
+INFO  00:22:43,940 - #41 bool
+INFO  00:22:43,940 - #41 b1
+INFO  00:22:43,940 - #31 ;
+INFO  00:22:43,940 - #37 {
+INFO  00:22:43,940 - #5 void
+INFO  00:22:43,940 - #41 main
+INFO  00:22:43,940 - #35 (
+INFO  00:22:43,940 - #36 )
+INFO  00:22:43,940 - #37 {
+INFO  00:22:43,941 - #38 }
+INFO  00:22:43,941 - #38 }
+INFO  00:22:43,944 - Program(
+  ProgramName(
+   Prog
+  ) [ProgramName]
+  ConstVarDeclEnumList_Var(
+    ConstVarDeclEnumList_Var(
+      ConstVarDeclEnumList_Var(
+        ConstVarDeclEnumList_Enum(
+          ConstVarDeclEnumList_Enum(
+            ConstVarDeclEnumList_Const(
+              ConstVarDeclEnumList_Const(
+                ConstVarDeclEnumList_Epsilon(
+                ) [ConstVarDeclEnumList_Epsilon]
+                ConstDeclList(
+                  Type(
+                   int
+                  ) [Type]
+                  ConstDecl(
+                   CI
+                    Constant_Number(
+                     3
+                    ) [Constant_Number]
+                  ) [ConstDecl]
+                  ConstDeclMore_Epsilon(
+                  ) [ConstDeclMore_Epsilon]
+                ) [ConstDeclList]
+              ) [ConstVarDeclEnumList_Const]
+              ConstDeclList(
+                Type(
+                 bool
+                ) [Type]
+                ConstDecl(
+                 CB
+                  Constant_Bool(
+                   1
+                  ) [Constant_Bool]
+                ) [ConstDecl]
+                ConstDeclMore_Epsilon(
+                ) [ConstDeclMore_Epsilon]
+              ) [ConstDeclList]
+            ) [ConstVarDeclEnumList_Const]
+            EnumDecl(
+              EnumBegin(
+               Tip
+              ) [EnumBegin]
+              EnumConst(
+               NULA
+                EnumNumConst_Epsilon(
+                ) [EnumNumConst_Epsilon]
+              ) [EnumConst]
+              EnumConstMore_Yes(
+                EnumConst(
+                 JEDAN
+                  EnumNumConst_Epsilon(
+                  ) [EnumNumConst_Epsilon]
+                ) [EnumConst]
+                EnumConstMore_Yes(
+                  EnumConst(
+                   PET
+                    EnumNumConst_Yes(
+                     5
+                    ) [EnumNumConst_Yes]
+                  ) [EnumConst]
+                  EnumConstMore_Yes(
+                    EnumConst(
+                     DESET
+                      EnumNumConst_Yes(
+                       10
+                      ) [EnumNumConst_Yes]
+                    ) [EnumConst]
+                    EnumConstMore_Epsilon(
+                    ) [EnumConstMore_Epsilon]
+                  ) [EnumConstMore_Yes]
+                ) [EnumConstMore_Yes]
+              ) [EnumConstMore_Yes]
+            ) [EnumDecl]
+          ) [ConstVarDeclEnumList_Enum]
+          EnumDecl(
+            EnumBegin(
+             Tip2
+            ) [EnumBegin]
+            EnumConst(
+             GAS
+              EnumNumConst_Epsilon(
+              ) [EnumNumConst_Epsilon]
+            ) [EnumConst]
+            EnumConstMore_Yes(
+              EnumConst(
+               JEDAN
+                EnumNumConst_Epsilon(
+                ) [EnumNumConst_Epsilon]
+              ) [EnumConst]
+              EnumConstMore_Yes(
+                EnumConst(
+                 PET
+                  EnumNumConst_Yes(
+                   5
+                  ) [EnumNumConst_Yes]
+                ) [EnumConst]
+                EnumConstMore_Yes(
+                  EnumConst(
+                   DESET
+                    EnumNumConst_Yes(
+                     10
+                    ) [EnumNumConst_Yes]
+                  ) [EnumConst]
+                  EnumConstMore_Epsilon(
+                  ) [EnumConstMore_Epsilon]
+                ) [EnumConstMore_Yes]
+              ) [EnumConstMore_Yes]
+            ) [EnumConstMore_Yes]
+          ) [EnumDecl]
+        ) [ConstVarDeclEnumList_Enum]
+        VarDeclList(
+          Type(
+           Tip
+          ) [Type]
+          VarDecl_Regular(
+           e1
+          ) [VarDecl_Regular]
+          VarDeclMore_Comma(
+            VarDecl_Regular(
+             e2
+            ) [VarDecl_Regular]
+            VarDeclMore_Semi(
+            ) [VarDeclMore_Semi]
+          ) [VarDeclMore_Comma]
+        ) [VarDeclList]
+      ) [ConstVarDeclEnumList_Var]
+      VarDeclList(
+        Type(
+         int
+        ) [Type]
+        VarDecl_Regular(
+         i1
+        ) [VarDecl_Regular]
+        VarDeclMore_Comma(
+          VarDecl_Regular(
+           i2
+          ) [VarDecl_Regular]
+          VarDeclMore_Semi(
+          ) [VarDeclMore_Semi]
+        ) [VarDeclMore_Comma]
+      ) [VarDeclList]
+    ) [ConstVarDeclEnumList_Var]
+    VarDeclList(
+      Type(
+       bool
+      ) [Type]
+      VarDecl_Regular(
+       b1
+      ) [VarDecl_Regular]
+      VarDeclMore_Semi(
+      ) [VarDeclMore_Semi]
+    ) [VarDeclList]
+  ) [ConstVarDeclEnumList_Var]
+  MethodDeclList_More(
+    MethodDecl(
+      MethodSignature(
+        MethodRetAndName_Void(
+         main
+        ) [MethodRetAndName_Void]
+        FormParsList_Epsilon(
+        ) [FormParsList_Epsilon]
+      ) [MethodSignature]
+      MethodDeclVarDeclList_Epsilon(
+      ) [MethodDeclVarDeclList_Epsilon]
+      StatementList_Epsilon(
+      ) [StatementList_Epsilon]
+    ) [MethodDecl]
+    MethodDeclList_Epsilon(
+    ) [MethodDeclList_Epsilon]
+  ) [MethodDeclList_More]
+) [Program]
+INFO  00:22:43,944 - =====================================================================
+INFO  00:22:43,949 - =====================================================================
+INFO  00:22:43,952 - Parsiranje uspesno zavrseno!
